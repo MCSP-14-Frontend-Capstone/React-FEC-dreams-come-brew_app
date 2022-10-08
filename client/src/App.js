@@ -6,7 +6,16 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <Routes></Routes>
+        <Routes>
+          <Route>
+            <Route path="/" element={<SharedLayout />}/>
+            <Route path="/" element={<SharedLayout />}/>
+            <Route path="/" element={<SharedLayout />}/>
+            <Route path="/" element={<SharedLayout />}/>
+            <Route path="/" element={<SharedLayout />}/>
+            <Route path="/" element={<SharedLayout />}/>
+          </Route>
+        </Routes>
       </div>
     </Router>
   );
