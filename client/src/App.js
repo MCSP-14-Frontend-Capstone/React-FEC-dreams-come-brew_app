@@ -15,11 +15,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Index />}/>
-            <Route index element={<About />}/>
-            <Route index element={<Products />}/>
-            <Route index element={<Contact />}/>
-            <Route index element={<Cart />}/>
-            <Route index element={<Login />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/products" element={<Products />}/>
+            <Route path="/contact" element={<Contact />}/>
+            <Route path="/cart" element={<Cart />}/>
+            <Route path="/login" element={<Login />}/>
            
           </Route>
         </Routes>
