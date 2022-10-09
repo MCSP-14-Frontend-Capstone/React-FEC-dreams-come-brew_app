@@ -2,7 +2,7 @@
   --primary-color: rgb(136, 78, 198);
   --grey: #bbb;
   --light: #eee;
-  --selected: rgb(156, 39, 18);
+  --selected: rgb(244, 167, 72);
 }
 
 .App {
@@ -32,4 +32,11 @@ a:-webkit-any-link {
 
 .link-unselected {
   color: var(--light);
+}
+
+.logo {
+  color: black;
+  border: 0.1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
 }
