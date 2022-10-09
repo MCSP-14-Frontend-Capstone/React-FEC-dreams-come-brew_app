@@ -8,6 +8,7 @@ import Cart from "./pages/Cart"
 import Login from "./pages/Login"
 import Index from "./pages/Index";
 import Singleproduct from "./pages/Singleproduct";
+import Error from "./pages/Error";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/login" element={<Login />}/>
            
           </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </Router>
