@@ -15,7 +15,7 @@ const Singleproduct = () => {
       </header>
       <img className="single-page-image" src={image} alt="" />
       <footer className="single-footer">
-        <h3>${price}</h3>
+        <h4>Price: ${price}</h4>
         <button>Products</button>
       </footer>
     </section>

@@ -57,8 +57,8 @@ a:-webkit-any-link {
 }
 
 .single-page-image {
-  height: 35rem;
-  width: 35rem;
+  height: 40rem;
+  width: 40rem;
 }
 
 .single-footer {
@@ -66,4 +66,13 @@ a:-webkit-any-link {
   flex-direction: row;
   align-items:center;
   justify-content:space-evenly;
+}
+
+.single-product{
+
+  width: 45rem;
+  margin: auto;
+  border: 1px solid #aaa;
+  margin-top: 5rem;
+  background-color: rgba(13, 31, 78, 0.2);
 }
