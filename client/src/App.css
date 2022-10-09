@@ -1,24 +1,35 @@
+:root {
+  --primary-color: rgb(136, 78, 198);
+  --grey: #bbb;
+  --light: #eee;
+  --selected: rgb(156, 39, 18);
+}
+
 .App {
   text-align: center;
 }
 
 .navbar {
-  background-color:aquamarine;
+  background-color: rgb(136, 78, 198);
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   height: 5vh;
-
 }
 .navlinks {
-  
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 80%;
-
-
 }
-a:-webkit-any-link{
+a:-webkit-any-link {
   text-decoration: none;
+}
+
+.link-selected {
+  color: var(--selected);
+}
+
+.link-unselected {
+  color: var(--light);
 }

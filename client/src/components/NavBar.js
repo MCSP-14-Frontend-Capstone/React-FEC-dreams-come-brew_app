@@ -1,27 +1,28 @@
-import { NavLink } from "react-router-dom"
+import { NavLink,  } from "react-router-dom"
+
 
 const NavBar = () => {
   return ( 
     <nav className="navbar">
-      <NavLink to="/">
+      <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/">
         <h3>D C B</h3>
       </NavLink>
       <div className="navlinks">
-        <NavLink to="/about">
+        <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/about">
           About
         </NavLink>
-        <NavLink to="/products">
+        <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/products">
           Products
-        </NavLink>
-        <NavLink to="/contact">
+        </NavLink >
+        <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/contact">
         Contact 
-        </NavLink>
-        <NavLink to="/cart">
+        </NavLink >
+        <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/cart">
           Cart
         </NavLink>
       </div>
 
-      <NavLink to="login">
+      <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="login">
         Login
       </NavLink>
     </nav>
