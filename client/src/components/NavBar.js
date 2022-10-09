@@ -1,11 +1,23 @@
 import { NavLink,  } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faCartShopping,
+  faSignIn, faCoffee
+} from "@fortawesome/free-solid-svg-icons";
 
 
 const NavBar = () => {
   return ( 
     <nav className="navbar">
-      <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/">
-        <h3 className="logo">D C B</h3>
+      <NavLink className={({isActive}) => isActive ? "link-unselected" : "link-selected"} to="/">
+      <div className="logo">
+        
+         <p>Dreams Come Brew</p>
+      <FontAwesomeIcon className="signin-icon" icon={faCoffee}></FontAwesomeIcon>
+
+        
+      </div>
       </NavLink>
       <div className="navlinks">
         <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/about">
@@ -18,12 +30,12 @@ const NavBar = () => {
         Contact 
         </NavLink >
         <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="/cart">
-          Cart
+        <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>  Cart
         </NavLink>
       </div>
 
       <NavLink className={({isActive}) => isActive ? "link-selected" : "link-unselected"} to="login">
-        Login
+      <FontAwesomeIcon className="signin-icon" icon={faSignIn}></FontAwesomeIcon> Login
       </NavLink>
     </nav>
   

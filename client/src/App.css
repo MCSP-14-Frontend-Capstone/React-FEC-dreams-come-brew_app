@@ -37,10 +37,7 @@ a:-webkit-any-link {
 }
 
 .logo {
-  color: var(--selected);
-  border: 0.1px solid #eee;
-  padding: 5px;
-  border-radius: 5px;
+ 
 }
 
 .item-image  {
@@ -81,4 +78,18 @@ a:-webkit-any-link {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+}
+
+.signin-icon {
+  color: var(--selected);
+  margin-left: 1rem;
+
+}
+
+
+
+p {
+  padding: 0;
+  margin: 0;
+  display: inline;
 }
