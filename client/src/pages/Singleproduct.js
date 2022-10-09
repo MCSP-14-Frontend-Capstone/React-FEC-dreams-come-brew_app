@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import products from "../data";
 
 const Singleproduct = () => {
@@ -16,7 +16,7 @@ const Singleproduct = () => {
       <img className="single-page-image" src={image} alt="" />
       <footer className="single-footer">
         <h4>Price: ${price}</h4>
-        <button>Products</button>
+        <Link to='/products' ><button>Products</button></Link>
       </footer>
     </section>
   );
