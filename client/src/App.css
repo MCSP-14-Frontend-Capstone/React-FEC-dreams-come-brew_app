@@ -37,20 +37,19 @@ a:-webkit-any-link {
 }
 
 .logo {
- 
 }
 
-.item-image  {
+.item-image {
   height: 15rem;
   width: 15rem;
 }
 
 .price-description {
-  display:inline;
+  display: inline;
 }
 
 .link {
-  color:  rgb(136, 78, 198)
+  color: rgb(136, 78, 198);
 }
 
 .single-page-image {
@@ -61,12 +60,11 @@ a:-webkit-any-link {
 .single-footer {
   display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content:space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.single-product{
-
+.single-product {
   width: 45rem;
   margin: auto;
   border: 1px solid #aaa;
@@ -83,10 +81,7 @@ a:-webkit-any-link {
 .signin-icon {
   color: var(--selected);
   margin-left: 1rem;
-
 }
-
-
 
 p {
   padding: 0;

@@ -15,7 +15,9 @@ const Products = () => {
               <img className="item-image" src={product.image} alt="" />
               <div>
                 <p className="price-description">Price: ${product.price}</p>
-                <Link className="link" to={`/products/${product.id}`}>more info</Link>
+                <Link className="link" to={`/products/${product.id}`}>
+                  more info
+                </Link>
               </div>
             </article>
           );

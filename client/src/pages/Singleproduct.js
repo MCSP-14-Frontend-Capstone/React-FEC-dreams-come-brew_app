@@ -4,7 +4,6 @@ import products from "../data";
 
 const Singleproduct = () => {
   const { productId } = useParams();
-
   const product = products.find((product) => product.id == productId);
   const { name, image, price } = product;
 
@@ -16,7 +15,9 @@ const Singleproduct = () => {
       <img className="single-page-image" src={image} alt="" />
       <footer className="single-footer">
         <h4>Price: ${price}</h4>
-        <Link to='/products' ><button>Products</button></Link>
+        <Link to="/products">
+          <button>Products</button>
+        </Link>
       </footer>
     </section>
   );
