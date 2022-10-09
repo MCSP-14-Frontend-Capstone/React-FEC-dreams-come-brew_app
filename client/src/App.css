@@ -40,3 +40,12 @@ a:-webkit-any-link {
   padding: 5px;
   border-radius: 5px;
 }
+
+.item-image  {
+  height: 15rem;
+  width: 15rem;
+}
+
+.price-description {
+  display:inline;
+}
