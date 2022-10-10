@@ -1,11 +1,18 @@
 import React from 'react'
 
+
 const Cart = () => {
+  const items = ["item1", "item2", "item3"]
+
+  if(items.length === 0){
+    return <h1>Your Cart is Empty</h1>
+  }else{
   return (
-    <>
-    <div className = "ShoppingCart">Shopping Cart
-    </div><>QTY:
-      <select>
+    items.map((item =>(
+    <div className='Product'>
+    <h1>{item}</h1>
+    <div>QTY:
+      <select className='QTY-Box' >
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -17,11 +24,12 @@ const Cart = () => {
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
-    </>
-      <button>Delete</button>
-      <button>CheckOut</button>
-    </>
+    </div>
+      <button className='DLT-BTN'>Delete</button>
+    </div>
+    )))
   )
+    }
 }
 
 export default Cart

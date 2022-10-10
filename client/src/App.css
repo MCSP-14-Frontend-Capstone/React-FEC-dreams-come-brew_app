@@ -90,6 +90,22 @@ p {
 }
 
 
-#ShoppingCart{
-  font-size: large;
+.DLT-BTN {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 0px;
+  width: 70px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.Product{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
 }
