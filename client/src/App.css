@@ -193,7 +193,11 @@ p,
   margin-top: 10rem;
   margin-left: 3rem;
   margin-right: 30rem;
+  width: 50vw;
   height: 15rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .aboutme-h {
 .aboutme-h{
@@ -222,8 +226,7 @@ p,
   display: flex;
   background-color: #DDDDDD;
   justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 .aboutpics {
   height: 12rem;
