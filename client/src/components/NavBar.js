@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -17,7 +18,7 @@ const NavBar = () => {
         to="/"
       >
         <div className="logo">
-          <p>Dreams Come Brew</p>
+          <p className="logo-text">Dreams Come Brew</p>
           <FontAwesomeIcon
             className="signin-icon"
             icon={faCoffee}
@@ -66,7 +67,7 @@ const NavBar = () => {
         to="login"
       >
         <FontAwesomeIcon
-          className="signin-icon"
+          className="login-icon"
           icon={faSignIn}
         ></FontAwesomeIcon>{" "}
         Login
