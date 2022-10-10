@@ -3,6 +3,7 @@
   --grey: #bbb;
   --light: #eee;
   --selected: rgb(244, 167, 72);
+  --navbackground: rgba(13, 31, 78, 1)
 }
 
 .App {
@@ -12,7 +13,7 @@
 }
 
 .navbar {
-  background-color: rgba(13, 31, 78, 1);
+  background-color: var(--navbackground);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -37,6 +38,12 @@ a:-webkit-any-link {
 }
 
 .logo {
+  background-color: var(--selected);
+  border-radius: 1rem;
+  padding: 5px 2px;
+  font-size: 1rem;
+  font-weight: 400;
+  max-height: 1.5rem;
 }
 
 .item-image {
@@ -79,12 +86,20 @@ a:-webkit-any-link {
 }
 
 .signin-icon {
-  color: var(--selected);
-  margin-left: 1rem;
+  color: var(--navbackground);
+
+  font-size: 1rem;
 }
 
-p {
+p,
+.signin-icon {
   padding: 0;
   margin: 0;
   display: inline;
+  font-size: 1rem;
+  color: rgba(13, 31, 78, 1);
+}
+
+.login-icon {
+  color: var(--selected);
 }
