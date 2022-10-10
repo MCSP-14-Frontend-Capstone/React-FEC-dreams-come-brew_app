@@ -83,12 +83,17 @@ const products = [
       price: 19,
     
      qty:'25',
+    image:
+      "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+      price: 18.99,
+
   },
   {
     id: " pr2",
     name: "Mulan's 'Cri-kee' Bean",
     image:
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+
       price: 24,
       qty:'90',
      
@@ -100,10 +105,21 @@ const products = [
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,
       qty:'130',
+
+      price: 14.99,
+  },
+  {
+    id: " pr3",
+    name: "Rapunzel's 'Golden' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      price: 24.99,
+
   },
   {
     id: " pr4",
     name: "Aurora's Wake-up Cure",
+
     image:
       "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
       price: 9,
@@ -112,6 +128,110 @@ const products = [
  
   
  
+
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 30,
+  },
+  {
+    id: " pr5",
+    name: "Cinderella's Midnight Magic",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 25,
+  },
+  {
+    id: " pr6",
+    name: "Snow White's Dwarven Strength",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 40,
+  },
+  {
+    id: " pr7",
+    name: "Merida's Pride",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 23,
+  },
+  {
+    id: " pr8",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr9",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr10",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr11",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr12",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr13",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr14",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr15",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr16",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr17",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+  {
+    id: " pr18",
+    name: "Tiana's 'Hopping' Coffee",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      price: 17.99,
+  },
+
   
 ];
 
