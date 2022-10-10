@@ -8,7 +8,8 @@
 .App {
   text-align: center;
   background-color: #ddd;
-  height: 100vh;
+  background: cover;
+  height: 100%;
 }
 
 .navbar {
@@ -74,8 +75,9 @@ a:-webkit-any-link {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .signin-icon {
