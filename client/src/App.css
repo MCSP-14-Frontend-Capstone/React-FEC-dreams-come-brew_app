@@ -179,7 +179,6 @@ p,
   background-image: linear-gradient(rgba(255, 255, 255, 0), #dddddd);
   height: 15rem;
 }
-
 .about-b-bdr{
   background-image: linear-gradient(rgba(255, 255, 255, 0), #DDDDDD);
   height: 15rem;
@@ -204,17 +203,8 @@ p,
   font-size: 3rem;
   margin: 0;
 }
-.aboutme-p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(219, 219, 219);
-}
 
-.aboutPhotosContainer {
-  margin-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  background-color: #dddddd;
-}
+
 
 .aboutme-p{
   font-family: Arial, Helvetica, sans-serif;
