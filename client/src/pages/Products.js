@@ -25,7 +25,7 @@ const Products = () => {
                 key={product.id}
                 id={product.id}
               >
-                <h3>{product.name}</h3>
+                <h3 className="product-name">{product.name}</h3>
                 <img className="item-image" src={product.image} alt="" />
                
                 <div>

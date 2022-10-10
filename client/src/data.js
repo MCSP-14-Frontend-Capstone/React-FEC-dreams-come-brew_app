@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: " pr3",
-    name: "Rapunzel's 'Golden' Coffee",
+    name: "Rapunzel's 'Gold' Coffee",
     image:
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,
@@ -58,7 +58,7 @@ const products = [
   },
   {
     id: " pr3",
-    name: "Rapunzel's 'Golden' Coffee",
+    name: "Rapunzel's 'Gold' Coffee",
     image:
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,
@@ -95,7 +95,7 @@ const products = [
   },
   {
     id: " pr3",
-    name: "Rapunzel's 'Golden' Coffee",
+    name: "Rapunzel's 'Gold' Coffee",
     image:
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,

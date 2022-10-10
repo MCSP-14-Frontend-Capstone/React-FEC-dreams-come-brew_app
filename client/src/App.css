@@ -6,23 +6,22 @@
   --navbackground: rgba(13, 31, 78, 1);
 }
 @font-face {
-  font-family: 'Waltograph UI';
-  src: url(./assets/WaltographUI-Bold.woff2) format('woff2'),
-      url(./assets/WaltographUI-Bold.woff) format('woff');
+  font-family: "Waltograph UI";
+  src: url(./assets/WaltographUI-Bold.woff2) format("woff2"),
+    url(./assets/WaltographUI-Bold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Waltograph';
-  src: url(./assets/Waltograph.woff2) format('woff2'),
-      url(./assets/Waltograph.woff) format('woff');
+  font-family: "Waltograph";
+  src: url(./assets/Waltograph.woff2) format("woff2"),
+    url(./assets/Waltograph.woff) format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
 
 .App {
   text-align: center;
@@ -30,7 +29,6 @@
   background: cover;
   height: 100%;
   width: 100%;
-  
 }
 
 .navbar {
@@ -39,7 +37,6 @@
   align-items: center;
   justify-content: space-around;
   height: 5vh;
-
 }
 .navlinks {
   display: flex;
@@ -70,14 +67,17 @@ a:-webkit-any-link {
 }
 
 .item-image {
-  height: 15rem;
-  width: 12.5rem;
+  height: 14rem;
+  width: 11rem;
   border-radius: 1rem;
-  background-color:rgba(244, 167, 72,0.3);
-  
-  border: 5px solid lightgrey;
-}
+  border: 5px solid lightblue;
 
+  margin-top: 0rem;
+  transition: 0.2s;
+}
+.item-image:hover {
+  border: 5px solid var(--navbackground);
+}
 /* .price-description {
   display: inline;
 } */
@@ -89,7 +89,6 @@ a:-webkit-any-link {
 .single-page-image {
   height: 40rem;
   width: 40rem;
-  
 }
 
 .single-footer {
@@ -109,11 +108,11 @@ a:-webkit-any-link {
 
 .products {
   display: grid;
- grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  grid-gap: 0.5rem;
-
- 
+  grid-gap: 1rem;
+  max-width: 85%;
+  margin: auto;
 }
 
 .signin-icon {
@@ -136,16 +135,13 @@ p,
 }
 .product-page-single {
   margin-top: 5rem;
-
 }
 
 .price-info {
   display: flex;
- justify-content:space-evenly;
+  justify-content: space-evenly;
 
- margin-top: 0;
-
-
+  margin-top: 0;
 }
 .price {
   font-weight: 800;
@@ -154,10 +150,84 @@ p,
   padding: 0;
 }
 
+.qty {
+  margin-right: 1rem;
+}
+
 .rating-icon {
   color: goldenrod;
 }
 
-.qty {
-  margin-right: 2rem;
+.aboutBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  flex-direction: column;
+  background: url(./pages/images/about-me-coffee.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
+}
+
+.about-b-bdr {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #dddddd);
+  height: 15rem;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  color: rgb(219, 219, 219);
+  margin-top: 10rem;
+  margin-left: 3rem;
+  margin-right: 30rem;
+  height: 15rem;
+}
+
+.aboutme-h {
+  font-family: cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+.aboutme-p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(219, 219, 219);
+}
+
+.aboutPhotosContainer {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  background-color: #dddddd;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.aboutpics {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+.aboutpics:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.product-name {
+  font-size: 0.1rem;
+  font-weight: 500;
+  color: var(--navbackground);
 }
