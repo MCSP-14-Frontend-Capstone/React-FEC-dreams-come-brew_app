@@ -68,13 +68,12 @@ a:-webkit-any-link {
 
 .item-image {
   height: 14rem;
-  width: 12rem;
+  width: 11rem;
   border-radius: 1rem;
   border: 5px solid lightblue;
 
   margin-top: 0rem;
   transition: 0.2s;
-  margin-right: 2rem;
 }
 .item-image:hover {
   border: 5px solid var(--navbackground);
@@ -112,11 +111,10 @@ a:-webkit-any-link {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 1rem;
-  width: 85%;
+  max-width: 85%;
   margin: auto;  
-  margin-top: 2rem;
- 
-
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .signin-icon {
@@ -139,10 +137,7 @@ p,
 }
 .product-page-single {
   margin-top: 5rem;
-  /* margin: auto; */
-
 }
-
 
 .price-info {
   display: flex;
@@ -153,7 +148,7 @@ p,
 .price {
   font-weight: 800;
   font-size: 1.5rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
   padding: 0;
 }
 
@@ -234,141 +229,46 @@ p,
   cursor: pointer;
 }
 
-/* h1{
+h1{
   font-family: cursive;
   font-size: 3rem;
   margin: 0;
-} */
+}
 .product-name {
-  font-size: 1rem;
-  font-weight: 900;
+  font-size: 0.1rem;
+  font-weight: 500;
   color: var(--navbackground);
-  margin-right:  2rem;
-  padding-bottom: 0.2rem;
-
 }
 
-.btn {
-  border: 0.5px solid red;
-  border-radius: 2rem;
-  padding: 0.5rem 0rem;
- 
-
+.contactPage{
+  margin: 0;
+  padding: 0;
 }
 
-.add-to-cart-btn {
-  display: block;
-  width: 12rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  
+.contactTitle{
+  background: url(pages/images/starbucks_disney_social_900x489.jpg) no-repeat;
+  background-size: cover;
+  color: blue;
+  font-family: 'Waltograph';
+  height: 53vh;
+  overflow: auto;
+  margin: 0;
 }
-
-.df {
-
-margin-bottom: 1.5rem;
-
+.contactInfo{
+  background-color: aliceblue;
 }
-.line{
-  border: 0.1px solid var(--selected)
+.contactForm{
+  background-color: inherit;
 }
-
-
-.loginButtons{
-  box-shadow:inset 0px 1px 0px 0px #42A8C2;
-  background:linear-gradient(to bottom, #45C3C7 5%, #F07FF0 100%);
-  background-color:#45c3c7;
-  border-radius:6px;
-  border:1px solid #AC05FF;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:'Dancing Script', cursive;;
-  font-size: 25px;
-  font-weight:bold;
-  padding:6px 24px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #000000;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-.loginButtons:hover{
-background:linear-gradient(to bottom, #F07FF0 5%, #45C3C7 100%);
-background-color:#f07ff0;
-position:relative;
-top:1px;
-}
-.loginButtons:active{
-  position:relative;
-  top:1px;
-}
-.inputBox{
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: lavender;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: 600;
+.contactInputBox{
   font-style: italic;
-  font-size: medium;
-  border-radius: 1rem;
-  text-align: center;
-  margin: .5rem
-  }
-.loginHeader{
-  font-family:'Dancing Script', cursive;;
-  font-size: 50px;
-  font-weight: 800px;
-  color:#f07ff0
-}
-.create-login-headers{
-  font-family:'Dancing Script', cursive;
-  font-size: 25px;
-  font-weight: 800px;
-  color:#45c3c7;
-}
-=======
-.DealsMain{
-  display: flex;
-  height: 12.5rem;
-  align-items: center;
-  flex-direction: row;
-  overflow: overlay;
 }
 
-.Deals{
-  display: flex;
-  height: 11.5rem;
-  gap: 10px;
-  align-items: center;
-  flex-direction: row;
-  overflow: overlay;
+.contactSubmitBtn{
+  background-color: blue;
+  color: aliceblue;
 }
 
-.DealsImg{
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100%;
+.contactFooter{
+  background-color: inherit;
 }
-
-.DealItemName{
-  font-size: 0.6rem;
-}
-
-.DealsArrow{
-  display: inline-block;
-  padding-top: 5rem;
-  padding-right: 1rem;
-  padding-bottom: 5rem;
-  padding-left: 1rem;
-  background-color: #cdcdcd;
-  color: black;
-  border-radius: 5px;
-  font-size: 30px;
-}
-.DealsArrow:hover {
-  background-color: #DDDDDD;
-  color: black;
-}
-
-
-
