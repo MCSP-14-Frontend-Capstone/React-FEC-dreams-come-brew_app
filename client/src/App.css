@@ -234,11 +234,11 @@ p,
   cursor: pointer;
 }
 
-h1{
+/* h1{
   font-family: cursive;
   font-size: 3rem;
   margin: 0;
-}
+} */
 .product-name {
   font-size: 1rem;
   font-weight: 900;
@@ -273,7 +273,7 @@ margin-bottom: 1.5rem;
   border: 0.1px solid var(--selected)
 }
 
-/*Login Page:*/
+
 .loginButtons{
   box-shadow:inset 0px 1px 0px 0px #42A8C2;
   background:linear-gradient(to bottom, #45C3C7 5%, #F07FF0 100%);
@@ -326,3 +326,49 @@ top:1px;
   font-weight: 800px;
   color:#45c3c7;
 }
+=======
+.DealsMain{
+  display: flex;
+  height: 12.5rem;
+  align-items: center;
+  flex-direction: row;
+  overflow: overlay;
+}
+
+.Deals{
+  display: flex;
+  height: 11.5rem;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  overflow: overlay;
+}
+
+.DealsImg{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.DealItemName{
+  font-size: 0.6rem;
+}
+
+.DealsArrow{
+  display: inline-block;
+  padding-top: 5rem;
+  padding-right: 1rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  background-color: #cdcdcd;
+  color: black;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.DealsArrow:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+
+
