@@ -275,7 +275,7 @@ margin-bottom: 1.5rem;
 
 .DealsMain{
   display: flex;
-  height: 11.5rem;
+  height: 12.5rem;
   align-items: center;
   flex-direction: row;
   overflow: overlay;
@@ -309,13 +309,11 @@ margin-bottom: 1.5rem;
   background-color: #cdcdcd;
   color: black;
   border-radius: 5px;
+  font-size: 30px;
 }
 .DealsArrow:hover {
   background-color: #DDDDDD;
   color: black;
-}
-.DealsArrow:active{
-  offset: 0 200px;
 }
 
 

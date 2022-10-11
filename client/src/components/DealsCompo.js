@@ -7,18 +7,15 @@ console.log(items)
     //map through items
     return (
         <div className="DealsMain">
-            <Link to="Deals" activeClass="active" ignoreCancelEvents={true} offset={-700} smooth={true} horizontal={true} containerId="deals">PREV
-            {/* <a href="#prev" className="DealsArrow">&#8249;</a> */}
-            </Link>
+            {/* <div>This is Deals Component</div> */}
+        <Link className="DealsArrow" to="Deals" activeClass="active" duration={650} ignoreCancelEvents={false} offset={-700} smooth={true} horizontal={true} containerId="deals">&#8249;</Link>
      
             <div className="Deals" id="deals">
             {items.map((item,i) => (
                 <DealsItem item={item} key={i}/>
             ))}
             </div>
-        <Link to="Deals" activeClass="active" ignoreCancelEvents={true} offset={700} smooth ={true} horizontal={true} containerId="deals">NEXT
-        {/* <a href="#next" className="DealsArrow">&#8250;</a> */}
-        </Link>
+        <Link className="DealsArrow" to="Deals" activeClass="active" duration={650} ignoreCancelEvents={false} offset={2000} smooth ={true} horizontal={true} containerId="deals">&#8250;</Link>
         </div>
        
     )
