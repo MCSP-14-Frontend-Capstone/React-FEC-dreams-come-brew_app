@@ -273,11 +273,21 @@ margin-bottom: 1.5rem;
   border: 0.1px solid var(--selected)
 }
 
+.DealsMain{
+  display: flex;
+  height: 11.5rem;
+  align-items: center;
+  flex-direction: row;
+  overflow: overlay;
+}
+
 .Deals{
   display: flex;
-  flex-direction: row;
-  height: 11.3rem;
+  height: 11.5rem;
   gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  overflow: overlay;
 }
 
 .DealsImg{
@@ -286,22 +296,26 @@ margin-bottom: 1.5rem;
   border-radius: 100%;
 }
 
-.DealItem{
-  width: 10rem;
-  height: 10rem;
-  font-size: 1rem;
-}
-
 .DealItemName{
   font-size: 0.6rem;
 }
 
-a {
-  text-decoration: none;
+.DealsArrow{
   display: inline-block;
+  padding-top: 5rem;
+  padding-right: 1rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  background-color: #cdcdcd;
+  color: black;
+  border-radius: 5px;
 }
-
-a:hover {
-  background-color: #ddd;
+.DealsArrow:hover {
+  background-color: #DDDDDD;
   color: black;
 }
+.DealsArrow:active{
+  offset: 0 200px;
+}
+
+

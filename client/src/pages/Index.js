@@ -7,7 +7,7 @@ const Index = () => {
   const [items, setItems] = useState(products)
 
   return (
-    <div>Home div Component
+    <div>
       <div>
         <DealsCompo items={items}/>
       </div>

@@ -1,13 +1,15 @@
 const DealsItem = ({item}) => {
 
     return (
-        <div className="DealItem">
+        <div href="#" className="DealItem">
 
             <div>
                 <img className ="DealsImg" src={item.image}></img>
             </div>
-            <h1 className="DealItemName">Item: {item.name} </h1>
-            <p>Price: {item.price}</p>
+            <div>
+            <h1 className="DealItemName">{item.name} </h1>
+            <p className="DealItemName">Price: {item.price}</p>
+            </div>
         </div>
     )
 }
