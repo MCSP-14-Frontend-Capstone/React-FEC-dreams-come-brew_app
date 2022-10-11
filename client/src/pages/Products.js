@@ -27,7 +27,10 @@ const Products = () => {
                 id={product.id}
               >
                 <h3 className="product-name">{product.name}</h3>
+                <Link className="single-link" to={`/products/${product.id}`}>
+                  
                 <img className="item-image" src={product.image} alt="" />
+                  </Link>
                
                 <div>
                   <p className="qty">Qty: {product.qty} +</p>
@@ -53,11 +56,10 @@ const Products = () => {
                     ></FontAwesomeIcon>
                   
                   <div className="price-info">
+             
                 </div>
                   <p className="price">${product.price} <p><sup>99</sup></p> </p>
-                  {/* <Link className="single-link" to={`/products/${product.id}`}>
-                    more info
-                  </Link> */}
+                
                 </div>
               </article>
             </div>
