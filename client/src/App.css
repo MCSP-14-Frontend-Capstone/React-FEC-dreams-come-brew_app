@@ -68,12 +68,13 @@ a:-webkit-any-link {
 
 .item-image {
   height: 14rem;
-  width: 11rem;
+  width: 12rem;
   border-radius: 1rem;
   border: 5px solid lightblue;
 
   margin-top: 0rem;
   transition: 0.2s;
+  margin-right: 2rem;
 }
 .item-image:hover {
   border: 5px solid var(--navbackground);
@@ -111,10 +112,11 @@ a:-webkit-any-link {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 1rem;
-  max-width: 85%;
+  width: 85%;
   margin: auto;  
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  margin-top: 2rem;
+ 
+
 }
 
 .signin-icon {
@@ -137,7 +139,10 @@ p,
 }
 .product-page-single {
   margin-top: 5rem;
+  /* margin: auto; */
+
 }
+
 
 .price-info {
   display: flex;
@@ -235,7 +240,35 @@ h1{
   margin: 0;
 }
 .product-name {
-  font-size: 0.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 900;
   color: var(--navbackground);
+  margin-right:  2rem;
+  padding-bottom: 0.2rem;
+
+}
+
+.btn {
+  border: 0.5px solid red;
+  border-radius: 2rem;
+  padding: 0.5rem 0rem;
+ 
+
+}
+
+.add-to-cart-btn {
+  display: block;
+  width: 12rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.df {
+
+margin-bottom: 1.5rem;
+
+}
+.line{
+  border: 0.1px solid var(--selected)
 }
