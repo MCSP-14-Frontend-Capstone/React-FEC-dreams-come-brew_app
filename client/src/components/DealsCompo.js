@@ -1,4 +1,4 @@
-import DealsItem from "./DealsItem";
+import DealsItem from "./DealsItems";
 
 const DealsCompo = ({items}) => {
 console.log(items)
