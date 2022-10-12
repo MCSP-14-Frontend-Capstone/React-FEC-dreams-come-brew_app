@@ -1,0 +1,36 @@
+
+.contactPage {
+  margin: 0;
+  padding: 0;
+}
+
+.contactTitle {
+  background: url(pages/images/starbucks_disney_social_900x489.jpg) no-repeat;
+  background-size: cover;
+  color: blue;
+  font-family: 'Waltograph';
+  height: 53vh;
+  overflow: auto;
+  margin: 0;
+}
+
+.contactInfo {
+  background-color: aliceblue;
+}
+
+.contactForm {
+  background-color: inherit;
+}
+
+.contactInputBox {
+  font-style: italic;
+}
+
+.contactSubmitBtn {
+  background-color: blue;
+  color: aliceblue;
+}
+
+.contactFooter {
+  background-color: inherit;
+}
