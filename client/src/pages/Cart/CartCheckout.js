@@ -9,7 +9,7 @@ const CartCheckout = () => {
 
     return (
         <>
-            <button>checkout</button>
+            <button className="cart-btn">checkout</button>
 
 
         </>

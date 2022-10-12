@@ -11,7 +11,7 @@ const Items = ({ cart, removeItem }) => {
     return (
         <>
             {cart.map((item) => (
-                <SingleItem key={item.name} item={item} removeItem={removeItem} />
+                <SingleItem key={item.id} item={item} removeItem={removeItem} />
             ))}
 
         </>

@@ -386,3 +386,15 @@ p,
 .remove-text:hover {
   cursor: pointer;
 }
+
+.checkout-submit {
+  margin-top: 2rem;
+}
+
+.cart-btn {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 20px;
+  font-size: x-large;
+  font-weight: 700;
+}
