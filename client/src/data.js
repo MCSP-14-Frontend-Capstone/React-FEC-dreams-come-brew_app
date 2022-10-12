@@ -2,115 +2,166 @@
 
 const products = [
   {
-    id: 1,
-    target: "1",
-    name: "Jasmine's  Roast",
+    id: "1",
+    name: "Jasmine's Roast",
+    topChoice: true,
     image:
-      "https://i5.walmartimages.com/asr/da71959a-5c1b-4ce1-9ff0-6b7c672b0827_1.55ab91ff06010245224f1f90b1b0abc2.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "https://assets.teenvogue.com/photos/5cc5dfdd62cd0775db86ea8e/1:1/w_1519,h_1519,c_limit/MSDALAD_EC015.jpg",
     price: 19,
 
     qty: '25',
-    description: "Premium coffe cultivated in the best farms in..."
+    description: "Jasmine's AmazonFresh Colombia Ground Coffee, Medium Roast, 16 Ounce"
   },
   {
-    id: 2,
-    target: "2",
-    name: "Mulan's  Bean",
+    id: "2",
+    name: "Mulan's Bean",
     image:
-      "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDwOtGaIt5qHPCWbf99VgEbxNA84vCKE9777ZShVZ-VGb3oBWGNzH_IVSleWSzMWIwKI&usqp=CAU",
     price: 24,
     qty: '90',
-    description: "Great coffe cultivated in the best farms in..."
+    description: "Mulan's Dark Roast Grounds - 16 Oz - The World's Strongest Coffee - Bold & Intense Blend of Arabica & Robusta Beans"
 
   },
   {
-    id: 3,
-    target: "3",
+    id: "3",
     name: "Rapunzel's Coffee",
     image:
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCe1zSrk3nMBjcVK4yg70u33np0tOyLEBBXoiSXg2-zZ-eHaaeUxGiWl2P-BG7wipxFo&usqp=CAU",
     price: 49,
     qty: '130',
-    description: "Sweet coffe cultivated in the best farms in..."
+    description: "Rapunzel's Coffee Roasters, Medium Roast Organic Whole Bean Coffee - Holler Mountain 12 Ounce Bag with Flavor Notes of Citrus Zest, Caramel and Hazelnut"
   },
   {
-    id: 4,
-    target: "4",
+    id: "4",
     name: "Aurora's Cure",
     image:
-      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAoLIRf7wjXTMS7Pzj6CIYf1qLx3SmCIJxg&usqp=CAU",
     price: 9,
     qty: '55',
-    description: "Grade A coffe cultivated in the best farms in..."
+    description: "Aurora's French Vanilla Flavored Coffee, Ground, Medium Roast, 12 Ounce"
   },
 
 
   {
-    id: 5,
-    target: "5",
-    name: "Mirabel Espesso",
+    id: "5",
+    name: "Mirabel Espresso",
     image:
-      "https://joffreys.com/wp-content/uploads/2022/07/WEB-Mockup-2022-Disney-Encanto-G-F-LTO.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaY8vpIFzxwDqkJEa00El-b8ukdRkitJyyQ&usqp=CAU",
     price: 19,
 
     qty: '25',
-    description: "Premium coffe cultivated in the best farms in..."
+    description: "Mirabel's Coffee Praline Pecan 28 Ounce Ground Medium Roast Flavored Coffee"
   },
   {
-    id: 6,
-    target: "6",
+    id: "6",
     name: "Ariel's Sea Island Coffee",
     image:
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqZ8-z4PVwo_HhEuWfpemWoU6TlWKp6HqPA&usqp=CAU",
     price: 24,
     qty: '90',
-    description: "Great coffe cultivated in the best farms in..."
+    description: "Ariel's Sea Island Coffee - St Helena, Bamboo Hedge Estate (Whole Bean, 16 Ounces)"
 
   },
   {
-    id: 7,
-    target: "7",
-    name: "Tiana's Light Voovoo Bean",
+    id: "7",
+    name: "Tiana's Light Voodoo Bean",
     image:
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMeKArT4Cc-c7iWhyEkPZEe4w_hfJLpEyug&usqp=CAU",
     price: 49,
     qty: '130',
-    description: "Sweet coffe cultivated in the best farms in..."
+    description: "Tiana's New Orleans Light Voodo Bean Roast - Medium Roast Ground Coffee, 12 Oz"
   },
   {
-    id: 8,
-    target:"8",
+    id: "8",
     name: "Cinderella Pumpkin Ride",
     image:
-      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnIOJ0qfFCiqrV64GGCIKB1FaCHyZtM4XKQ&usqp=CAU",
     price: 9,
     qty: '55',
-    description: "Grade A coffe cultivated in the best farms in..."
+    description: "Cinderella's Fall In Love Pumpkin Spice Flavored Coffee, 12 Oz"
   },
 
 
   {
-    id: 9,
-    target: "9",
+    id: "9",
     name: "Snow White Ice Coffee",
     image:
-      "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLRD4rvlqXkXlQrze8HarTERWt4uhXuohaw&usqp=CAU",
     price: 19,
 
     qty: '25',
-    description: "Premium coffe cultivated in the best farms in..."
+    description: "Snow White's House Cold Brew Coffee On Tap, Espresso, 20 Fl Oz"
   },
   {
-    id: 10,
-    target: "10",
+    id: "10",
     name: "Elsa's Frozen Latte",
     image:
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7H30BXc8JNs5agaOwflgnYQjISWtwARyMttN7olx5HYsaJBMB6-U9B550xQ06Q1YXKQ&usqp=CAU",
     price: 24,
     qty: '90',
-    description: "Great coffe cultivated in the best farms in..."
+    description: "Elsa's Frappe Freeze Iced Coffee Latte Blended Drink Mix, 3 Pounds"
 
   },
+  {
+    id: "11",
+    name: "Anna's Peppermint Delight",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejMkCI2SP5ceMfnN5-u0FaEK6S9brQ3IXQw&usqp=CAU",
+    price: 49,
+    qty: '130',
+    description: "Anna's Peppermint Mocha Flavored Coffee—100% Arabica—Naturally Flavored—Limited Edition—1 bag (17 oz )"
+  },
+  {
+    id: "12",
+    name: "Merida Gaelic Coffee",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIzBJGIQMVzYjvVXdVa2s8K6B1Ifn86G4x_o6rJKHGoN6UxyZDGPhVH9_IuaJXlrWdnQ&usqp=CAU",
+    price: 9,
+    qty: '55',
+    description: "Merida's Gaelic Coffee, Dark Roast Ground Coffee Blend 18 Ounce Bag"
+  },
+
+
+  {
+    id: "13",
+    name: "Belle's French Roast",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzA03Ir_Zh-Oyx3YPnhJltqEPq7v912_j9Q&usqp=CAU",
+    price: 19,
+
+    qty: '25',
+    description: "Belle's French Roast Canister Coffee, Dark Roast, 24 Ounce"
+  },
+  {
+    id: "14",
+    name: "Pocahontas Earth Bean",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgfpAFYseymfZE4Sy4qpYfkuo7tbh4Pd9eQ&usqp=CAU",
+    price: 24,
+    qty: '90',
+    description: "Pocahontas Earth Bean: Super Brain Blend Instant Gourmet Espresso - Instant Black Coffee with Nootropics - 20 Ounce "
+
+  },
+  {
+    id: "15",
+    name: "Moana's Pacific Island Blend",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWI488fVShfP2B-sJ8jxVPDTdMTzVPaKLn5A&usqp=CAU",
+    price: 49,
+    qty: '130',
+    description: "Moana's Pacific Island Coffee Roasters - Whole Bean 2lb, Fresh Medium Roast"
+  },
+  {
+    id: "16",
+    name: "Mini's Yogurt Coffee",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNT4j8W711m5dtkiAfRVXKbT4QzCCEJB0Tg&usqp=CAU",
+    price: 9,
+    qty: '55',
+    description: "Mini's Original Blend Medium Roast Ground Coffee, 12 Ounces"
+  },
+
+
 
 ];
 
