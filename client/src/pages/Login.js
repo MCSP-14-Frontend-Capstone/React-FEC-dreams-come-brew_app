@@ -1,53 +1,21 @@
-import { faL } from "@fortawesome/free-solid-svg-icons";
-import React, { useState } from "react";
-import NavBar from "../components/NavBar";
-
+import React, { useContext } from "react";
+import LoginContext from "../context/LoginContext";
 /*When logged, return to main.*/
 /*Add log out to main page.*/
 
 const Login = () => {
-  const [loginName, setLoginName] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
-  const [logInIcon, setlogInIcon] = useState(false); //If set to true, logged in page works.
+  const {
+    logInIcon,
+    toggleLogin,
+    handleCreateNewUser,
+    handlePassword,
+    logIn,
+    logOut,
+    loginPassword,
+    loginName
+  } = useContext(LoginContext);
 
-  const logOut = (e) => {
-    e.preventDefault();
-    setlogInIcon(false);
-  };
-
-  /*For future use*/
-  // const [newUserName, setNewUserName] = useState({})
-  // const [email, setEmail] = useState ({})
-  // const [newPassword, setNewPassword] = useState ({})
-  // const [comfirmPassWord, setConfirmPassword] = useState ({})
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    setLoginName("");
-    setLoginPassword("");
-    setlogInIcon(true);
-    alert(`Welcome, ${loginName}!`);
-  };
-
-  const logIn = (e) => {
-    e.preventDefault();
-    setLoginName(e.target.value);
-
-    /*Change the login logo color to indicate logged in/logged out. 
-    When logged in, change text to 'logged out'.*/
-    /*Display "Login Succcessful"*/
-  };
-
-  const handlePassword = (e) => {
-    e.preventDefault();
-    setLoginPassword(e.target.value);
-  };
-
-  const handleCreateNewUser = (e) => {
-    e.preventDefault();
-    console.log(e);
-  };
-
+  console.log(logInIcon)
   if (logInIcon === true) {
     return (
       <>
@@ -65,7 +33,7 @@ const Login = () => {
         {/*Login for existing users*/}
         <div>
           <h4 className="create-login-headers">Existing Users Login</h4>
-          <form onSubmit={handleLogin}>
+          <form onSubmit={toggleLogin}>
             <input
               className="inputBox"
               type="text"
