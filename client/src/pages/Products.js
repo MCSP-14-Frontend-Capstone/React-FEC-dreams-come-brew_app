@@ -31,7 +31,10 @@ const Products = () => {
                   <Link className="single-link" to={`/products/${product.id}`}>
                   
                   <img className="item-image" src={product.image} alt="" />
-                    </Link>
+                  
+                  <span id="productTitle" class="a-size-large product-title-word-break">Princess Breakfast Blend, Light Roast Ground Coffee, 12 oz Bag       
+                  </span>
+                  </Link>
                   <div>
                   <button className="btn add-to-cart-btn">Add to Cart <FontAwesomeIcon
                         className="cart-icon"
