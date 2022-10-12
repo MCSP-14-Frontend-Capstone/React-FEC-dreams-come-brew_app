@@ -5,7 +5,7 @@ import "./App.css";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
-import Cart from "./pages/Cart";
+import Cart from "./pages/Cart/Cart";
 import Login from "./pages/Login";
 import Index from "./pages/Index";
 import Singleproduct from "./pages/Singleproduct";
