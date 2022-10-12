@@ -179,10 +179,6 @@ p,
   background-image: linear-gradient(rgba(255, 255, 255, 0), #dddddd);
   height: 15rem;
 }
-.about-b-bdr{
-  background-image: linear-gradient(rgba(255, 255, 255, 0), #DDDDDD);
-  height: 15rem;
-}
 
 .aboutme{
   display: flex;
@@ -229,11 +225,6 @@ p,
   cursor: pointer;
 }
 
-h1{
-  font-family: cursive;
-  font-size: 3rem;
-  margin: 0;
-}
 .product-name {
   font-size: 0.1rem;
   font-weight: 500;
@@ -275,7 +266,7 @@ h1{
 
 .DealsMain{
   display: flex;
-  height: 12.5rem;
+  height: 16rem;
   align-items: center;
   flex-direction: row;
   overflow: overlay;
@@ -283,7 +274,7 @@ h1{
 
 .Deals{
   display: flex;
-  height: 11.5rem;
+  height: 16rem;
   gap: 10px;
   align-items: center;
   flex-direction: row;
@@ -297,14 +288,18 @@ h1{
 }
 
 .DealItemName{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.DealItem:hover{
+cursor: pointer;
 }
 
 .DealsArrow{
   display: inline-block;
-  padding-top: 5rem;
+  padding-top: 6.5rem;
   padding-right: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6.5rem;
   padding-left: 1rem;
   background-color: #cdcdcd;
   color: black;
@@ -314,4 +309,5 @@ h1{
 .DealsArrow:hover {
   background-color: #DDDDDD;
   color: black;
+  cursor: pointer;
 }
