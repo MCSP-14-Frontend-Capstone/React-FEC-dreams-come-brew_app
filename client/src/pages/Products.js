@@ -22,7 +22,7 @@ const Products = () => {
 
   return (
     <>
-      <h2>Princess-Grade Coffee</h2>
+      <h2 className="productHeader">Princess-Grade Coffee</h2>
 
       <div className="products">
         {products.map((product) => {

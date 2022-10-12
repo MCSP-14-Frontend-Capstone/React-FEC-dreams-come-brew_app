@@ -13,7 +13,7 @@ const Cart = () => {
 
     const { cart } = useContext(CartContext)
 
-    console.log(cart)
+    // console.log(cart)
 
 
 
