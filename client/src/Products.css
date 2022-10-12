@@ -95,3 +95,8 @@ p,
 sup {
   font-weight: 700;
 }
+
+.productHeader {
+  margin-top: 40px;
+  padding-top: 15px;
+}
