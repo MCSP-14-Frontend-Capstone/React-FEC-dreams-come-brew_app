@@ -2,11 +2,11 @@
 
 const products = [
   {
-    id: "1",
-    name: "Jasmine's Roast",
-    topChoice: true,
+    id: 1,
+    target: "1",
+    name: "Jasmine's  Roast",
     image:
-      "https://assets.teenvogue.com/photos/5cc5dfdd62cd0775db86ea8e/1:1/w_1519,h_1519,c_limit/MSDALAD_EC015.jpg",
+      "https://i5.walmartimages.com/asr/da71959a-5c1b-4ce1-9ff0-6b7c672b0827_1.55ab91ff06010245224f1f90b1b0abc2.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     price: 19,
     pic1: "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
     pic2: "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
@@ -14,73 +14,112 @@ const products = [
     pic4: "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
 
     qty: '25',
-
+    description: "Premium coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
-
-    description: "Jasmine's AmazonFresh Colombia Ground Coffee, Medium Roast, 16 Ounce"
-
   },
   {
-    id: "2",
-    name: "Mulan's Bean",
+    id: 2,
+    target: "2",
+    name: "Mulan's  Bean",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDwOtGaIt5qHPCWbf99VgEbxNA84vCKE9777ZShVZ-VGb3oBWGNzH_IVSleWSzMWIwKI&usqp=CAU",
+      "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
     price: 24,
     qty: '90',
-
+    description: "Great coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
-
-    description: "Mulan's Dark Roast Grounds - 16 Oz - The World's Strongest Coffee - Bold & Intense Blend of Arabica & Robusta Beans"
-
 
   },
   {
-    id: "3",
+    id: 3,
+    target: "3",
     name: "Rapunzel's Coffee",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCe1zSrk3nMBjcVK4yg70u33np0tOyLEBBXoiSXg2-zZ-eHaaeUxGiWl2P-BG7wipxFo&usqp=CAU",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     price: 49,
     qty: '130',
-
-
+    description: "Sweet coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
-
-    description: "Rapunzel's Coffee Roasters, Medium Roast Organic Whole Bean Coffee - Holler Mountain 12 Ounce Bag with Flavor Notes of Citrus Zest, Caramel and Hazelnut"
-
   },
   {
-    id: "4",
+    id: 4,
+    target: "4",
     name: "Aurora's Cure",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAoLIRf7wjXTMS7Pzj6CIYf1qLx3SmCIJxg&usqp=CAU",
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
     price: 9,
     qty: '55',
-
-
+    description: "Grade A coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
-
-    description: "Aurora's French Vanilla Flavored Coffee, Ground, Medium Roast, 12 Ounce"
-
   },
 
 
   {
-    id: "5",
-    name: "Mirabel Espresso",
+    id: 5,
+    target: "5",
+    name: "Mirabel Espesso",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaY8vpIFzxwDqkJEa00El-b8ukdRkitJyyQ&usqp=CAU",
+      "https://joffreys.com/wp-content/uploads/2022/07/WEB-Mockup-2022-Disney-Encanto-G-F-LTO.png",
     price: 19,
 
     qty: '25',
-
-
+    description: "Premium coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
+  },
+  {
+    id: 6,
+    target: "6",
+    name: "Ariel's Sea Island Coffee",
+    image:
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+    price: 24,
+    qty: '90',
+    description: "Great coffe cultivated in the best farms in..."
 
-    description: "Mirabel's Coffee Praline Pecan 28 Ounce Ground Medium Roast Flavored Coffee"
-
+  },
+  {
+    id: 7,
+    target: "7",
+    name: "Tiana's Light Voovoo Bean",
+    image:
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    price: 49,
+    qty: '130',
+    description: "Sweet coffe cultivated in the best farms in..."
+  },
+  {
+    id: 8,
+    target:"8",
+    name: "Cinderella Pumpkin Ride",
+    image:
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+    price: 9,
+    qty: '55',
+    description: "Grade A coffe cultivated in the best farms in..."
   },
 
 
+  {
+    id: 9,
+    target: "9",
+    name: "Snow White Ice Coffee",
+    image:
+      "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+    price: 19,
+
+    qty: '25',
+    description: "Premium coffe cultivated in the best farms in..."
+  },
+  {
+    id: 10,
+    target: "10",
+    name: "Elsa's Frozen Latte",
+    image:
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+    price: 24,
+    qty: '90',
+    description: "Great coffe cultivated in the best farms in..."
+
+  },
 
 ];
 
