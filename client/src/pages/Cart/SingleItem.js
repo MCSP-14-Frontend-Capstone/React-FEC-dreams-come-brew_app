@@ -1,7 +1,13 @@
 import React, { useState } from "react"
+import { useContext } from "react"
+import CartContext from "../../context/CartContext"
 
 
-const SingleItem = ({ item, removeItem }) => {
+
+const SingleItem = ({ item }) => {
+
+    const { removeItem } = useContext(CartContext)
+
 
     const price = item.price
 
@@ -12,6 +18,10 @@ const SingleItem = ({ item, removeItem }) => {
         const sum = price * qty
         setTotal(sum)
     }
+
+
+
+
 
 
     const handleRemove = (e) => {

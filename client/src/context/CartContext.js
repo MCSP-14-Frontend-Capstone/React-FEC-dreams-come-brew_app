@@ -1,8 +1,8 @@
 
 import { useState, createContext } from "react";
 
-const CartContext = createContext()
 
+const CartContext = createContext()
 
 
 
@@ -12,29 +12,22 @@ export const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
 
+    const handleClick = (product) => {
 
-    const handleClick = (e) => {
+        setCart([...cart, product])
+        console.log(cart)
+    }
 
-        console.log(e.target.id)
 
+    const removeItem = (id) => {
+        const newArr = cart.filter((elem) => elem.id != id)
+        setCart(newArr)
     }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    return <CartContext.Provider value={{ handleClick }}>
+    return <CartContext.Provider value={{ cart, handleClick, removeItem }}>
 
 
         {children}

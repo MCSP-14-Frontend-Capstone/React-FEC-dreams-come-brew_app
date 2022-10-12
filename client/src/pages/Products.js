@@ -26,6 +26,9 @@ const Products = () => {
 
       <div className="products">
         {products.map((product) => {
+          const handleObj = () => {
+            handleClick(product)
+          }
           return (
 
             <div className="product-page-card">
@@ -41,7 +44,7 @@ const Products = () => {
                     <img className="item-image" src={product.image} alt="" />
                   </Link>
                   <div>
-                    <button onClick={handleClick} className=" add-to-cart-btn" id={product.id}>Add to Cart <FontAwesomeIcon
+                    <button onClick={handleObj} className=" add-to-cart-btn" id={product.id} >Add to Cart <FontAwesomeIcon
                       className="cart-icon"
                       icon={faCartShopping}
                     ></FontAwesomeIcon></button>
