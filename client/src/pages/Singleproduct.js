@@ -3,8 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import products from "../data";
 
 const Singleproduct = () => {
-  const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
+  const { productTarget } = useParams();
+  const product = products.find((product) => product.target === productTarget);
   const { name, image, price } = product;
 
   return (

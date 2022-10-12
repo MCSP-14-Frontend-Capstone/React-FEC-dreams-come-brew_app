@@ -39,7 +39,7 @@ const Products = () => {
               >
                 <h3 className="product-name">{product.name}</h3>
                 <div className="df">
-                  <Link className="single-link" to={`/products/${product.id}`}>
+                  <Link className="single-link" to={`/products/${product.target}`}>
 
                     <img className="item-image" src={product.image} alt="" />
                   </Link>
