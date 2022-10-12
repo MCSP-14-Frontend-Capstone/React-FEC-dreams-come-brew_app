@@ -1,0 +1,80 @@
+:root {
+  --primary-color: rgb(78, 112, 198);
+  --grey: #bbb;
+  --light: #eee;
+  --selected: rgb(244, 167, 72);
+  --navbackground: rgba(13, 31, 78, 1);
+}
+
+@font-face {
+  font-family: "Waltograph UI";
+  src: url(./assets/WaltographUI-Bold.woff2) format("woff2"),
+    url(./assets/WaltographUI-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Waltograph";
+  src: url(./assets/Waltograph.woff2) format("woff2"),
+    url(./assets/Waltograph.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.App {
+  text-align: center;
+  background-color: #ddd;
+  background: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: var(--navbackground);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5vh;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.link-selected {
+  color: var(--selected);
+}
+
+.link-unselected {
+  color: var(--light);
+}
+
+.logo {
+  background-color: var(--selected);
+  border-radius: 1rem;
+  padding: 6px 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  max-height: 1.5rem;
+  font-family: Waltograph;
+}
+
+.signin-icon {
+  color: var(--navbackground);
+
+  font-size: 1rem;
+}
+
+.login-icon {
+  color: var(--selected);
+}
