@@ -8,6 +8,7 @@ import "./Deals.css"
 import "./Products.css"
 import "./Cartanditem.css"
 import "./Login.css"
+import "./HomeIndex.css"
 
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -17,7 +18,7 @@ import Login from "./pages/Login";
 import Index from "./pages/Index";
 import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
-
+import CheckoutPage from "./pages/Cart/CheckoutPage";
 const App = () => {
   return (
     <Router>
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/CheckoutPage" element={<CheckoutPage />} />
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>

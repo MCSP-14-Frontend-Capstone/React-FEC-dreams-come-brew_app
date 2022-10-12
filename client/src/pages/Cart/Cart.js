@@ -1,10 +1,11 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, } from 'react'
 import CartHeader from './CartHeader'
 import CartColumns from './CartColumn'
 import Items from './Items'
 import CartCheckout from './CartCheckout'
 import CartContext from '../../context/CartContext'
-
+import { Link } from "react-router-dom";
+import whatever from './CheckoutPage'
 
 
 
@@ -12,8 +13,6 @@ import CartContext from '../../context/CartContext'
 const Cart = () => {
 
     const { cart } = useContext(CartContext)
-
-    // console.log(cart)
 
 
 
@@ -27,17 +26,19 @@ const Cart = () => {
                     <div className='cart-header-box'>
                         <CartHeader />
                         <CartColumns />
-                    </div>
-                </div>
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
+                        <Link to='/CheckoutPage'>
                         <div className='checkout-submit'>
-                            <CartCheckout />
+                            <button>CHECKOUT</button>
                         </div>
+                        </Link>
 
                     </div>
 
+                </div>
+                    </div>
                 </div>
             </div>
         )
@@ -49,3 +50,4 @@ const Cart = () => {
 }
 
 export default Cart
+/* <CartCheckout /> */
