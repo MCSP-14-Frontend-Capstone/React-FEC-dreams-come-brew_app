@@ -58,7 +58,7 @@ const Contact = () => {
               onChange={handleChangeName}/>
             <input
               className='contactInputBox'
-              type='text'
+              type='email'
               placeholder='Email'
               value={cemail}
               onChange={handleChangeEmail} />
