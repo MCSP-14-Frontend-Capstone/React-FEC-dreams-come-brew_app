@@ -2,7 +2,6 @@ import DealsItem from "./DealsItems";
 import {Link} from 'react-scroll';
 
 const DealsCompo = ({items}) => {
-console.log(items)
 
     //map through items
     return (
