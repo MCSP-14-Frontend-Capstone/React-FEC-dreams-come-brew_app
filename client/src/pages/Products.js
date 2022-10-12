@@ -33,7 +33,7 @@ const Products = () => {
                   <img className="item-image" src={product.image} alt="" />
                     </Link>
                   <div>
-                  <button className="btn add-to-cart-btn">Add to Cart <FontAwesomeIcon
+                  <button className=" add-to-cart-btn">Add to Cart <FontAwesomeIcon
                         className="cart-icon"
                         icon={faCartShopping}
                       ></FontAwesomeIcon></button>
