@@ -1,17 +1,17 @@
 import SingleItem from "./SingleItem"
+import { useContext } from "react"
+import CartContext from "../../context/CartContext"
 
 
+const Items = () => {
 
-
-const Items = ({ cart, removeItem }) => {
-
-
+    const { cart } = useContext(CartContext)
 
 
     return (
         <>
             {cart.map((item) => (
-                <SingleItem key={item.id} item={item} removeItem={removeItem} />
+                <SingleItem key={item.id} item={item} />
             ))}
 
         </>
