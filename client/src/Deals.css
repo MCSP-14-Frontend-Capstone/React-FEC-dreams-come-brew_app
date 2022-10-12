@@ -5,6 +5,8 @@
   align-items: center;
   flex-direction: row;
   overflow: overlay;
+  /* background-image: linear-gradient(rgb(0, 0, 0) 1%,white)  */
+  background-color:#DDDDDD;
 }
 
 .Deals {
@@ -14,6 +16,7 @@
   align-items: center;
   flex-direction: row;
   overflow: overlay;
+  width: -webkit-fill-available;
 }
 
 .DealsImg {
@@ -46,4 +49,18 @@
   background-color: #DDDDDD;
   color: black;
   cursor: pointer;
+}
+
+.bkgroundDeal-Container{
+  display: flex;
+  flex-direction: row;
+  row-gap: 2rem;
+  gap: 2rem;
+}
+.backgroundDeal-div{
+  height: 45rem;
+}
+.backgroundDealimg{
+  width: 70rem;
+  height: 70rem;
 }

@@ -1,16 +1,16 @@
-import React, {useState} from 'react'
-import DealsCompo from '../components/DealsCompo'
-import products from '../data'
+import React, {useState} from 'react';
+import DealsCompo from '../components/DealsCompo';
+import BackgroundDeal from '../components/BackgroundDeal';
+import products from '../data';
 
 const Index = () => {
   //products data in state
   const [items, setItems] = useState(products)
 
   return (
-    <div>
-      <div>
+    <div className='homeBody'>
+        <BackgroundDeal items={items}/>    
         <DealsCompo items={items}/>
-      </div>
     </div>
   )
 }

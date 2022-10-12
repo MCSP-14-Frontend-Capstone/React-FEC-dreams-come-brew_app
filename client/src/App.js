@@ -8,6 +8,7 @@ import "./Deals.css"
 import "./Products.css"
 import "./Cartanditem.css"
 import "./Login.css"
+import "./HomeIndex.css"
 
 import About from "./pages/About";
 import Products from "./pages/Products";
