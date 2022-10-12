@@ -1,11 +1,18 @@
 import React from "react";
 import SharedLayout from "./components/SharedLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./Nav.css";
+import "./About.css";
+import "./Contact.css";
+import "./Deals.css"
+import "./Products.css"
+import "./Cartanditem.css"
+import "./Login.css"
+
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
-import Cart from "./pages/Cart";
+import Cart from "./pages/Cart/Cart";
 import Login from "./pages/Login";
 import Index from "./pages/Index";
 import Singleproduct from "./pages/Singleproduct";

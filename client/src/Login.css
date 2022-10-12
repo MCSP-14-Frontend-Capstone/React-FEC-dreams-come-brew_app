@@ -1,0 +1,54 @@
+
+
+.loginButtons{
+  box-shadow:inset 0px 1px 0px 0px #42A8C2;
+  background:linear-gradient(to bottom, #45C3C7 5%, #F07FF0 100%);
+  background-color:#45c3c7;
+  border-radius:6px;
+  border:1px solid #AC05FF;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:'Dancing Script', cursive;;
+  font-size: 25px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #000000;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+.loginButtons:hover{
+background:linear-gradient(to bottom, #F07FF0 5%, #45C3C7 100%);
+background-color:#f07ff0;
+position:relative;
+top:1px;
+}
+.loginButtons:active{
+  position:relative;
+  top:1px;
+}
+.inputBox{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: lavender;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: medium;
+  border-radius: 1rem;
+  text-align: center;
+  margin: .5rem
+  }
+.loginHeader{
+  font-family:'Dancing Script', cursive;;
+  font-size: 50px;
+  font-weight: 800px;
+  color:#f07ff0
+}
+.create-login-headers{
+  font-family:'Dancing Script', cursive;
+  font-size: 25px;
+  font-weight: 800px;
+  color:#45c3c7;
+}

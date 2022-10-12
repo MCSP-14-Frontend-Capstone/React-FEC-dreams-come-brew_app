@@ -1,0 +1,49 @@
+
+.DealsMain {
+  display: flex;
+  height: 16rem;
+  align-items: center;
+  flex-direction: row;
+  overflow: overlay;
+}
+
+.Deals {
+  display: flex;
+  height: 16rem;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  overflow: overlay;
+}
+
+.DealsImg {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.DealItemName {
+  font-size: 0.8rem;
+}
+
+.DealItem:hover {
+  cursor: pointer;
+}
+
+.DealsArrow {
+  display: inline-block;
+  padding-top: 6.5rem;
+  padding-right: 1rem;
+  padding-bottom: 6.5rem;
+  padding-left: 1rem;
+  background-color: #cdcdcd;
+  color: black;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.DealsArrow:hover {
+  background-color: #DDDDDD;
+  color: black;
+  cursor: pointer;
+}
