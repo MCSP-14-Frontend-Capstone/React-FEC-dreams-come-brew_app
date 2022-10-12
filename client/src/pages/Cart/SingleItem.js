@@ -32,7 +32,7 @@ const SingleItem = ({ item, removeItem }) => {
                     <p>about this item </p>
                 </div>
             </div>
-            <h1 className="item-p-q-t">{item.price}</h1>
+            <h1 className="item-p-q-t"><span>$</span>{item.price}</h1>
             <div className="item-qty">QTY
                 <select onChange={handleChange}>
                     <option value="1">1</option>
@@ -48,7 +48,7 @@ const SingleItem = ({ item, removeItem }) => {
                 </select>
                 <div className="remove-text" onClick={handleRemove} id={item.id}>Remove</div>
             </div>
-            <h1 className="item-p-q-t">{total}</h1>
+            <h1 className="item-p-q-t"><span>$</span>{total}</h1>
 
         </div >
     )
