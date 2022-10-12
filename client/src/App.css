@@ -177,7 +177,7 @@ p,
 
 
 
-.aboutContainer{
+.aboutContainer {
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -254,7 +254,7 @@ p,
 }
 
 .product-name {
-  font-size: 0.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--navbackground);
 }
