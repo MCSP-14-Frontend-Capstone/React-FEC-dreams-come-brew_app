@@ -13,14 +13,7 @@ import whatever from './CheckoutPage'
 const Cart = () => {
 
     const { cart } = useContext(CartContext)
-    const [checkingOut, setCheckingOut] = useState(true)
-    console.log(cart)
 
-const handleClick = ()=>{
-    setCheckingOut(false)
-
-    console.log("work plz")
-}
 
 
     if (cart.length === 0) {
