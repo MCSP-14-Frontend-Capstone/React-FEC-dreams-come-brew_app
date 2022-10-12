@@ -6,7 +6,7 @@ import CartCheckout from './CartCheckout'
 import CartContext from '../../context/CartContext'
 import { Link } from "react-router-dom";
 import whatever from './CheckoutPage'
-
+import CartRec from './CartRec'
 
 
 
@@ -26,20 +26,29 @@ const Cart = () => {
                     <div className='cart-header-box'>
                         <CartHeader />
                         <CartColumns />
+                    </div>
+                </div>
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
                         <Link to='/CheckoutPage'>
-                        <div className='checkout-submit'>
-                            <button>CHECKOUT</button>
-                        </div>
+                            <div className='checkout-submit'>
+                                <button>CHECKOUT</button>
+                            </div>
                         </Link>
-
+                    </div>
+                </div>
+                <div className='rec-display'>
+                    <div className='rec-container'>
+                        <CartRec />
                     </div>
 
                 </div>
-                    </div>
-                </div>
+
+
+
+
+
             </div>
         )
     }

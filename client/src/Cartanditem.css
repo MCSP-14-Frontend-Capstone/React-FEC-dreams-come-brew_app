@@ -1,4 +1,3 @@
-
 .cart-item-columns {
   display: flex;
   flex-direction: row;
@@ -72,7 +71,31 @@
 }
 
 .cart-btn:hover {
-  background-color:var(--selected);
+  background-color: var(--selected);
   cursor: pointer;
-  
+
+}
+
+.rec-display {
+  width: 100vw;
+  height: 50vh;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.rec-container {
+  width: 90rem;
+  height: 50vh;
+}
+
+.rec-pics-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60rem;
+  margin: auto;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
 }

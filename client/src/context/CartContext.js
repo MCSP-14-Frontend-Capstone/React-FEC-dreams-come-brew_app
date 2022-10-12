@@ -11,17 +11,18 @@ const CartContext = createContext()
 
 
 
+
 export const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
 
-    
+
 
     const handleClick = (product) => {
-     const addedToCart = () => toast(`${product.name} Was added to your cart!`);
+        const addedToCart = () => toast(`${product.name} Was added to your cart!`);
         setCart([...cart, product])
         addedToCart()
-        
+
     }
 
 
@@ -30,7 +31,7 @@ export const CartProvider = ({ children }) => {
         const newArr = cart.filter((elem) => elem.id != id)
         setCart(newArr)
         itemRemoved()
-        
+
     }
 
 
@@ -38,7 +39,7 @@ export const CartProvider = ({ children }) => {
 
     return <CartContext.Provider value={{ cart, handleClick, removeItem }}>
 
-<ToastContainer />
+        <ToastContainer />
         {children}
     </CartContext.Provider>
 }
