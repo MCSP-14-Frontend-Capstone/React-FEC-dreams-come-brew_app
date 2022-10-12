@@ -1,6 +1,6 @@
-import BackgroundDealImg from "./BackgroundDealImg";
+import CardImg from "./CardImg";
 
-const BackgroundDeal = ({items}) => {
+const HomeCard = ({items}) => {
 
     //filter through images to get items with id less that 5
     const filters = (item) => {
@@ -14,14 +14,14 @@ const BackgroundDeal = ({items}) => {
     
 
     return (
-        <div className="bkgroundDeal-Container">
+        <div className="CardMain-Container">
             {
                 imgItems.map(item => (
-                    <BackgroundDealImg key={item.id} item={item}/>
+                    <CardImg key={item.id} item={item}/>
                 ))
             }
         </div>
     )
 }
 
-export default BackgroundDeal;
+export default HomeCard;

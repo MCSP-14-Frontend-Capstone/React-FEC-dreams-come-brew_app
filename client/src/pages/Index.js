@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import DealsCompo from '../components/DealsCompo';
-import BackgroundDeal from '../components/BackgroundDeal';
+import HomeCard from '../components/HomeCard.js';
 import products from '../data';
 
 const Index = () => {
@@ -9,7 +9,7 @@ const Index = () => {
 
   return (
     <div className='homeBody'>
-        <BackgroundDeal items={items}/>    
+        <HomeCard items={items}/>    
         <DealsCompo items={items}/>
     </div>
   )
