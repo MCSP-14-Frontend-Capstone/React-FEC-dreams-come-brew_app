@@ -78,7 +78,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnIOJ0qfFCiqrV64GGCIKB1FaCHyZtM4XKQ&usqp=CAU",
     price: 9,
     qty: '55',
-    description: "Grade A coffe cultivated in the best farms in..."
+    description: "Cinderella's Fall In Love Pumpkin Spice Flavored Coffee, 12 Oz"
   },
 
 
@@ -90,7 +90,7 @@ const products = [
     price: 19,
 
     qty: '25',
-    description: "Premium coffe cultivated in the best farms in..."
+    description: "Snow White's House Cold Brew Coffee On Tap, Espresso, 20 Fl Oz"
   },
   {
     id: "10",
@@ -99,7 +99,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7H30BXc8JNs5agaOwflgnYQjISWtwARyMttN7olx5HYsaJBMB6-U9B550xQ06Q1YXKQ&usqp=CAU",
     price: 24,
     qty: '90',
-    description: "Great coffe cultivated in the best farms in..."
+    description: "Elsa's Frappe Freeze Iced Coffee Latte Blended Drink Mix, 3 Pounds"
 
   },
   {
@@ -109,7 +109,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejMkCI2SP5ceMfnN5-u0FaEK6S9brQ3IXQw&usqp=CAU",
     price: 49,
     qty: '130',
-    description: "Sweet coffe cultivated in the best farms in..."
+    description: "Anna's Peppermint Mocha Flavored Coffee—100% Arabica—Naturally Flavored—Limited Edition—1 bag (17 oz )"
   },
   {
     id: "12",
@@ -118,7 +118,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIzBJGIQMVzYjvVXdVa2s8K6B1Ifn86G4x_o6rJKHGoN6UxyZDGPhVH9_IuaJXlrWdnQ&usqp=CAU",
     price: 9,
     qty: '55',
-    description: "Grade A coffe cultivated in the best farms in..."
+    description: "Merida's Gaelic Coffee, Dark Roast Ground Coffee Blend 18 Ounce Bag"
   },
 
 
@@ -130,7 +130,7 @@ const products = [
     price: 19,
 
     qty: '25',
-    description: "Premium coffe cultivated in the best farms in..."
+    description: "Belle's French Roast Canister Coffee, Dark Roast, 24 Ounce"
   },
   {
     id: "14",
@@ -139,7 +139,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgfpAFYseymfZE4Sy4qpYfkuo7tbh4Pd9eQ&usqp=CAU",
     price: 24,
     qty: '90',
-    description: "Great coffe cultivated in the best farms in..."
+    description: "Pocahontas Earth Bean: Super Brain Blend Instant Gourmet Espresso - Instant Black Coffee with Nootropics - 20 Ounce "
 
   },
   {
@@ -149,7 +149,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWI488fVShfP2B-sJ8jxVPDTdMTzVPaKLn5A&usqp=CAU",
     price: 49,
     qty: '130',
-    description: "Sweet coffe cultivated in the best farms in..."
+    description: "Moana's Pacific Island Coffee Roasters - Whole Bean 2lb, Fresh Medium Roast"
   },
   {
     id: "16",
@@ -158,7 +158,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNT4j8W711m5dtkiAfRVXKbT4QzCCEJB0Tg&usqp=CAU",
     price: 9,
     qty: '55',
-    description: "Grade A coffe cultivated in the best farms in..."
+    description: "Mini's Original Blend Medium Roast Ground Coffee, 12 Ounces"
   },
 
 
