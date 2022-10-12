@@ -22,7 +22,7 @@ const Products = () => {
 
   return (
     <>
-      <h2>Princess-Grade Coffee</h2>
+      <h2 className="productHeader">Princess-Grade Coffee</h2>
 
       <div className="products">
         {products.map((product) => {
@@ -39,7 +39,7 @@ const Products = () => {
               >
                 <h3 className="product-name">{product.name}</h3>
                 <div className="df">
-                  <Link className="single-link" to={`/products/${product.id}`}>
+                  <Link className="single-link" to={`/products/${product.target}`}>
 
                     <img className="item-image" src={product.image} alt="" />
                   </Link>

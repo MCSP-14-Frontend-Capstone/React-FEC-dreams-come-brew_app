@@ -51,7 +51,7 @@ const Login = () => {
   if (logInIcon === true) {
     return (
       <>
-        <h1>You are now logged in.</h1>
+        <h1 className="loggedinHeader">You are now logged in.</h1>
         <button className="loginButtons" onClick={logOut}>
           Click To Log Out
         </button>

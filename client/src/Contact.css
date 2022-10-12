@@ -1,36 +1,89 @@
+:root {
+  --primary-color: rgb(78, 112, 198);
+  --grey: #bbb;
+  --light: #eee;
+  --selected: rgb(244, 167, 72);
+  --navbackground: rgb(13, 31, 78);
+}
+
+@font-face {
+  font-family: "Waltograph UI";
+  src: url(./assets/WaltographUI-Bold.woff2) format("woff2"),
+    url(./assets/WaltographUI-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Waltograph";
+  src: url(./assets/Waltograph.woff2) format("woff2"),
+    url(./assets/Waltograph.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 .contactPage {
+  background-color: aliceblue;
   margin: 0;
-  padding: 0;
+  padding-top: 5rem;
 }
 
 .contactTitle {
-  background: url(pages/images/starbucks_disney_social_900x489.jpg) no-repeat;
-  background-size: cover;
-  color: blue;
-  font-family: 'Waltograph';
-  height: 53vh;
-  overflow: auto;
+  background: url(pages/images/starbucks_disney_social_900x489.jpg) no-repeat center;
+  background-size: contain;
+  border-radius: .3rem;
+  height: 20pc;
   margin: 0;
+  overflow: auto;
 }
 
-.contactInfo {
-  background-color: aliceblue;
+.contactInfo{
+  padding-bottom: 3rem;
 }
 
-.contactForm {
-  background-color: inherit;
+.contactInfoTitle{
+  color: var(--navbackground);
+  font-family: 'Waltograph';
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.contactForm{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .contactInputBox {
+  border-radius: .3rem;
+  display: flex;
   font-style: italic;
+  margin: 1rem;
+  width: 25pc;
+}
+
+.contactInputBoxDes {
+  border-radius: .3rem;
+  display: flex;
+  font-style: italic;
+  margin: 1rem;
+  padding-bottom: 10pc;
+  width: 25pc;
 }
 
 .contactSubmitBtn {
-  background-color: blue;
+  border-radius: .3rem;
+  background-color: var(--navbackground);
   color: aliceblue;
 }
 
 .contactFooter {
-  background-color: inherit;
+  background-color: var(--navbackground);
+  color: aliceblue;
+}
+
+.contactFooterBold{
+  font-weight: bold;
 }

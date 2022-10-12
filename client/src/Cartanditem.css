@@ -70,3 +70,9 @@
   font-size: x-large;
   font-weight: 700;
 }
+
+.cart-btn:hover {
+  background-color:var(--selected);
+  cursor: pointer;
+  
+}

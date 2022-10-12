@@ -38,57 +38,53 @@ const Contact = () => {
 
   return (
     <div className='contactPage'>
+      <main>
+        <h1 className='contactTitle'></h1>
 
-      <div>
-        <h1 className='contactTitle'>
-          Contact Us
-        </h1>
-      </div>
+        <section className='contactInfo'>
+          <ul className='contactInfoTitle'>Contact Info</ul>
+          <div>Phone Number: +1 (888) 888-8888</div>
+          <div>Email: customerservice@dreamscomebrew.net</div>
+          <div>Address: 789 Dream Street, Brewtown, California 98765</div>
+        </section>
 
-      <div className='contactInfo'>
-        <ul>Contact Info</ul>
-        <li>Phone Number: +1 (888) 888-8888</li>
-        <li>Email: customerservice@dreamscomebrew.net</li>
-        <li>Address: 789 Dream Street, Brewtown, California 98765</li>
-      </div>
+        <article className='contactForm'>
+          <form>
+            <input
+              className='contactInputBox'
+              type='text'
+              placeholder='Full Name'
+              value={cname}
+              onChange={handleChangeName}/>
+            <input
+              className='contactInputBox'
+              type='email'
+              placeholder='Email'
+              value={cemail}
+              onChange={handleChangeEmail} />
+            <input
+              className='contactInputBoxDes'
+              type='text'
+              placeholder='Description'
+              value={cdes}
+              onChange={handleChangeDes} />
+            <button
+              type="button"
+              className="contactSubmitBtn"
+              onClick={handleSubmit}
+            >Submit
+            </button>
+          </form>
+        </article>
+      </main>
+      <section className='contactFooter'>
+        <span className='contactFooterBold'>Order Online 24/7</span>
+        <footer>Contact Hours</footer>
+        <footer>Monday-Friday 9am to 7pm</footer>
+        <footer>Saturday-Sunday 9am to 1pm</footer>
+      </section>
 
-      <div className='contactForm'>
-        <form>
-          <input
-            className='contactInputBox'
-            type='text'
-            placeholder='Full Name'
-            value={cname}
-            onChange={handleChangeName} />
-          <input
-            className='contactInputBox'
-            type='text'
-            placeholder='Email'
-            value={cemail}
-            onChange={handleChangeEmail} />
-          <input
-            className='contactInputBox'
-            type='text'
-            placeholder='Description'
-            value={cdes}
-            onChange={handleChangeDes} />
-          <button
-            type="button"
-            className="contactSubmitBtn"
-            onClick={handleSubmit}
-          >Submit
-          </button>
-        </form>
-      </div>
 
-      <div className='contactFooter'>
-      <footer>Order Online 24/7</footer>
-      <footer>Contact Hours</footer>
-      <footer>Monday-Friday 9am to 7pm</footer>
-      <footer>Saturday-Sunday 9am to 1pm</footer>
-      </div>
-     
-      
     </div>
   )
 };
