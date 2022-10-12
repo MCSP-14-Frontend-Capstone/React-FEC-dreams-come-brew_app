@@ -5,7 +5,7 @@ const products = [
     id: " pr1",
     name: "Jasmine's  Roast",
     image:
-      "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+      "https://i5.walmartimages.com/asr/da71959a-5c1b-4ce1-9ff0-6b7c672b0827_1.55ab91ff06010245224f1f90b1b0abc2.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       price: 19,
     
      qty:'25',
@@ -15,7 +15,7 @@ const products = [
     id: " pr2",
     name: "Mulan's  Bean",
     image:
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+      "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
       price: 24,
       qty:'90',
       description: "Great coffe cultivated in the best farms in..."
@@ -43,9 +43,9 @@ const products = [
  
   {
     id: " pr1",
-    name: "Jasmine's  Roast",
+    name: "Mirabel Espesso",
     image:
-      "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+      "https://joffreys.com/wp-content/uploads/2022/07/WEB-Mockup-2022-Disney-Encanto-G-F-LTO.png",
       price: 19,
     
      qty:'25',
@@ -53,7 +53,7 @@ const products = [
   },
   {
     id: " pr2",
-    name: "Mulan's  Bean",
+    name: "Ariel's Sea Island Coffee",
     image:
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
       price: 24,
@@ -63,7 +63,7 @@ const products = [
   },
   {
     id: " pr3",
-    name: "Rapunzel's Coffee",
+    name: "Tiana's Light Voovoo Bean",
     image:
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,
@@ -72,7 +72,7 @@ const products = [
   },
   {
     id: " pr4",
-    name: "Aurora's Cure",
+    name: "Cinderella Pumpkin Ride",
     image:
       "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
       price: 9,
@@ -83,7 +83,7 @@ const products = [
  
   {
     id: " pr1",
-    name: "Jasmine's  Roast",
+    name: "Snow White Ice Coffee",
     image:
       "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
       price: 19,
@@ -93,7 +93,7 @@ const products = [
   },
   {
     id: " pr2",
-    name: "Mulan's  Bean",
+    name: "Elsa's Frozen Latte",
     image:
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
       price: 24,
@@ -103,7 +103,7 @@ const products = [
   },
   {
     id: " pr3",
-    name: "Rapunzel's Coffee",
+    name: "Anna's Peppermint Delight",
     image:
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,
@@ -112,7 +112,7 @@ const products = [
   },
   {
     id: " pr4",
-    name: "Aurora's Cure",
+    name: "Merida Gaelic Coffee",
     image:
       "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
       price: 9,
@@ -123,7 +123,7 @@ const products = [
  
   {
     id: " pr1",
-    name: "Jasmine's  Roast",
+    name: "Belle's French Roast",
     image:
       "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
       price: 19,
@@ -133,7 +133,7 @@ const products = [
   },
   {
     id: " pr2",
-    name: "Mulan's  Bean",
+    name: "Pocahontas Earth Bean",
     image:
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
       price: 24,
@@ -143,7 +143,7 @@ const products = [
   },
   {
     id: " pr3",
-    name: "Rapunzel's Coffee",
+    name: "Moana's Pacific Island Blend",
     image:
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
       price: 49,
@@ -152,7 +152,7 @@ const products = [
   },
   {
     id: " pr4",
-    name: "Aurora's Cure",
+    name: "Raya's Yogurt Coffee",
     image:
       "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
       price: 9,

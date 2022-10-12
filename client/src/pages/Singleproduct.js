@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import products from "../data";
+import Cart from "./Cart";
 
 const Singleproduct = () => {
   const { productId } = useParams();
@@ -17,6 +18,11 @@ const Singleproduct = () => {
         <h4>Price: ${price}</h4>
         <Link to="/products">
           <button>Products</button>
+          
+        </Link>
+        <Link to="/Cart">
+          <button>Add to Cart</button>
+        
         </Link>
       </footer>
     </section>
