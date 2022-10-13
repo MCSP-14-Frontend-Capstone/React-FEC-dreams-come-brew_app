@@ -10,7 +10,7 @@ const CardImg = ({item}) => {
 
     return (
         <div className="Card-div" onClick={NavToHotItems}>
-            <h1 className="CardHeader">Hot Item</h1>
+            <h2>Hot Item</h2>
                <img className="Cardimg" src={item.image}></img> 
         </div>
     )
