@@ -1,20 +1,17 @@
 
 .DealsMain {
   display: flex;
-  height: 16rem;
-  align-items: center;
-  flex-direction: row;
+  height: 25rem;
+  flex-direction: column;
   overflow: overlay;
-  background-color:#DDDDDD;
-  width: 95vw;
-  border-radius: 1rem;
-    border: 5px solid lightblue;
+  width: 79vw;
+  align-items: flex-start;
 }
 
 .Deals {
   display: flex;
   height: 16rem;
-  gap: 10px;
+  gap: 2rem;
   align-items: center;
   flex-direction: row;
   overflow: overlay;
@@ -35,7 +32,7 @@
   cursor: pointer;
 }
 
-.DealsArrow {
+/* .DealsArrow {
   display: inline-block;
   padding-top: 6.8rem;
   padding-right: 1rem;
@@ -45,7 +42,7 @@
   color: black;
   border-radius: 5px;
   font-size: 30px;
-}
+} */
 
 .DealsArrow:hover {
   background-color: #DDDDDD;
@@ -64,23 +61,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 25rem;
-  width: 22.3vw;
-  background: #DDDDDD;
+  height: 25vh;
+  width: 18vw;
+  background: #eeeeee;
   justify-content: center;
-  border-radius: 1rem;
-  border: 5px solid lightblue;
+}
+.Card-div:hover{
+  cursor: pointer;
 }
 
 .Cardimg{
-  width: 20vw;
-  height:30vh;
-}
-
-.CardHeader{
-height: 5rem;
-font-size: 3rem;
-margin: 0;
+  width: 15vw;
+  height: 15vh;
 }
 
 .SalePrice-Container{
@@ -122,7 +114,6 @@ margin: 0;
 
 .home_image{
   width: 100%;
-  z-index: -1;
   margin-bottom: -150px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),
   rgba(0, 0, 0, 0));
@@ -135,10 +126,7 @@ margin: 0;
   justify-content: center;
   margin: 10px;
   width: 10rem;
-  max-height: 400px;
-  min-width: 100px;
   background-color: white;
-  margin-bottom: 20rem;
 }
 
 .product > img {
@@ -150,7 +138,6 @@ margin: 0;
 #products-img {
   width: 8rem;
   height: 8rem;
-  border-radius: 100%;
 }
 
 .product > button {
@@ -201,15 +188,22 @@ margin: 0;
 .home {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home_container{
+  display: flex;
+  flex-direction: column;
 }
 
 .home_row {
   display: flex;
-  z-index: 1;
-  margin-left: 5px;
-  margin-right: 5px;
-  justify-content: center;
+  gap: 1rem;
   align-items: center;
+  width: 80vw;
+  overflow: auto;
 }
 
 .home-image {
