@@ -5,36 +5,18 @@ const CartContext = createContext()
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
     const handleClick = (product) => {
-        const addedToCart = () => toast.success(`${product.name} Was added to your cart!`,{
-            position: "bottom-right",
-            autoClose: 2500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
-            });
+        const addedToCart = () => toast.success(`${product.name} Was added to your cart!`)
         setCart([...cart, product])
         addedToCart()
     }
     const removeItem = (id) => {
-        const itemRemoved = () => toast.success("Item removed from cart.", {
-            position: "bottom-right",
-            autoClose: 2500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
-            });
+        const itemRemoved = () => toast.success("Item removed from cart.")
         const newArr = cart.filter((elem) => elem.id != id)
         setCart(newArr)
         itemRemoved()
     }
     return <CartContext.Provider value={{ cart, handleClick, removeItem }}>
-        <ToastContainer />
+        <ToastContainer position="bottom-right" autoclose={2500} theme="dark"/>
         {children}
     </CartContext.Provider>
 }
