@@ -24,10 +24,10 @@ const Singleproduct = () => {
                 </section>
             
                   <div className="helper-images">
-                    <img src={pic1} alt="" />
-                    <img src={pic2} alt="" />
-                    <img src={pic3} alt="" />
-                    <img src={pic4} alt="" />
+                    <img className="single-helper" src={pic1} alt="" />
+                    <img className="single-helper" src={pic2} alt="" />
+                    <img className="single-helper" src={pic3} alt="" />
+                    <img className="single-helper" src={pic4} alt="" />
 
                   </div>
             
