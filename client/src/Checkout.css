@@ -1,0 +1,19 @@
+.Checkout-messege{
+    border: solid red;
+    box-shadow: 20px 20px 10px grey;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 10vw;
+}
+
+.BackButton{
+    border: solid red;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.BackButton:hover{
+    box-shadow: 20px 20px 10px rgba(7, 209, 199, 0.666);
+
+}
