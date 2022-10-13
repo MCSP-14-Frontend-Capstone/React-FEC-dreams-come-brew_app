@@ -9,6 +9,7 @@ import "./Products.css"
 import "./Cartanditem.css"
 import "./Login.css"
 import "./HomeIndex.css"
+import './Summary.css'
 
 import About from "./pages/About";
 import Products from "./pages/Products";

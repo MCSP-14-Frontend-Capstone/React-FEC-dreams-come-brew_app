@@ -5,6 +5,11 @@ import Items from './Items'
 import CartContext from '../../context/CartContext'
 import { Link } from "react-router-dom";
 import CartRec from './CartRec'
+import Summary from './Summary';
+
+
+
+
 const Cart = () => {
     const { cart } = useContext(CartContext)
     if (cart.length === 0) {
@@ -32,11 +37,9 @@ const Cart = () => {
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
-                        <Link to='/CheckoutPage'>
-                            <div className='checkout-submit'>
-                                <button>CHECKOUT</button>
-                            </div>
-                        </Link>
+                        <div className='summaryPage'>
+                            <Summary />
+                        </div>
                     </div>
                 </div>
                 <div className='rec-display'>
