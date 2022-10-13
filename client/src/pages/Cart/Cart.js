@@ -9,9 +9,9 @@ import Summary from './Summary';
 
 
 
-
 const Cart = () => {
     const { cart } = useContext(CartContext)
+   
     if (cart.length === 0) {
         return (
             <div className='main-cart-page'>
