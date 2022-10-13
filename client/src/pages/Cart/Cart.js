@@ -9,13 +9,9 @@ import Summary from './Summary';
 
 
 
+
 const Cart = () => {
-
     const { cart } = useContext(CartContext)
-
-
-
-
     if (cart.length === 0) {
         return (
             <div className='main-cart-page'>
@@ -27,9 +23,7 @@ const Cart = () => {
                         <CartRec />
                     </div>
                 </div>
-
             </div>
-
         )
     } else {
         return (
@@ -52,21 +46,10 @@ const Cart = () => {
                     <div className='rec-container'>
                         <CartRec />
                     </div>
-
                 </div>
-
-
-
-
-
             </div>
         )
     }
-
-
-
-
 }
-
 export default Cart
 /* <CartCheckout /> */

@@ -41,17 +41,6 @@
   margin: 0;
 }
 
-.add-to-cart-btn {
-  display: block;
-  width: 12rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0.5px solid red;
-  border-radius: 2rem;
-  padding: 0.5rem 0rem;
-  margin-left: 1rem;
-  cursor: pointer;
-}
 
 .aboutme-p {
   font-family: Arial, Helvetica, sans-serif;
