@@ -99,3 +99,25 @@
   border-bottom: 1px solid;
   padding-bottom: 10px;
 }
+
+.cart-empty-box {
+  width: 50rem;
+  height: 10rem;
+  margin: auto;
+}
+
+.cart-empty-text {
+  width: 30rem;
+  height: 5rem;
+  margin: auto;
+}
+
+.RecImg {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.RecItemName {
+  font-size: 0.8rem;
+}

@@ -1,5 +1,5 @@
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const CartRec = () => {
 
@@ -40,13 +40,28 @@ const CartRec = () => {
             <div className="rec-pics-box">
                 {recData.map((item) => (
 
-                    <div href="#" className="DealItem">
+                    <div href="#" className="RecItem">
                         <div>
-                            <img className="DealsImg" alt='' src={item.image}></img>
+                            <img className="RecImg" alt='' src={item.image}></img>
                         </div>
-                        <div>
-                            <h1 className="DealItemName">{item.name}</h1>
-                            <p className="DealItemName">Price: {item.price}</p>
+                        <div className="Rec-info">
+                            <h1 className="RecItemName">{item.name}</h1>
+                            <div className="rec-stars">
+                                <FontAwesomeIcon
+                                    className="rating-icon"
+                                    icon={faStar}
+                                ></FontAwesomeIcon>
+                                <FontAwesomeIcon
+                                    className="rating-icon"
+                                    icon={faStar}
+                                ></FontAwesomeIcon>
+                                <FontAwesomeIcon
+                                    className="rating-icon"
+                                    icon={faStar}
+                                ></FontAwesomeIcon>
+                            </div>
+
+                            <p className="RecItemName">Price: {item.price}</p>
                         </div>
                     </div>
 

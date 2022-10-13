@@ -18,7 +18,20 @@ const Cart = () => {
 
 
     if (cart.length === 0) {
-        return <h1>Your cart is empty</h1>
+        return (
+            <div className='main-cart-page'>
+                <div className='cart-empty-box'>
+                    <h1 className='cart-empty-text'>Your cart is empty</h1>
+                </div>
+                <div className='rec-display'>
+                    <div className='rec-container'>
+                        <CartRec />
+                    </div>
+                </div>
+
+            </div>
+
+        )
     } else {
         return (
             <div className='main-cart-page'>
