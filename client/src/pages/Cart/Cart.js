@@ -2,10 +2,10 @@ import React, { useState, useContext, } from 'react'
 import CartHeader from './CartHeader'
 import CartColumns from './CartColumn'
 import Items from './Items'
-import CartCheckout from './CartCheckout'
+
 import CartContext from '../../context/CartContext'
 import { Link } from "react-router-dom";
-import whatever from './CheckoutPage'
+
 import CartRec from './CartRec'
 
 
