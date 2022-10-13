@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import Login from '../Login'
+import LoginContext from '../../context/LoginContext'
 
 const CheckoutPage = () => {
-    return (
+    const { logInIcon } = useContext(LoginContext)
+
+    if (logInIcon === false){
+        return ( <Login />
+        )
+    }else{
+        return (
         <div>
             <div>YOUR GOOD TO GO
                 <h1>Thank You For Your Purchase</h1>
@@ -11,6 +20,7 @@ const CheckoutPage = () => {
             </Link>
         </div>
     )
+    }
 }
 
 export default CheckoutPage
