@@ -2,23 +2,24 @@ import React, { useState, useContext, } from 'react'
 import CartHeader from './CartHeader'
 import CartColumns from './CartColumn'
 import Items from './Items'
-import CartCheckout from './CartCheckout'
 import CartContext from '../../context/CartContext'
 import { Link } from "react-router-dom";
-import whatever from './CheckoutPage'
-
-
-
-
+import CartRec from './CartRec'
 const Cart = () => {
-
     const { cart } = useContext(CartContext)
-
-
-
-
     if (cart.length === 0) {
-        return <h1>Your cart is empty</h1>
+        return (
+            <div className='main-cart-page'>
+                <div className='cart-empty-box'>
+                    <h1 className='cart-empty-text'>Your cart is empty</h1>
+                </div>
+                <div className='rec-display'>
+                    <div className='rec-container'>
+                        <CartRec />
+                    </div>
+                </div>
+            </div>
+        )
     } else {
         return (
             <div className='main-cart-page'>
@@ -26,28 +27,26 @@ const Cart = () => {
                     <div className='cart-header-box'>
                         <CartHeader />
                         <CartColumns />
+                    </div>
+                </div>
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
                         <Link to='/CheckoutPage'>
-                        <div className='checkout-submit'>
-                            <button>CHECKOUT</button>
-                        </div>
+                            <div className='checkout-submit'>
+                                <button>CHECKOUT</button>
+                            </div>
                         </Link>
-
                     </div>
-
                 </div>
+                <div className='rec-display'>
+                    <div className='rec-container'>
+                        <CartRec />
                     </div>
                 </div>
             </div>
         )
     }
-
-
-
-
 }
-
 export default Cart
 /* <CartCheckout /> */
