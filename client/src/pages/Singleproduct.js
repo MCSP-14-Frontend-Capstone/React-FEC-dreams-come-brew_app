@@ -35,8 +35,11 @@ const Singleproduct = () => {
               <Link to="/Cart">
                 <button className="single-add-to-cart">Add to Cart</button>
               </Link>
+              <Link to="/hotItems">
+                  <button className="single-back-to-products">Hot Items</button>
+                </Link>
                 <Link to="/products">
-                  <button className="single-back-to-products">Products</button>
+                  <button className="single-back-to-products">All Products</button>
                 </Link>
             </div>
           </div>

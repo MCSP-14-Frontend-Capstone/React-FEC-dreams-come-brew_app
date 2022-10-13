@@ -83,6 +83,29 @@ font-size: 3rem;
 margin: 0;
 }
 
+.SalePrice-Container{
+display: flex;
+justify-content: space-evenly;
+height: 2vh;
+align-items: center;
+margin-top: 1rem;
+}
+
+.Sale-info{
+text-align: center;
+background-color: red;
+height: 2vh;
+width: 5vw;
+overflow: hidden;
+margin: 0;
+padding: 3px;
+}
+
+.Sale-Price{
+text-align: center;
+margin: 0;
+}
+
 
 
 
