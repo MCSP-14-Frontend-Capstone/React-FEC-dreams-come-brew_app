@@ -5,16 +5,8 @@ import Items from './Items'
 import CartContext from '../../context/CartContext'
 import { Link } from "react-router-dom";
 import CartRec from './CartRec'
-
-
-
 const Cart = () => {
-
     const { cart } = useContext(CartContext)
-
-
-
-
     if (cart.length === 0) {
         return (
             <div className='main-cart-page'>
@@ -26,9 +18,7 @@ const Cart = () => {
                         <CartRec />
                     </div>
                 </div>
-
             </div>
-
         )
     } else {
         return (
@@ -53,21 +43,10 @@ const Cart = () => {
                     <div className='rec-container'>
                         <CartRec />
                     </div>
-
                 </div>
-
-
-
-
-
             </div>
         )
     }
-
-
-
-
 }
-
 export default Cart
 /* <CartCheckout /> */
