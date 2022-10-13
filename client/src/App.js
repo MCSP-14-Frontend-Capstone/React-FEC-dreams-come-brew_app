@@ -20,6 +20,7 @@ import Index from "./pages/Index";
 import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import CheckoutPage from "./pages/Cart/CheckoutPage";
+import HotItems from "./pages/HotItem";
 const App = () => {
   return (
     <Router>
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/CheckoutPage" element={<CheckoutPage />} />
+            <Route path="/hotItems" element={<HotItems />} />
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>
