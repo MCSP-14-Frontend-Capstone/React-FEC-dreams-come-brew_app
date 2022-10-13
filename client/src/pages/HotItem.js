@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartContext from "../context/CartContext";
 
-
 import {
   faCartShopping,
   faStar,
