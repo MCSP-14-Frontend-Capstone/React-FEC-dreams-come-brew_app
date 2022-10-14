@@ -16,10 +16,10 @@ const Summary = () => {
         return (
             <main className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>
-                <div className='total-elem'>SubTotal <span>$</span>{subTotal.toFixed(2)}</div>
-                <div className='total-elem'>Fees <span>$</span>{fees}</div>
-                <div className='total-elem'>Taxes <span>$</span>{tax}</div>
-                <div className='grandTotal'>Grand Total <span>$</span>{grandTotal.toFixed(2)}</div>
+                <div className='total-elem'>SubTotal: <div className='summaryElements'><span>$</span>{subTotal.toFixed(2)}</div></div>
+                <div className='total-elem'>Fees: <div className='summaryElements'><span>$</span>{fees}</div></div>
+                <div className='total-elem'>Taxes: <div className='summaryElements'><span>$</span>{tax}</div></div>
+                <div className='grandTotal'>Grand Total: <div className='summaryElements'><span>$</span>{grandTotal.toFixed(2)}</div></div>
                 <Link to='/Login'>
                     <button className='checkout-btn'>Sign-in to checkout</button>
                 </Link>
@@ -29,10 +29,10 @@ const Summary = () => {
         return (
             <div className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>
-                <div className='total-elem'>SubTotal <span>$</span>{subTotal.toFixed(2)}</div>
-                <div className='total-elem'>Fees <span>$</span>{fees}</div>
-                <div className='total-elem'>Taxes <span>$</span>{tax}</div>
-                <div className='grandTotal'>Grand Total <span>$</span>{grandTotal.toFixed(2)}</div>
+                <div className='total-elem'>SubTotal: <div className='summaryElements'>${subTotal.toFixed(2)}</div></div>
+                <div className='total-elem'>Fees: <div className='summaryElements'>${fees}</div></div>
+                <div className='total-elem'>Taxes: <div className='summaryElements'><span>$</span>{tax}</div></div>
+                <div className='grandTotal'>Grand Total: <div className='summaryElements'><span>$</span>{grandTotal.toFixed(2)}</div></div>
                 <Link to='/CheckoutPage'>
                     <div className='checkout-submit'>
                         <button className='checkout-btn' onClick={emptyCart}>CHECKOUT</button>
