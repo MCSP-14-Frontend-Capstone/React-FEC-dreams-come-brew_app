@@ -1,8 +1,9 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment, useContext, useState } from "react";
 import products from "../data";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartContext from "../context/CartContext";
+import AddedContext from "../context/AddedContext";
 
 import {
   faCartShopping,
@@ -15,16 +16,33 @@ import {
 
 const Products = () => {
   const { handleClick } = useContext(CartContext);
+  const { addedCart, changeButton, addedText, changeText} = useContext(AddedContext)
 
+const buttons = {
+
+}
+
+
+  
   return (
     <>
+ 
+
+
+
       <div className="product-grid">
         
         {products.map((product) => {
-          
+          const { id } = product
+       
           const handleObj = () => {
             handleClick(product);
+           changeButton()
+           changeText()
           };
+        
+
+           
           return (
             <article className="product-col" key={product.id} id={product.id}>
               
@@ -33,18 +51,22 @@ const Products = () => {
               </Link>
               <div className="below-image">
                 <div className="btn-group-card">
-                  <button
+                  <button 
+                  
                     onClick={handleObj}
+                    style={{color: addedCart ? "black" : "white", backgroundColor: addedCart ? "white" : "black"} }
+
+                 
                     className=" add-to-cart-btn"
                     id={product.id}
                   >
-                    ADD TO CART{" "}
-                    <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+                    {addedText}
+                
  
                   </button>
                   
                   <button
-                    onClick={handleObj}
+                  
                     className=" buy-now-btn"
                     id={product.id}
                   >
@@ -91,6 +113,22 @@ const Products = () => {
             </article>
           );
         })}
+      </div>
+      <div className="container">
+        <div className="beside-image">
+            <h2 className="best-seller-desc" >This month's Best Seller</h2>
+            <div className="circles">
+                  <div className="one-circ">Great Taste</div>
+                  <div className="one-circ">Fat Burner</div>
+                  <div className="one-circ">Low Calories</div>
+                  <div className="one-circ">Ready To Go</div>
+                  <div className="one-circ last">Smells Great</div>
+                  <div className="one-circ last">Do Enjoy!</div>
+            </div>
+
+        </div>
+      
+        <img className="coffee-image" src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317" alt="" />
       </div>
     </>
   );
