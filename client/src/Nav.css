@@ -71,9 +71,12 @@ a:-webkit-any-link {
   padding: 6px 3px;
   font-size: 1rem;
   font-weight: 400;
-  max-height: 3rem;
   font-family: Waltograph;
-
+  display: flex;
+  flex-direction: row;
+  width: 13rem;
+  height: 3rem;
+  align-items: center;
 }
 
 .signin-icon {

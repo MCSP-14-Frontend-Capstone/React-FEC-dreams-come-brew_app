@@ -1,11 +1,17 @@
+/* html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 .DealsMain {
   display: flex;
-  height: 25rem;
+  height: 20rem;
   flex-direction: column;
-  overflow: overlay;
   width: 79vw;
-  align-items: flex-start;
+  overflow: auto;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .Deals {
@@ -14,8 +20,6 @@
   gap: 2rem;
   align-items: center;
   flex-direction: row;
-  overflow: overlay;
-  width: -webkit-fill-available;
 }
 
 .DealsImg {
@@ -26,6 +30,11 @@
 
 .DealItemName {
   font-size: 0.8rem;
+}
+
+.DealItem{
+  width: 9rem;
+  height: 15vh;
 }
 
 .DealItem:hover {
@@ -53,6 +62,7 @@
 .CardMain-Container{
   display: flex;
   flex-direction: row;
+  width: 70vw;
   gap: 1rem;
   margin-top: 2vh;
 }
@@ -61,8 +71,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 25vh;
-  width: 18vw;
+  height: 22vh;
+  width: 17vw;
   background: #eeeeee;
   justify-content: center;
 }
@@ -71,11 +81,11 @@
 }
 
 .Cardimg{
-  width: 15vw;
-  height: 15vh;
+  width: 10vw;
+  height: 10vh;
 }
 
-.SalePrice-Container{
+/* .SalePrice-Container{
 display: flex;
 justify-content: space-evenly;
 height: 2vh;
@@ -96,13 +106,63 @@ padding: 3px;
 .Sale-Price{
 text-align: center;
 margin: 0;
+} */
+
+/* .HotItems-Container{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 90vw;
+} */
+
+.HotItems-Container{
+  display: flex;
+  margin: 6rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* height: 60rem; */
+  justify-content: center;
+  align-content: flex-start;
 }
 
+.HotItem-Card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
 
+.HotItem-Img{
+width: 16vw;
+height: 25vh;
+}
 
+.belowHotItem-image{
+  background-color: #eee;
+  text-align: left;
+  height: 20vh;
+  max-width: 25rem;
+  width: 16vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+.Hotproduct-name{
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Quicksand";
+}
 
-
+.HotItem-Head{
+  margin-top: 8rem;
+  font-size: 5rem;
+}
 
 
 
@@ -201,9 +261,9 @@ margin: 0;
 .home_row {
   display: flex;
   gap: 1rem;
-  align-items: center;
   width: 80vw;
   overflow: auto;
+  align-items: center;
 }
 
 .home-image {
