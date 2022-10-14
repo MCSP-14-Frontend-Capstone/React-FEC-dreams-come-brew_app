@@ -10,11 +10,7 @@ import Summary from './Summary';
 
 const Cart = () => {
     const { cart } = useContext(CartContext)
-<<<<<<< HEAD
-   
-=======
 
->>>>>>> ae1925b7a12e37173d00c2d56b1ed563a319cefd
     if (cart.length === 0) {
         return (
             <div className='main-cart-page'>
@@ -34,12 +30,7 @@ const Cart = () => {
                 
                 <div className='cart-table'>
                     <div className='cart-header-box'>
-<<<<<<< HEAD
-                        <CartHeader />
-                   
-=======
-                        <h1 className='cart-header'>Ready To Checkout?</h1>
->>>>>>> ae1925b7a12e37173d00c2d56b1ed563a319cefd
+
                     </div>
                 </div>
          
