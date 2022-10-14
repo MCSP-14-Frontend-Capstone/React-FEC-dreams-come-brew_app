@@ -1,31 +1,34 @@
 import { createContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCartShopping,
-  
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
-
+import { faCartShopping, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const AddedContext = createContext();
 
 export const AddedProvider = ({ children }) => {
   const [addedCart, setAddedCart] = useState(false);
   const [addedText, setAddedText] = useState("ADD TO CART");
-  const changeButton = () => {
+  const changeButton = (id) => {
     setAddedCart(!addedCart);
   };
 
-  const changeText =()=> {
-   if (addedText == "Add TO CART" ) {
 
+  const removeTheItem = (id) => {
+   
 
-   } else {
-    setAddedText("REMOVE")
-   }
   }
+  const changeText = (id) => {
+    setAddedText("REMOVE");
+    removeTheItem(id)
+
+    if (addedText == "REMOVE") {
+      setAddedText("ADD TO CART");
+
+    }
+  };
   return (
-    <AddedContext.Provider value={{ addedCart, changeButton, addedText, changeText }}>
+    <AddedContext.Provider
+      value={{ addedCart, changeButton, addedText, changeText }}
+    >
       {children}
     </AddedContext.Provider>
   );

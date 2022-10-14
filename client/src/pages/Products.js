@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartContext from "../context/CartContext";
 import AddedContext from "../context/AddedContext";
 
+
 import {
   faCartShopping,
   faSignIn,
@@ -15,11 +16,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Products = () => {
-  const { handleClick } = useContext(CartContext);
-  const { addedCart, changeButton, addedText, changeText } =
+  const { handleClick, cart, setCart } = useContext(CartContext);
+  const { addedCart, changeButton, addedText, changeText, removeTheItem } =
     useContext(AddedContext);
 
   const buttons = {};
+  
 
   return (
     <>
@@ -27,10 +29,20 @@ const Products = () => {
         {products.map((product) => {
           const { id } = product;
 
-          const handleObj = () => {
+          const handleObj = (e) => {
             handleClick(product);
-            changeButton();
-            changeText();
+            const id = e.target.id
+            changeButton(id);
+            changeText(id);
+          
+            if (addedText == "REMOVE") {
+              const removeTheItem = (id) => {
+                const newArr = cart.filter((elem) => elem.id != id)
+               setCart(newArr)
+              }
+              removeTheItem(id)
+            }
+            
           };
 
           return (
@@ -97,98 +109,110 @@ const Products = () => {
       </div>
 
       <h3 className="special-text">SPECIAL FLAVORS</h3>
-      <div className="special-main">
-        <div className="special">
-          <img
-            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
-            alt=""
-          />
-        <div className="special-stars">
-                  <FontAwesomeIcon
-                    className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
+      <div className="shine">
+        <div className="special-main">
+          <div className="special">
+            <img
+              src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+              alt=""
+            />
+            <div className="special-stars">
+              <FontAwesomeIcon
                 className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                  className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
                 className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                   className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                </div>
-   <Link className="review">14 reviews</Link>
-   <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque reiciendis dolores, accusantium dolor qui impedit. Cum labore officia inventore.</p>
-
-        </div>
-        <div className="special">
-          <img
-            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
-            alt=""
-          />
-           <div className="special-stars">
-                  <FontAwesomeIcon
-                    className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
                 className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                  className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
                 className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                   className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                </div>
-   <Link className="review">66 reviews</Link>
-   <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque reiciendis dolores, accusantium dolor qui impedit. Cum labore officia inventore.</p>
-
-        </div>
-        <div className="special">
-          <img
-            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
-            alt=""
-          />
-           <div className="special-stars">
-                  <FontAwesomeIcon
-                    className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
                 className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                  className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
+                icon={faStar}
+              ></FontAwesomeIcon>
+            </div>
+            <Link className="review">14 reviews</Link>
+            <p className="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque
+              reiciendis dolores, accusantium dolor qui impedit. Cum labore
+              officia inventore.
+            </p>
+          </div>
+          <div className="special">
+            <img
+              src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+              alt=""
+            />
+            <div className="special-stars">
+              <FontAwesomeIcon
                 className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                   className="rating-special"
-                    icon={faStar}
-                  ></FontAwesomeIcon>
-                </div>
-   <Link className="review">19 reviews</Link>
-   <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque reiciendis dolores, accusantium dolor qui impedit. Cum labore officia inventore.</p>
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+            </div>
+            <Link className="review">66 reviews</Link>
+            <p className="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque
+              reiciendis dolores, accusantium dolor qui impedit. Cum labore
+              officia inventore.
+            </p>
+          </div>
+          <div className="special">
+            <img
+              src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+              alt=""
+            />
+            <div className="special-stars">
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="rating-special"
+                icon={faStar}
+              ></FontAwesomeIcon>
+            </div>
+            <Link className="review">19 reviews</Link>
+            <p className="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque
+              reiciendis dolores, accusantium dolor qui impedit. Cum labore
+              officia inventore.
+            </p>
+          </div>
         </div>
       </div>
 

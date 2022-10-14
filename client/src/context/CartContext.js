@@ -33,7 +33,7 @@ export const CartProvider = ({ children }) => {
         setCart(newArr)
         itemRemoved()
     }
-    return <CartContext.Provider value={{ cart, handleClick, removeItem }}>
+    return <CartContext.Provider value={{ cart, handleClick, removeItem, setCart }}>
         <ToastContainer />
         {children}
     </CartContext.Provider>
