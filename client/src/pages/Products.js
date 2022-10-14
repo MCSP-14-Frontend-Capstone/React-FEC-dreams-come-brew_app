@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartContext from "../context/CartContext";
 import AddedContext from "../context/AddedContext";
 
-
 import {
   faCartShopping,
   faSignIn,
@@ -21,7 +20,6 @@ const Products = () => {
     useContext(AddedContext);
 
   const buttons = {};
-  
 
   return (
     <>
@@ -31,18 +29,17 @@ const Products = () => {
 
           const handleObj = (e) => {
             handleClick(product);
-            const id = e.target.id
+            const id = e.target.id;
             changeButton(id);
             changeText(id);
-          
+
             if (addedText == "REMOVE") {
               const removeTheItem = (id) => {
-                const newArr = cart.filter((elem) => elem.id != id)
-               setCart(newArr)
-              }
-              removeTheItem(id)
+                const newArr = cart.filter((elem) => elem.id != id);
+                setCart(newArr);
+              };
+              removeTheItem(id);
             }
-            
           };
 
           return (
@@ -140,9 +137,9 @@ const Products = () => {
             </div>
             <Link className="review">14 reviews</Link>
             <p className="review-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque
-              reiciendis dolores, accusantium dolor qui impedit. Cum labore
-              officia inventore.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              neque reiciendis dolores, accusantium dolor qui impedit. Cum
+              labore officia inventore.
             </p>
           </div>
           <div className="special">
@@ -174,9 +171,9 @@ const Products = () => {
             </div>
             <Link className="review">66 reviews</Link>
             <p className="review-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque
-              reiciendis dolores, accusantium dolor qui impedit. Cum labore
-              officia inventore.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              neque reiciendis dolores, accusantium dolor qui impedit. Cum
+              labore officia inventore.
             </p>
           </div>
           <div className="special">
@@ -208,9 +205,9 @@ const Products = () => {
             </div>
             <Link className="review">19 reviews</Link>
             <p className="review-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque
-              reiciendis dolores, accusantium dolor qui impedit. Cum labore
-              officia inventore.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              neque reiciendis dolores, accusantium dolor qui impedit. Cum
+              labore officia inventore.
             </p>
           </div>
         </div>

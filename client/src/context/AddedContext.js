@@ -13,7 +13,7 @@ export const AddedProvider = ({ children }) => {
 
 
   const removeTheItem = (id) => {
-   
+  
 
   }
   const changeText = (id) => {
