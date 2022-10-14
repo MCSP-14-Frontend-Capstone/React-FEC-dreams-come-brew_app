@@ -18,14 +18,9 @@ export const LoginProvider = ({ children }) => {
     setLoginInIcon(false);
   };
 
-
   const logIn = (e) => {
     e.preventDefault();
     setLoginName(e.target.value);
-
-    /*Change the login logo color to indicate logged in/logged out. 
-    When logged in, change text to 'logged out'.*/
-    /*Display "Login Succcessful"*/
   };
 
   const handlePassword = (e) => {
