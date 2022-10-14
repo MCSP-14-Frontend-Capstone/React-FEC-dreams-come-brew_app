@@ -5,7 +5,7 @@ const SearchBar = () => {
         <h2 className="beside-text">NEW DEALS ALL MONTH!!!</h2>
       </div>
       <div className="main-search">
-        <form className="searchbar" action="">
+        <form className="searchbar" action="https://www.google.com/search" method="get">
           
           <input className="search" type="text" placeholder="Search Anything" />
           <button type="submit">
