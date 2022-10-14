@@ -1,4 +1,4 @@
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 const Products = ({item}) =>{
    
     const navigate = useNavigate();
@@ -15,9 +15,9 @@ const Products = ({item}) =>{
           <p className="product_price">
           </p>
       </div>
-  
+      <Link className="single-link" to={`/products/${item.target}`}>
       <img id='products-img' src={item.image} alt=""></img>
-  
+      </Link>
       <button className='myButton' onClick={navigateToProducts}>See more in our products!</button>
   </div>
 )

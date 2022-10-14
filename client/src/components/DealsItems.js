@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 const DealsItem = ({item}) => {
 
     return (
         <div href="#" className="DealItem">
 
             <div>
-                <img className ="DealsImg" src={item.image}></img>
+                <Link className="single-link" to={`/products/${item.target}`}>
+                <img className ="DealsImg" src={item.image} alt={""}></img>
+                </Link>
             </div>
             <div>
             <h1 className="DealItemName">{item.name} </h1>
