@@ -37,10 +37,15 @@ const Cart = () => {
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
+
+
+
+                        </div>
+
                         <div className='summaryPage'>
                             <Summary />
                         </div>
-                    </div>
+               
                 </div>
                 <div className='rec-display'>
                     <div className='rec-container'>
