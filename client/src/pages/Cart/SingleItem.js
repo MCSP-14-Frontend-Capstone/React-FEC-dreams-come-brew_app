@@ -1,4 +1,3 @@
-import React, { useState } from "react"
 import { useContext } from "react"
 import CartContext from "../../context/CartContext"
 
@@ -7,25 +6,7 @@ import CartContext from "../../context/CartContext"
 const SingleItem = ({ item }) => {
 
     const { removeItem, Addon, onRemove } = useContext(CartContext)
-
-    const price = item.price
-
-    const [total, setTotal] = useState(price)
-
-    const handleChange = (e) => {
-        const qty = e.target.value
-        const sum = price * qty
-        setTotal(sum)
-    }
-
-
-
-
-
-
-
-
-
+    const total = item.price * item.cartQty
     const handleRemove = (e) => {
         const id = e.target.id
         removeItem(id)
@@ -39,19 +20,19 @@ const SingleItem = ({ item }) => {
                 <img style={{ width: '5rem' }} src={item.image} alt='' />
                 <div>
                     <h1 className="item-name">{item.name}</h1>
-                    <p>about this item </p>
+                    <p className="item-desc-text">{item.description}</p>
                 </div>
             </div>
-            <h1 className="item-p-q-t"><span>$</span>{item.price}</h1>
+            <h1 className="item-p-q-t"><span>$</span>{item.price.toFixed(2)}</h1>
             <div className="item-qty">
                 <div className="qty-btn">
-                    <button onClick={() => { onRemove(item) }}>-</button>
-                    <p>{item.cartQty}</p>
-                    <button onClick={() => { Addon(item) }}>+</button>
+                    <button className="add-qty-btn" onClick={() => { onRemove(item) }}>-</button>
+                    <p className="cart-qty">{item.cartQty}</p>
+                    <button className="remove-qty-btn" onClick={() => { Addon(item) }}>+</button>
                 </div>
                 <div className="remove-text" onClick={handleRemove} id={item.id}>Remove</div>
             </div>
-            <h1 className="item-p-q-t"><span>$</span>{total}</h1>
+            <h1 className="item-p-q-t"><span>$</span>{total.toFixed(2)}</h1>
 
         </div >
     )
