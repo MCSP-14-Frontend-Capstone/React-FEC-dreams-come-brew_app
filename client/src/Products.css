@@ -165,8 +165,9 @@ img {
   color: #333;
 }
 .logo-text{
-  font-size: 2.5vh;
-  width: 13vw;
+  font-size: 1.4rem;
+  /* width: 13vw; */
+  color:#F3F3F3;
 }
 
 p,
@@ -175,7 +176,7 @@ p,
   margin: 0;
   display: block;
   font-size: 1rem;
-  color: rgba(13, 31, 78, 1);
+  /* color: #266D6F; */
 }
 .name-and-price {
   display: flex;

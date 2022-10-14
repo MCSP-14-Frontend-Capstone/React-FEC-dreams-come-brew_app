@@ -1,9 +1,12 @@
+@import url('http://fonts.cdnfonts.com/css/maybe-coffee');
+
+
 :root {
   --primary-color: rgb(78, 112, 198);
   --grey: #bbb;
   --light: #eee;
   --selected: rgb(244, 167, 72);
-  --navbackground: rgba(13, 31, 78, 1);
+  --navbackground: #266D6F;
 }
 
 @font-face {
@@ -37,11 +40,11 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--navbackground);
+  background-color: #343434;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 7vh;
+  height: 9vh;
 }
 
 .navlinks {
@@ -56,22 +59,23 @@ a:-webkit-any-link {
 }
 
 .link-selected {
-  color: var(--selected);
+  color: #AC05FF;
   font-size: 130%;
   transition: .5s;
 }
 
 .link-unselected {
-  color: var(--light);
+  color: #F3F3F3;
 }
 
 .logo {
-  background-color: var(--selected);
+  /* background-color: var(--selected); */
   border-radius: 1rem;
   padding: 6px 3px;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Waltograph;
+  /* font-family: Waltograph; */
+  font-family: 'Maybe Coffee', sans-serif;
   display: flex;
   flex-direction: row;
   width: 13rem;
@@ -80,11 +84,10 @@ a:-webkit-any-link {
 }
 
 .signin-icon {
-  color: var(--navbackground);
-
-  font-size: 1rem;
+  color: #AC05FF;
+  font-size: 2rem;
 }
 
 .login-icon {
-  color: var(--selected);
+  color: #AC05FF;
 }
