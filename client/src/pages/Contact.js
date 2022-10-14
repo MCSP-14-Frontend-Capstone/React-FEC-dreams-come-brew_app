@@ -7,7 +7,7 @@ const Contact = () => {
   const [cdes, setCdes] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();//stop the form from repeating
     setCname('');
     setCemail('');
     setCdes('');
@@ -38,7 +38,8 @@ const Contact = () => {
 
   return (
     <div className='contactPage'>
-      <main className='ContainMain'>
+      <main className='ContainMain'> 
+      {/* main tag specifies  main context of a document */}
         <h1 className='contactTitle'></h1>
 
         <section className='contactInfo'>

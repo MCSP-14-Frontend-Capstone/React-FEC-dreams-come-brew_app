@@ -22,7 +22,7 @@ const Summary = () => {
                 <div>SubTotal:{subTotal} </div>
                 <div>Fees:{fees} </div>
                 <div>Taxes:{tax}</div>
-                <div className='grandTotal'>Grand Total{grandTotal}</div>
+                <div className='grandTotal'>Grand Total {grandTotal}</div>
                 <Link to='/Login'>
                     <button>Sign-in to checkout</button>
                 </Link>
