@@ -9,7 +9,9 @@
   height: 10rem;
   margin: auto;
 }
-
+.cart-header {
+  margin-top: 5rem
+}
 .item-text {
   text-align: left;
   width: 15rem;

@@ -1,3 +1,5 @@
+
+
 import React, { useState, useContext, } from 'react'
 import CartHeader from './CartHeader'
 import CartColumns from './CartColumn'
@@ -28,12 +30,14 @@ const Cart = () => {
     } else {
         return (
             <div className='main-cart-page'>
+                
                 <div className='cart-table'>
                     <div className='cart-header-box'>
                         <CartHeader />
-                        <CartColumns />
+                   
                     </div>
                 </div>
+         
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
@@ -52,6 +56,7 @@ const Cart = () => {
                         <CartRec />
                     </div>
                 </div>
+                
             </div>
         )
     }

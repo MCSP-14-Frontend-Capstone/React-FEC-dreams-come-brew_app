@@ -24,7 +24,7 @@ img {
   width: 2rem;
 }
 .beside-search {
-  width: 60%;
+  width: 80%;
   background-image: linear-gradient(
     to bottom right,
     rgba(34, 33, 33, 0.971) 50%,
@@ -35,14 +35,14 @@ img {
   align-items: center;
   justify-content: center;
 }
-.search {
-}
+
 .beside-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #eee;
-  width: 15;
+  width: 10;
 }
-.searchbar {
+
+.searchbar  {
   width: 25rem;
   display: flex;
   align-items: center;
@@ -52,11 +52,16 @@ img {
   margin: auto;
   padding-left: 3rem;
 }
+
+ .search {
+  width: 15rem;
+ }
 .main-search {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 1rem 2rem;
 }
 .search-container {
   width: 100vw;
@@ -76,6 +81,7 @@ img {
   outline: none;
   /* padding: 0.1rem 0.5rem; */
   font-size: 1rem;
+
 }
 ::placeholder {
   color: #333;
@@ -91,6 +97,7 @@ img {
   height: 3rem;
   background-color: rgb(247, 247, 247);
   margin-left: 2rem;
+
 }
 
 .product-col {

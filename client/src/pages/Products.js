@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartContext from "../context/CartContext";
 import AddedContext from "../context/AddedContext";
+import SearchBar from "../components/SearchBar";
 
 import {
   faCartShopping,
@@ -23,6 +24,7 @@ const Products = () => {
 
   return (
     <>
+    <SearchBar />
       <div className="product-grid">
         {products.map((product) => {
           const { id } = product;
@@ -43,6 +45,7 @@ const Products = () => {
           };
 
           return (
+
             <article className="product-col" key={product.id} id={product.id}>
               <Link className="single-link" to={`/products/${product.target}`}>
                 <img src={product.image} alt="" />
