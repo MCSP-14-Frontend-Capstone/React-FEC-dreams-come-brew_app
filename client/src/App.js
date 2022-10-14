@@ -21,13 +21,15 @@ import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import CheckoutPage from "./pages/Cart/CheckoutPage";
 import HotItems from "./pages/HotItem";
-const App = () => {
+const App = () => { 
   return (
-    <Router>
+    <Router> 
       <div className="App">
         <Routes>
-          <Route path="/" element={<SharedLayout />}>
+          <Route path="/" element={<SharedLayout />}> 
+          {/* A path is just the route to the individual page  */}
             <Route index element={<Index />} />
+            {/* Element is the component being rendener*/}
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:productTarget" element={<Singleproduct />} />

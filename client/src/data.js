@@ -1,4 +1,4 @@
-
+// This is our fake data for product.
 
 const products = [
   {

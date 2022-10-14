@@ -11,7 +11,6 @@ const Summary = () => {
     const fees = 1.75
     const grandTotal = subTotal + tax + fees
 
-
     if (logInIcon === false) {
         return (
             <main className='summaryBox'>
