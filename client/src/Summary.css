@@ -23,4 +23,41 @@
 
   .grandTotal{
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
+
+  .items-checkout-box{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* .summaryPage{
+    border: solid red;
+  } */
+  
+  /* .summaryTitle{
+    
+  } */
+
+  .summaryBox{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    width: 20vw
+  }
+  
+  .summaryElements{
+    text-align: right;
+    }
+
+    .total-elem{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    
