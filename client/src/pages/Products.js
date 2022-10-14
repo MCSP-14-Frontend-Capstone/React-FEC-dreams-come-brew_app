@@ -16,60 +16,43 @@ import {
 
 const Products = () => {
   const { handleClick } = useContext(CartContext);
-  const { addedCart, changeButton, addedText, changeText} = useContext(AddedContext)
+  const { addedCart, changeButton, addedText, changeText } =
+    useContext(AddedContext);
 
-const buttons = {
+  const buttons = {};
 
-}
-
-
-  
   return (
     <>
- 
-
-
-
       <div className="product-grid">
-        
         {products.map((product) => {
-          const { id } = product
-       
+          const { id } = product;
+
           const handleObj = () => {
             handleClick(product);
-           changeButton()
-           changeText()
+            changeButton();
+            changeText();
           };
-        
 
-           
           return (
             <article className="product-col" key={product.id} id={product.id}>
-              
               <Link className="single-link" to={`/products/${product.target}`}>
                 <img src={product.image} alt="" />
               </Link>
               <div className="below-image">
                 <div className="btn-group-card">
-                  <button 
-                  
+                  <button
                     onClick={handleObj}
-                    style={{color: addedCart ? "black" : "white", backgroundColor: addedCart ? "white" : "black"} }
-
-                 
+                    style={{
+                      color: addedCart ? "black" : "white",
+                      backgroundColor: addedCart ? "white" : "black",
+                    }}
                     className=" add-to-cart-btn"
                     id={product.id}
                   >
                     {addedText}
-                
- 
                   </button>
-                  
-                  <button
-                  
-                    className=" buy-now-btn"
-                    id={product.id}
-                  >
+
+                  <button className=" buy-now-btn" id={product.id}>
                     BUY NOW{" "}
                     <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                   </button>
@@ -78,12 +61,12 @@ const buttons = {
                   <p className="product-name">{product.name}</p>
 
                   <p className="price">
-                  <p className="old-price"><s>${product.oldprice}</s></p>
+                    <p className="old-price">
+                      <s>${product.oldprice}</s>
+                    </p>
                     ${product.price}
-                    <sup>99</sup>{" "}
-                    <p className="qty">{product.qty} left</p>
+                    <sup>99</sup> <p className="qty">{product.qty} left</p>
                   </p>
-
                 </div>
                 <div className="stars">
                   <FontAwesomeIcon
@@ -108,27 +91,52 @@ const buttons = {
                   ></FontAwesomeIcon>
                 </div>
               </div>
-
-
             </article>
           );
         })}
       </div>
+
+      <h3 className="special-text">SPECIAL FLAVORS</h3>
+      <div className="special-main">
+        <div className="special">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+            alt=""
+          />
+          <p></p>
+        </div>
+        <div className="special">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+            alt=""
+          />
+        </div>
+        <div className="special">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+            alt=""
+          />
+        </div>
+      </div>
+
       <div className="container">
         <div className="beside-image">
-            <h2 className="best-seller-desc" >This month's Best Seller</h2>
-            <div className="circles">
-                  <div className="one-circ">Great Taste</div>
-                  <div className="one-circ">Fat Burner</div>
-                  <div className="one-circ">Low Calories</div>
-                  <div className="one-circ">Ready To Go</div>
-                  <div className="one-circ last">Smells Great</div>
-                  <div className="one-circ last">Do Enjoy!</div>
-            </div>
-
+          <h2 className="best-seller-desc">This month's Best Seller</h2>
+          <div className="circles">
+            <div className="one-circ">Great Taste</div>
+            <div className="one-circ">Fat Burner</div>
+            <div className="one-circ">Low Calories</div>
+            <div className="one-circ">Ready To Go</div>
+            <div className="one-circ last">Smells Great</div>
+            <div className="one-circ last">Do Enjoy!</div>
+          </div>
         </div>
-      
-        <img className="coffee-image" src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317" alt="" />
+
+        <img
+          className="coffee-image"
+          src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+          alt=""
+        />
       </div>
     </>
   );

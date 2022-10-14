@@ -17,12 +17,7 @@ export const AddedProvider = ({ children }) => {
   };
 
   const changeText =()=> {
-   if (addedText == "Add TO CART" ) {
-
-
-   } else {
-    setAddedText("REMOVE")
-   }
+    setAddedText("ADDED!")
   }
   return (
     <AddedContext.Provider value={{ addedCart, changeButton, addedText, changeText }}>
