@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div className='contactPage'>
-      <main>
+      <main className='ContainMain'>
         <h1 className='contactTitle'></h1>
 
         <section className='contactInfo'>
