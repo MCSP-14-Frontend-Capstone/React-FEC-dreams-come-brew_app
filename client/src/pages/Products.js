@@ -22,18 +22,39 @@ const Products = () => {
 
   const buttons = {};
 
+
+  //
+  const [toggle, setToggle] = useState(false)
+  //
+
+
+
+
+
+
+
+
   return (
     <>
-    <SearchBar />
+      <SearchBar />
       <div className="product-grid">
         {products.map((product) => {
           const { id } = product;
+          //
+          const toggleBtn = () => {
+            setToggle(!toggle)
+          }
+          //
 
           const handleObj = (e) => {
             handleClick(product);
             const id = e.target.id;
             changeButton(id);
             changeText(id);
+
+
+
+
 
             if (addedText == "REMOVE") {
               const removeTheItem = (id) => {
@@ -42,7 +63,7 @@ const Products = () => {
               };
               removeTheItem(id);
             }
-          };
+          }
 
           return (
 
@@ -68,6 +89,11 @@ const Products = () => {
                     BUY NOW{" "}
                     <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                   </button>
+
+                  <button onClick={toggleBtn}>{toggle ? 'remove' : 'addddd'}</button>
+
+
+
                 </div>
                 <div className="name-and-price">
                   <p className="product-name">{product.name}</p>

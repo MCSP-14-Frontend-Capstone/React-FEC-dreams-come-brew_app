@@ -7,13 +7,18 @@ const AddedContext = createContext();
 export const AddedProvider = ({ children }) => {
   const [addedCart, setAddedCart] = useState(false);
   const [addedText, setAddedText] = useState("ADD TO CART");
+
+
+
+
+
   const changeButton = (id) => {
     setAddedCart(!addedCart);
   };
 
 
   const removeTheItem = (id) => {
-  
+
 
   }
   const changeText = (id) => {
