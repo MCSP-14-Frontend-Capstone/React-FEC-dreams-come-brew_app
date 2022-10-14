@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import LoginContext from "../context/LoginContext";
+import { Link } from "react-router-dom";
 /*When logged, return to main.*/
 /*Add log out to main page.*/
 
@@ -12,17 +13,24 @@ const Login = () => {
     logIn,
     logOut,
     loginPassword,
-    loginName
+    loginName,
+    backToCart,
   } = useContext(LoginContext);
 
-  console.log(logInIcon)
+  console.log(logInIcon);
   if (logInIcon === true) {
     return (
       <>
         <h1 className="loggedinHeader">You are now logged in.</h1>
         <button className="loginButtons" onClick={logOut}>
           Click To Log Out
-        </button>
+        </button>{" "}
+        <br></br>
+        <Link to="/Cart">
+          <button className="loginButtons" onClick={backToCart}>
+            Back To Cart
+          </button>
+        </Link>
       </>
     );
   } else {

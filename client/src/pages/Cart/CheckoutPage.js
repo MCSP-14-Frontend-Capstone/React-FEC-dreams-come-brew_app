@@ -12,7 +12,7 @@ const CheckoutPage = () => {
     }else{
         return (
         <div>
-            <div>YOUR GOOD TO GO
+            <div>YOU'RE GOOD TO GO
                 <h1>Thank You For Your Purchase</h1>
             </div>
             <Link to='/'>

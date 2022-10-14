@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import Login from '../Login';
-import { useContext, useState } from "react"
-import CartContext from "../../context/CartContext"
-
+import { useContext } from "react";
+import LoginContext from '../../context/LoginContext';
 
 const Summary = () => {
-    const [loggedIn, setLoggedIn] = useState(true)
-    if (!loggedIn) {
+    const { logInIcon } = useContext(LoginContext)
+
+    if (logInIcon === false) {
         return (
             <main className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>
