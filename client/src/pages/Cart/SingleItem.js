@@ -41,4 +41,3 @@ const SingleItem = ({ item }) => {
 }
 
 export default SingleItem 
-

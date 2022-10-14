@@ -1,5 +1,3 @@
-
-
 import React, { useState, useContext, } from 'react'
 import Items from './Items'
 import CartContext from '../../context/CartContext'
@@ -27,32 +25,24 @@ const Cart = () => {
     } else {
         return (
             <div className='main-cart-page'>
-                
                 <div className='cart-table'>
                     <div className='cart-header-box'>
-
+                        <h1 className='cart-header'>Ready To Checkout?</h1>
                     </div>
                 </div>
-         
                 <div className='items-page'>
                     <div className='items-checkout-box'>
                         <Items />
-
-
-
-                        </div>
-
                         <div className='summaryPage'>
                             <Summary />
                         </div>
-               
+                    </div>
                 </div>
                 <div className='rec-display'>
                     <div className='rec-container'>
                         <CartRec />
                     </div>
                 </div>
-                
             </div>
         )
     }
