@@ -14,6 +14,7 @@ const products = [
     pic4: "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
 
     qty: '25',
+    cartQty: 1,
     oldprice: 25,
     description: "Premium coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
@@ -26,6 +27,7 @@ const products = [
       "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
     price: 24,
     qty: '90',
+    cartQty: 1,
     oldprice: 35,
     description: "Great coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
@@ -39,6 +41,7 @@ const products = [
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     price: 49,
     qty: '130',
+    cartQty: 1,
     oldprice: 55,
     description: "Sweet coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
@@ -52,6 +55,7 @@ const products = [
     price: 9,
     qty: '55',
     oldprice: 15,
+    cartQty: 1,
     description: "Grade A coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
   },
@@ -66,6 +70,7 @@ const products = [
     price: 19,
 
     qty: '25',
+    cartQty: 1,
     oldprice: 25,
     description: "Premium coffe cultivated in the best farms in...",
     detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
@@ -78,6 +83,7 @@ const products = [
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
     price: 24,
     qty: '90',
+    cartQty: 1,
     oldprice: 35,
     description: "Great coffe cultivated in the best farms in..."
 
@@ -90,17 +96,19 @@ const products = [
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     price: 49,
     qty: '130',
+    cartQty: 1,
     oldprice: 65,
     description: "Sweet coffe cultivated in the best farms in..."
   },
   {
     id: 8,
-    target:"8",
+    target: "8",
     name: "Cinderella Ride",
     image:
       "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
     price: 9,
     qty: '55',
+    cartQty: 1,
     oldprice: 15,
     description: "Grade A coffe cultivated in the best farms in..."
   },
@@ -115,6 +123,7 @@ const products = [
     price: 19,
 
     qty: '25',
+    cartQty: 1,
     oldprice: 25,
     description: "Premium coffe cultivated in the best farms in..."
   },
@@ -126,11 +135,12 @@ const products = [
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
     price: 24,
     qty: '90',
+    cartQty: 1,
     oldprice: 35,
     description: "Great coffe cultivated in the best farms in..."
 
   },
-  
+
 
 ];
 
