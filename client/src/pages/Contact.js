@@ -38,8 +38,10 @@ const Contact = () => {
 
   return (
     <div className='contactPage'>
+
       <main className='ContainMain'> 
       {/* main tag specifies  main context of a document */}
+
         <h1 className='contactTitle'></h1>
 
         <section className='contactInfo'>

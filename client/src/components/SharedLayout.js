@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
+
 import { Outlet } from 'react-router-dom'
 
 const SharedLayout = () => {
@@ -7,6 +8,8 @@ const SharedLayout = () => {
     <div>
 
       <NavBar />
+ 
+
       <Outlet />
 
     </div>

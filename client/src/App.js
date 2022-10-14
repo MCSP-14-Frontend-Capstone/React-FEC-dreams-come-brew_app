@@ -21,7 +21,9 @@ import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import CheckoutPage from "./pages/Cart/CheckoutPage";
 import HotItems from "./pages/HotItem";
-const App = () => { 
+
+const App = () => {
+
   return (
     <Router> 
       <div className="App">
