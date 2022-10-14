@@ -9,6 +9,7 @@ export const CartProvider = ({ children }) => {
 
 
     const [cart, setCart] = useState([])
+
     const Addon = (item) => {
         const exist = cart.find((x) => x.id === item.id)
         console.log(exist)
@@ -40,13 +41,19 @@ export const CartProvider = ({ children }) => {
 
 
 
-
+    const emptyCart = ()=>{
+        setCart([])
+    }
+    
 
     const handleClick = (product) => {
         const addedToCart = () => toast.success(`${product.name} Was added to your cart!`)
         setCart([...cart, product])
         addedToCart()
     }
+
+
+
 
 
     const removeItem = (id) => {
@@ -56,8 +63,11 @@ export const CartProvider = ({ children }) => {
         itemRemoved()
     }
 
-    return <CartContext.Provider value={{ cart, handleClick, removeItem, Addon, onRemove }}>
-        <ToastContainer position="bottom-right" autoclose={2500} theme="dark" />
+
+
+    return <CartContext.Provider value={{ cart, handleClick, removeItem, emptyCart, Addon, onRemove }}>
+        <ToastContainer position="bottom-right" autoclose={2500} theme="dark"/>
+
         {children}
     </CartContext.Provider>
 }

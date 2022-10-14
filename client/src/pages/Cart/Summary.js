@@ -4,7 +4,10 @@ import { useContext, useState } from "react"
 import CartContext from "../../context/CartContext"
 
 
+
 const Summary = () => {
+    const {emptyCart} = useContext(CartContext)
+
     const [loggedIn, setLoggedIn] = useState(true)
     const { cart } = useContext(CartContext)
     const subTotal = cart.reduce((total, item) => total + item.price * item.cartQty, 0)
@@ -37,7 +40,7 @@ const Summary = () => {
 
                 <Link to='/CheckoutPage'>
                     <div className='checkout-submit'>
-                        <button>CHECKOUT</button>
+                        <button onClick = {emptyCart}>CHECKOUT</button>
                     </div>
                 </Link>
             </div>
