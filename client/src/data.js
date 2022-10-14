@@ -1,4 +1,7 @@
 
+// This is our fake data for product.
+
+
 const products = [
   {
     id: 1,

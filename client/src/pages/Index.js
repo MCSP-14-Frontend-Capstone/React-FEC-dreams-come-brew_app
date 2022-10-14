@@ -4,7 +4,10 @@ import products from '../data'
 import HomeCard from '../components/HomeCard.js';
 import ProductsItem from '../components/ProductsItem'
 const Index = () => {
-  const [items, setItems] = useState(products);
+
+  //This is the homepage
+  const [items, setItems] = useState(products); // from data.js
+
 
   
   return (

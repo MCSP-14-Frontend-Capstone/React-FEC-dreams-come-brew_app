@@ -18,3 +18,4 @@ root.render(
     </AddedProvider>
   </React.StrictMode>
 );
+// When we would usually render the main react component into our root element.
