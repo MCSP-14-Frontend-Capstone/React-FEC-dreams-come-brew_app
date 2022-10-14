@@ -365,9 +365,9 @@ sup {
 }
 
 .special-main {
-  width: 80rem;
+  width: 70rem;
   border-radius: 2rem;
-  height: 27rem;
+  height: 34rem;
   margin-top: 5rem;
   margin: auto;
   display: flex;
@@ -376,6 +376,7 @@ sup {
   background-color: #ccc;
   padding: 2rem 0;
   background-color: rgba(152, 71, 170, 0.85);
+  margin-bottom: 5rem;
 }
 .special img {
   height: inherit;
@@ -389,4 +390,23 @@ sup {
 .special {
   height: 22rem;
   width: 20rem;
+}
+
+.special-stars {
+ margin-top: 1rem;
+ margin-bottom: 0.3rem;
+
+}
+.rating-special {
+  color: gold;
+  
+}
+
+.review {
+  color: #ddd;
+  text-decoration: solid;
+}
+.review-text {
+
+  margin-top: 0.5rem;
 }

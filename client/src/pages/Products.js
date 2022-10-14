@@ -103,19 +103,92 @@ const Products = () => {
             src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
             alt=""
           />
-          <p></p>
+        <div className="special-stars">
+                  <FontAwesomeIcon
+                    className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                  className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                   className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                </div>
+   <Link className="review">14 reviews</Link>
+   <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque reiciendis dolores, accusantium dolor qui impedit. Cum labore officia inventore.</p>
+
         </div>
         <div className="special">
           <img
             src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
             alt=""
           />
+           <div className="special-stars">
+                  <FontAwesomeIcon
+                    className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                  className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                   className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                </div>
+   <Link className="review">66 reviews</Link>
+   <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque reiciendis dolores, accusantium dolor qui impedit. Cum labore officia inventore.</p>
+
         </div>
         <div className="special">
           <img
             src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
             alt=""
           />
+           <div className="special-stars">
+                  <FontAwesomeIcon
+                    className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                  className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                   className="rating-special"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                </div>
+   <Link className="review">19 reviews</Link>
+   <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque reiciendis dolores, accusantium dolor qui impedit. Cum labore officia inventore.</p>
         </div>
       </div>
 
