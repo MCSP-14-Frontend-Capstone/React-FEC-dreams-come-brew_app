@@ -17,7 +17,8 @@ const products = [
     cartQty: 1,
     oldprice: 25,
     description: "Premium coffe cultivated in the best farms in...",
-    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
+    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!",
+    onSale: true,
   },
   {
     id: 2,
@@ -30,8 +31,8 @@ const products = [
     cartQty: 1,
     oldprice: 35,
     description: "Great coffe cultivated in the best farms in...",
-    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
-
+    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!",
+    onSale: false,
   },
   {
     id: 3,
@@ -44,7 +45,8 @@ const products = [
     cartQty: 1,
     oldprice: 55,
     description: "Sweet coffe cultivated in the best farms in...",
-    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
+    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!",
+    onSale: true,
   },
   {
     id: 4,
@@ -57,7 +59,8 @@ const products = [
     oldprice: 15,
     cartQty: 1,
     description: "Grade A coffe cultivated in the best farms in...",
-    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
+    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!",
+    onSale: true,
   },
 
 
@@ -73,7 +76,8 @@ const products = [
     cartQty: 1,
     oldprice: 25,
     description: "Premium coffe cultivated in the best farms in...",
-    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!"
+    detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur aliquid dolor ab expedita voluptates pariatur eaque doloribus odio! Sequi reiciendis quidem sunt in ipsa obcaecati amet distinctio, voluptas nihil, voluptatibus pariatur repudiandae perferendis molestias, harum eius suscipit ipsam at. Corrupti esse, cum magnam aut qui in odio quam sit!",
+    onSale: false,
   },
   {
     id: 6,
@@ -85,8 +89,8 @@ const products = [
     qty: '90',
     cartQty: 1,
     oldprice: 35,
-    description: "Great coffe cultivated in the best farms in..."
-
+    description: "Great coffe cultivated in the best farms in...",
+    onSale: true,
   },
   {
     id: 7,
@@ -98,7 +102,8 @@ const products = [
     qty: '130',
     cartQty: 1,
     oldprice: 65,
-    description: "Sweet coffe cultivated in the best farms in..."
+    description: "Sweet coffe cultivated in the best farms in...",
+    onSale: false,
   },
   {
     id: 8,
@@ -110,7 +115,8 @@ const products = [
     qty: '55',
     cartQty: 1,
     oldprice: 15,
-    description: "Grade A coffe cultivated in the best farms in..."
+    description: "Grade A coffe cultivated in the best farms in...",
+    onSale: true,
   },
 
 
@@ -121,11 +127,11 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
     price: 19,
-
     qty: '25',
     cartQty: 1,
     oldprice: 25,
-    description: "Premium coffe cultivated in the best farms in..."
+    description: "Premium coffe cultivated in the best farms in...",
+    onSale: true,
   },
   {
     id: 10,
@@ -137,8 +143,8 @@ const products = [
     qty: '90',
     cartQty: 1,
     oldprice: 35,
-    description: "Great coffe cultivated in the best farms in..."
-
+    description: "Great coffe cultivated in the best farms in...",
+    onSale: false,
   },
 
 

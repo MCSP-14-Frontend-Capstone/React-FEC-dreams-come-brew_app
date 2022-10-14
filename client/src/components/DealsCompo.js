@@ -1,5 +1,6 @@
 import DealsItem from "./DealsItems";
 // import {Link} from 'react-scroll';
+import { Link } from "react-router-dom";
 
 const DealsCompo = ({items}) => {
 

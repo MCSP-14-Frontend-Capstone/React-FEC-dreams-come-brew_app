@@ -11,7 +11,7 @@ const CardImg = ({item}) => {
     return (
         <div className="Card-div" onClick={NavToHotItems}>
             <h2>Hot Item</h2>
-               <img className="Cardimg" src={item.image}></img> 
+               <img className="Cardimg" alt={""} src={item.image}></img> 
         </div>
     )
 }
