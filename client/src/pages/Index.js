@@ -4,7 +4,9 @@ import products from '../data'
 import HomeCard from '../components/HomeCard.js';
 import ProductsItem from '../components/ProductsItem'
 const Index = () => {
-  const [items, setItems] = useState(products)
+  const [items, setItems] = useState(products);
+
+  
   return (
     <div className='home'>
       <div className='home_container'>

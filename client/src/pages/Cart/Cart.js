@@ -1,11 +1,8 @@
 
 
 import React, { useState, useContext, } from 'react'
-import CartHeader from './CartHeader'
-import CartColumns from './CartColumn'
 import Items from './Items'
 import CartContext from '../../context/CartContext'
-import { Link } from "react-router-dom";
 import CartRec from './CartRec'
 import Summary from './Summary';
 
@@ -13,7 +10,11 @@ import Summary from './Summary';
 
 const Cart = () => {
     const { cart } = useContext(CartContext)
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> ae1925b7a12e37173d00c2d56b1ed563a319cefd
     if (cart.length === 0) {
         return (
             <div className='main-cart-page'>
@@ -33,8 +34,12 @@ const Cart = () => {
                 
                 <div className='cart-table'>
                     <div className='cart-header-box'>
+<<<<<<< HEAD
                         <CartHeader />
                    
+=======
+                        <h1 className='cart-header'>Ready To Checkout?</h1>
+>>>>>>> ae1925b7a12e37173d00c2d56b1ed563a319cefd
                     </div>
                 </div>
          
@@ -62,4 +67,3 @@ const Cart = () => {
     }
 }
 export default Cart
-/* <CartCheckout /> */
