@@ -1,28 +1,18 @@
 import { Link } from 'react-router-dom';
-import Login from '../Login';
-import { useContext, useState } from "react"
-import CartContext from "../../context/CartContext"
-
-
+import { useContext } from "react";
+import LoginContext from '../../context/LoginContext';
 
 const Summary = () => {
-    const {emptyCart} = useContext(CartContext)
+    const { logInIcon } = useContext(LoginContext)
 
-    const [loggedIn, setLoggedIn] = useState(true)
-    const { cart } = useContext(CartContext)
-    const subTotal = cart.reduce((total, item) => total + item.price * item.cartQty, 0)
-    const tax = 2.50
-    const fees = 1.70
-    const grandTotal = subTotal + tax + fees
-
-    if (!loggedIn) {
+    if (logInIcon === false) {
         return (
             <main className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>
-                <div>SubTotal:{subTotal} </div>
-                <div>Fees:{fees} </div>
-                <div>Taxes:{tax}</div>
-                <div className='grandTotal'>Grand Total{grandTotal}</div>
+                <div>SubTotal: </div>
+                <div>Fees: </div>
+                <div>Taxes:</div>
+                <div className='grandTotal'>Grand Total</div>
                 <Link to='/Login'>
                     <button>Sign-in to checkout</button>
                 </Link>
@@ -32,15 +22,15 @@ const Summary = () => {
         return (
             <div className='summaryBox'>
                 <h2>Order Summary</h2>
-                <div>SubTotal:{subTotal} </div>
-                <div>Fees:{fees} </div>
-                <div>Taxes:{tax}</div>
-                <div className='grandTotal'>Grand Total{grandTotal}</div>
+                <div>SubTotal: </div>
+                <div>Fees: </div>
+                <div>Taxes:</div>
+                <div className='grandTotal'>Grand Total</div>
 
 
                 <Link to='/CheckoutPage'>
                     <div className='checkout-submit'>
-                        <button onClick = {emptyCart}>CHECKOUT</button>
+                        <button>CHECKOUT</button>
                     </div>
                 </Link>
             </div>
