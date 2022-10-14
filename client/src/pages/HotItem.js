@@ -37,6 +37,7 @@ const HotItems = () => {
                   >
                     ADD TO CART{" "}
                     <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+                    {/* Add icon */}
  
                   </button>
                   

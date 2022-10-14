@@ -1,10 +1,10 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom"; // use params returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>
 import products from "../data";
 
 const Singleproduct = () => {
   const { productTarget } = useParams();
-  const product = products.find((product) => product.target === productTarget);
+  const product = products.find((product) => product.target === productTarget);  //find is method 
   const { name, image, price, detail, description,pic1,pic2,pic3,pic4 } = product;
 
   return (

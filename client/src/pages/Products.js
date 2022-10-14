@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Products = () => {
-  const { handleClick } = useContext(CartContext);
+  const { handleClick } = useContext(CartContext); //Context is primarily used when some data needs to be accessible by many components at different nesting levels.
 
   return (
     <>
@@ -88,7 +88,7 @@ const Products = () => {
               </div>
 
 
-            </article>
+            </article> 
           );
         })}
       </div>
