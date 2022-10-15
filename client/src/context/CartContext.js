@@ -67,7 +67,7 @@ export const CartProvider = ({ children }) => {
 
 
 
-    return <CartContext.Provider value={{ cart, handleClick, removeItem, emptyCart, Addon, onRemove }}>
+    return <CartContext.Provider value={{ cart, handleClick, removeItem, emptyCart, Addon, onRemove, setCart }}>
         <ToastContainer position="bottom-right" autoclose={2500} theme="dark" />
 
         {children}
