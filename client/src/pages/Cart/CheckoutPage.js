@@ -25,7 +25,7 @@ const CheckoutPage = () => {
                 <div className='purchase-box'>
                     <div className='thanks-box'>
                         <h1 className='thanks-text'>Thank You For Your Purchase</h1>
-                        <h1>Your shipping order is: {letter() + random}</h1>
+                        <h2>Your shipping order is: {letter() + random}</h2>
                     </div>
                     <Link to='/' >
                         <button className='backTo-btn'>Back To Shopping</button>
