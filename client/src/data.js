@@ -1,4 +1,5 @@
 
+
 // This is our fake data for product.
 
 
@@ -27,7 +28,7 @@ const products = [
     target: "2",
     name: "Mulan's Bean",
     image:
-      "https://cdnb.artstation.com/p/assets/images/images/007/661/261/4k/inna-drofa-111.jpg?1507673939",
+      "https://images.unsplash.com/photo-1598811465486-475d218a6ff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvZmZlZSUyMGJhZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: 24,
     qty: '90',
     cartQty: 1,
@@ -41,7 +42,7 @@ const products = [
     target: "3",
     name: "Tam Coffee",
     image:
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "https://easybaked.files.wordpress.com/2011/11/mocha2.jpg",
     price: 49,
     qty: '130',
     cartQty: 1,
@@ -55,7 +56,7 @@ const products = [
     target: "4",
     name: "Aurora's Cure",
     image:
-      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      "https://images.unsplash.com/photo-1585230997430-63aec8545d6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGNvZmZlZSUyMGJhZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: 9,
     qty: '55',
     oldprice: 15,
@@ -86,7 +87,7 @@ const products = [
     target: "6",
     name: "Ariel's Coffee",
     image:
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+      "https://images.unsplash.com/photo-1584736286279-5d85d32ba79d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGNvZmZlZSUyMGJhZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: 24,
     qty: '90',
     cartQty: 1,
@@ -99,7 +100,7 @@ const products = [
     target: "7",
     name: "Tiana's  Bean",
     image:
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1592250819999-c00fed586048?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGNvZmZlZSUyMGJhZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: 49,
     qty: '130',
     cartQty: 1,
@@ -112,7 +113,7 @@ const products = [
     target: "8",
     name: "Cinderella Ride",
     image:
-      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1721&q=80",
+      "https://images.unsplash.com/photo-1642437271884-fe1d3393eef9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGNvZmZlZSUyMGJhZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: 9,
     qty: '55',
     cartQty: 1,
@@ -127,7 +128,7 @@ const products = [
     target: "9",
     name: "Snow White Coffee",
     image:
-      "https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+      "https://images.unsplash.com/photo-1611854778863-0c4d1bae5a6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
     price: 19,
     qty: '25',
     cartQty: 1,
@@ -140,7 +141,7 @@ const products = [
     target: "10",
     name: "Elsa's  Latte",
     image:
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+      "https://images.unsplash.com/photo-1612213807634-ab190d1255e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHxjb2ZmZWUlMjBiYWdzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     price: 24,
     qty: '90',
     cartQty: 1,
