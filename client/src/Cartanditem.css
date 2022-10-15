@@ -135,8 +135,8 @@
   justify-content: space-evenly;
   width: 60rem;
   margin: auto;
-  border-bottom: 1px solid;
   padding-bottom: 10px;
+  margin-top: 4rem;
 }
 
 .cart-empty-box {
@@ -187,4 +187,9 @@
 
 .backTo-btn:hover {
   cursor: pointer;
+}
+
+.cart-img-empty {
+  width: 11rem;
+  height: 11rem;
 }

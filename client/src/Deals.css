@@ -186,7 +186,9 @@ height: 25vh;
   justify-content: center;
   margin: 10px;
   width: 10rem;
-  background-color: white;
+  background-color: #343434;
+  border: #343434;
+  box-sizing: border-box;
 }
 
 .product > img {
@@ -201,11 +203,11 @@ height: 25vh;
 }
 
 .product > button {
-  background: #f0c14b;
-  border: 1px solid;
+  background: #343434;
+  border: 3px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  border-color: #8c0fc6 #8c0fc6  #8c0fc6;
+  color: white;
   cursor: pointer;
 }
 
@@ -266,7 +268,9 @@ height: 25vh;
   width: 80vw;
   overflow: auto;
   align-items: center;
-}
+  justify-content: space-evenly;
+  align-content: center;
+  }
 
 .home-image {
   width: 100%;
@@ -284,4 +288,11 @@ height: 25vh;
 
 .main-header{
   margin-top: 5rem;
+}
+.deals-header{
+  color: white;
+}
+
+.coffee-name{
+  color: white;
 }
