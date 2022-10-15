@@ -9,24 +9,6 @@
   --navbackground: #266D6F;
 }
 
-@font-face {
-  font-family: "Waltograph UI";
-  src: url(./assets/WaltographUI-Bold.woff2) format("woff2"),
-    url(./assets/WaltographUI-Bold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Waltograph";
-  src: url(./assets/Waltograph.woff2) format("woff2"),
-    url(./assets/Waltograph.woff) format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 .App {
   text-align: center;
   background-color: #fff;
