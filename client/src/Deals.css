@@ -252,10 +252,12 @@ height: 25vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
+  margin-top: 3rem;
 }
 
 .home_container{
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }

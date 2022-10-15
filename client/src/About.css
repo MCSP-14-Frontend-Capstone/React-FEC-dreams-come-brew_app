@@ -138,4 +138,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
+ }
+ 
+.hide{
+  height:fit-content;
+  background-color: #eee;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+.hide2:nth-of-type(even) {
+  background-color: #dbcfe2;
+}
+.hide2 li {
+  font-size: 0.7rem;
+  padding: 0.75rem;
 }
