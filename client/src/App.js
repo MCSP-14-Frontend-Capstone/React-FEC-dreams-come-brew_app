@@ -10,6 +10,8 @@ import "./Cartanditem.css"
 import "./Login.css"
 import "./HomeIndex.css"
 import './Summary.css'
+import "./footer.css"
+
 
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -21,6 +23,7 @@ import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import CheckoutPage from "./pages/Cart/CheckoutPage";
 import HotItems from "./pages/HotItem";
+import footer from "./components/footer";
 
 const App = () => {
 

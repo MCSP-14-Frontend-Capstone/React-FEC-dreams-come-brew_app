@@ -17,7 +17,7 @@ import {
 
 const Products = () => {
   const { handleClick, cart, setCart } = useContext(CartContext);
-  const { addedCart, changeButton, addedText, changeText, removeTheItem } =
+  const {  addedText, changeText } =
     useContext(AddedContext);
 
   const buttons = {};
@@ -32,7 +32,7 @@ const Products = () => {
           const handleObj = (e) => {
             handleClick(product);
             const id = e.target.id;
-            changeButton(id);
+     
             changeText(id);
 
             if (addedText == "REMOVE") {
@@ -43,6 +43,11 @@ const Products = () => {
               removeTheItem(id);
             }
           };
+
+
+          const checkOutObj = () => {
+            handleClick(product)
+          }
 
           return (
 
@@ -55,19 +60,22 @@ const Products = () => {
                   <button
                     onClick={handleObj}
                     style={{
-                      color: addedCart ? "black" : "white",
-                      backgroundColor: addedCart ? "white" : "black",
+                      color: "white",
+                      backgroundColor: "black"
                     }}
                     className=" add-to-cart-btn"
                     id={product.id}
                   >
                     {addedText}
                   </button>
+<Link to={'/cart'}> 
 
-                  <button className=" buy-now-btn" id={product.id}>
+                  <button className=" buy-now-btn" id={product.id} onClick={checkOutObj}>
                     BUY NOW{" "}
                     <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                   </button>
+
+</Link>
                 </div>
                 <div className="name-and-price">
                   <p className="product-name">{product.name}</p>

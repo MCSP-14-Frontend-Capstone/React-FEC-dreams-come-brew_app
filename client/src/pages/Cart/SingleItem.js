@@ -17,7 +17,7 @@ const SingleItem = ({ item }) => {
         <div className="single-item" id={item.id}>
 
             <div className="item-image-name">
-                <img style={{ width: '5rem' }} src={item.image} alt='' />
+                <img style={{ width: '5rem', height: '7rem', margin: 'auto 10px' }} src={item.image} alt='' />
                 <div>
                     <h1 className="item-name">{item.name}</h1>
                     <p className="item-desc-text">{item.description}</p>
@@ -26,9 +26,9 @@ const SingleItem = ({ item }) => {
             <h1 className="item-p-q-t"><span>$</span>{item.price.toFixed(2)}</h1>
             <div className="item-qty">
                 <div className="qty-btn">
-                    <button className="add-qty-btn" onClick={() => { onRemove(item) }}>-</button>
+                    <button className="qty-btn-count" onClick={() => { onRemove(item) }}>-</button>
                     <p className="cart-qty">{item.cartQty}</p>
-                    <button className="remove-qty-btn" onClick={() => { Addon(item) }}>+</button>
+                    <button className="qty-btn-count" onClick={() => { Addon(item) }}>+</button>
                 </div>
                 <div className="remove-text" onClick={handleRemove} id={item.id}>Remove</div>
             </div>
