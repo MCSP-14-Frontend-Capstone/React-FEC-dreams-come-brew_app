@@ -129,3 +129,9 @@
 .RecItemName {
   font-size: 0.8rem;
 }
+
+.items-page{
+  box-shadow: 0 6px 20px 0 rgba(149, 173, 240, 0.552);
+  margin-left: 21vw;
+  margin-right: 16vw;
+}
