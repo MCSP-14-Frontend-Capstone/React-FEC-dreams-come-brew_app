@@ -65,3 +65,75 @@
 .aboutpics:hover {
   cursor: pointer;
 }
+
+.home-img {
+  width: 30rem;
+  height: 35rem;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  object-fit: contain;
+  
+
+}
+.home-img-two {
+  width:40rem;
+}
+
+.home-img-box {
+  display: flex;
+  justify-content:center;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  width: 95vw;
+  margin-left: 3rem;
+}
+
+ .above-pics {
+  text-align: left;
+  margin-top:5rem;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  font-size: 4rem ;
+ }
+ .below-pics {
+  text-align: right;
+  margin-top:1rem;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+  font-size: 4rem ;
+ }
+ .empty-cart {
+  height: 40rem;
+  width:40rem;
+  margin-top: 0rem;
+ }
+ .empty-div {
+  border:1px solid black;
+  width: 60vw;
+  margin: auto;
+  height: 25rem;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 4px 2px rgb(215, 228, 238);
+ 
+
+ }
+ .empty-div h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+
+
+ }
+
+ .beside-empty {
+  height:25rem;
+  border: 1px solid black;
+  width: 25rem;
+  border-radius: .5rem;
+  
+ }
+
+ .empty-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+ }
