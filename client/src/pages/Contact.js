@@ -42,13 +42,13 @@ const Contact = () => {
       <main className='ContainMain'> 
       {/* main tag specifies  main context of a document */}
 
-        <h1 className='contactTitle'></h1>
+        <div className='contactImg'></div>
 
         <section className='contactInfo'>
-          <ul className='contactInfoTitle'>Contact Info</ul>
-          <div>Phone Number: +1 (888) 888-8888</div>
-          <div>Email: customerservice@dreamscomebrew.net</div>
-          <div>Address: 789 Dream Street, Brewtown, California 98765</div>
+          <h1 className='contactInfoTitle'>Contact Info</h1>
+          <div className='infoElem'>Phone Number: +1 (888) 888-8888</div>
+          <div className='infoElem'>Email: customerservice@dreamscomebrew.net</div>
+          <div className='infoElem'>Address: 789 Dream Street, Brewtown, California 98765</div>
         </section>
 
         <article className='contactForm'>
@@ -65,12 +65,14 @@ const Contact = () => {
               placeholder='Email'
               value={cemail}
               onChange={handleChangeEmail} />
-            <input
+            <textarea
               className='contactInputBoxDes'
-              type='text'
+              name='text'
               placeholder='Description'
               value={cdes}
-              onChange={handleChangeDes} />
+              onChange={handleChangeDes}
+              wrap='hard'
+              maxlength="600" />
             <button
               type="button"
               className="contactSubmitBtn"

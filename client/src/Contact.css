@@ -20,7 +20,7 @@
   padding-top: 5rem;
 }
 
-.contactTitle {
+.contactImg {
   background: url(pages/images/captial-mall-northwest-grind-coffee-flight.jpg) no-repeat center;
   background-size: contain;
   height: 20pc;
@@ -38,6 +38,10 @@
   font-weight: bold;
   margin: auto;
   padding: 3rem 0;
+}
+
+.infoElem {
+  margin: 0.5rem;
 }
 
 .contactForm {
@@ -71,7 +75,7 @@
   font-style: italic;
   margin: 1rem;
   padding: .25rem .5rem;
-  padding-bottom: 10pc;
+  padding-bottom: 10rem;
   width: 35rem;
 }
 
