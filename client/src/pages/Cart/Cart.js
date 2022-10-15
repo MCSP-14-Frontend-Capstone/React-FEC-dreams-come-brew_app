@@ -32,9 +32,9 @@ const Cart = () => {
                 </div>
                 <div className='items-page'>
                     <div className='items-checkout-box'>
-                            <div>
+                        <div className='items-all'>
                             <Items />
-                            </div>
+                        </div>
                         <div className='summaryPage'>
                             <Summary />
                         </div>
