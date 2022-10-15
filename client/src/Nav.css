@@ -93,7 +93,7 @@ a:-webkit-any-link {
 }
 
 
-.cart-mini:nth-child(2) {
+.cart-mini:nth-child(1) {
   font-size: 1rem;
   border-radius: 5px;
   padding: 0 5px;
