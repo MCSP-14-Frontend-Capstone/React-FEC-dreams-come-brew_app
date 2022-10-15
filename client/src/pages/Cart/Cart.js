@@ -11,24 +11,23 @@ const Cart = () => {
 
     if (cart.length === 0) {
         return (
-           <>
+            <>
                 <div className='empty-main'>
                     <div className='empty-div'>
-          
+
                         <h2 className='cart-empty-text'>Your cart is empty</h2>
-            
-                      
+
+
                     </div>
-                    <div className='beside-empty'> </div>
-                    
+
                 </div>
                 <div className='rec-display'>
                     <div className='rec-container'>
                         <CartRec />
                     </div>
                 </div>
-           </>
-          
+            </>
+
         )
     } else {
         return (
