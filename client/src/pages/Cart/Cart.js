@@ -14,10 +14,8 @@ const Cart = () => {
             <>
                 <div className='empty-main'>
                     <div className='empty-div'>
-
                         <h2 className='cart-empty-text'>Your cart is empty</h2>
-
-
+                        <img className='cart-img-empty' src='https://static.vecteezy.com/system/resources/previews/000/585/684/original/coffee-cup-logo-template-vector-icon-design.jpg' alt=''></img>
                     </div>
 
                 </div>

@@ -188,3 +188,8 @@
 .backTo-btn:hover {
   cursor: pointer;
 }
+
+.cart-img-empty {
+  width: 11rem;
+  height: 11rem;
+}
