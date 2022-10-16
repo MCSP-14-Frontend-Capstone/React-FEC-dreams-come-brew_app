@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import { useParams, Link } from "react-router-dom";
 import products from "../data";
-
+import CartContext from "../context/CartContext";
 const Singleproduct = () => {
   const { productTarget } = useParams();
   const product = products.find((product) => product.target === productTarget);
   const { name, image, price, detail, description,pic1,pic2,pic3,pic4 } = product;
-
+  //useContext for the cartcontext 
+  const { handleClick } = useContext(CartContext);
+  //handleObj changes the useContext value to be added to the cart 
+  const handleObj = () => {
+    handleClick(product);
+  };
   return (
     <section key={product.id} id={product.id} className="single-product-page">
       <div className="main-single">
@@ -33,7 +38,7 @@ const Singleproduct = () => {
             
             <div className="single-btns">
               <Link to="/Cart">
-                <button className="single-add-to-cart">Add to Cart</button>
+                <button className="single-add-to-cart" onClick={handleObj}>Add to Cart</button>
               </Link>
               <Link to="/hotItems">
                   <button className="single-back-to-products">Hot Items</button>
