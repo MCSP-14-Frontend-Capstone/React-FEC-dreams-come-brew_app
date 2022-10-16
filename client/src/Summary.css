@@ -72,6 +72,9 @@
   /* border-radius: 30px; */
   transition: .5s ease;
   border: none;
+  border-radius: 1rem;
+  background-color: #444;
+  color: #eee;
 }
 
 .checkout-btn:hover {
