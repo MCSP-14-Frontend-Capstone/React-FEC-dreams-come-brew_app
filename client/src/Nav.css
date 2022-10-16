@@ -56,8 +56,8 @@ a:-webkit-any-link {
   font-family: "Maybe Coffee", sans-serif;
   display: flex;
   flex-direction: row;
-/* width: 13rem;  */
-  height: 3rem; 
+  /* width: 13rem;  */
+  height: 3rem;
   align-items: center;
 }
 
@@ -78,4 +78,29 @@ a:-webkit-any-link {
   font-weight: bold;
   position: relative;
   top: -15px;
+}
+
+.error-box {
+  width: 80rem;
+  height: 15rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-text {
+  font-size: xxx-large;
+}
+
+.error-btn {
+  width: 15%;
+  height: 2.5rem;
+  /* border-radius: 30px; */
+  transition: .5s ease;
+  border: none;
+  margin-top: 2rem;
+}
+
+.error-btn:hover {
+  cursor: pointer;
 }
