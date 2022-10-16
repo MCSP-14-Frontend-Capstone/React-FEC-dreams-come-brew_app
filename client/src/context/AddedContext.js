@@ -11,7 +11,7 @@ export const AddedProvider = ({ children }) => {
 
 
   const changeText = () => {
-    setAddedText("REMOVE");
+    setAddedText("ADD TO CART");
 
 
     if (addedText == "REMOVE") {

@@ -6,6 +6,7 @@ import { CartProvider } from "./context/CartContext";
 import { LoginProvider } from "./context/LoginContext";
 import { AddedProvider } from "./context/AddedContext";
 import { SearchProvider } from "./context/SearchContext";
+import { RandomProvider } from "./context/RandomContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +16,9 @@ root.render(
     <AddedProvider>
       <CartProvider>
         <LoginProvider>
+          <RandomProvider>
           <App />
+          </RandomProvider>
         </LoginProvider>
       </CartProvider>
     </AddedProvider>

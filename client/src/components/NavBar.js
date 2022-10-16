@@ -26,10 +26,10 @@ const NavBar = () => {
       >
         <div className="logo">
           <p className="logo-text">Dreams Come Brew</p>
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             className="signin-icon"
             icon={faCoffee}
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
         </div>
       </NavLink>
       <div className="navlinks">
