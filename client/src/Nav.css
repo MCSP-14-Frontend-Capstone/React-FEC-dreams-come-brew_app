@@ -99,6 +99,9 @@ a:-webkit-any-link {
   transition: .5s ease;
   border: none;
   margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #444;
+  color: #eee;
 }
 
 .error-btn:hover {
