@@ -18,7 +18,7 @@ const SingleItem = ({ item }) => {
 
             <div className="item-image-name">
                 <img style={{ width: '5rem', height: '7rem', margin: 'auto 10px' }} src={item.image} alt='' />
-                <div>
+                <div className="item-info-box">
                     <h1 className="item-name">{item.name}</h1>
                     <p className="item-desc-text">{item.description}</p>
                 </div>
