@@ -34,7 +34,7 @@ top:1px;
   margin-top: 0rem;
   margin-bottom: 0rem;
   background-color: rgb(249, 249, 249);
-  font-family:'Times New Roman', Times, serif;
+  font-family:'outfit', Times, serif;
   font-weight: 400;
   font-style: italic;
   font-size: medium;
@@ -83,4 +83,5 @@ top:1px;
 .mainDivContainer{
   display: flex;
   justify-content: center;
+  background-color: ;
 }
