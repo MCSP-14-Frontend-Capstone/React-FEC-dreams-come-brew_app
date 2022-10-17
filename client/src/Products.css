@@ -492,7 +492,7 @@ margin-top:2rem;
 .marquee {
   height: 3rem;
 
-  width: 120rem;
+  width: 105rem;
   background-color: #fff;
   color:#111;
   font-size: 1.25rem;
@@ -501,4 +501,7 @@ margin-top:2rem;
   font-weight: 200;
   /* text-align: center; */
   animation: marquee 90s linear infinite;
+  display: inline-block;
+  position: static;
+
 }

@@ -258,6 +258,7 @@ height: 25vh;
 
 .home_container{
   margin-top: 5rem;
+
   display: flex;
   flex-direction: column;
 }
@@ -265,7 +266,7 @@ height: 25vh;
 .home_row {
   display: flex;
   gap: 1rem;
-  width: 80vw;
+  width: 85vw;
   overflow: auto;
   align-items: center;
   justify-content: space-evenly;
