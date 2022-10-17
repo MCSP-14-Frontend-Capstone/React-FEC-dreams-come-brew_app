@@ -36,11 +36,12 @@ const Login = () => {
   } else {
     return (
       <>
-        <h1 className="loginHeader">Please Log In Or Create An Account</h1>
+        <h1 className="loginHeader">Log In Or Create An Account</h1>
+      <div className="mainDivContainer">
 
         {/*Login for existing users*/}
-        <div>
-          <h4 className="create-login-headers">Existing Users Login</h4>
+        <div className="login-createContainers">
+          <h4 className="create-login-headers">Log In</h4>
           <form onSubmit={toggleLogin}>
             <input
               className="inputBox"
@@ -52,7 +53,7 @@ const Login = () => {
             <br></br>
             <input
               className="inputBox"
-              type="text"
+              type="password"
               onChange={handlePassword}
               placeholder="Password"
               value={loginPassword}
@@ -65,7 +66,7 @@ const Login = () => {
           </form>
         </div>
 
-        <div className="newUsers">
+        <div className="login-createContainers">
           <h2 className="create-login-headers"> Create Account </h2>
           <form>
             <input
@@ -101,6 +102,7 @@ const Login = () => {
             </button>
           </form>
         </div>
+      </div>
       </>
     );
   }
