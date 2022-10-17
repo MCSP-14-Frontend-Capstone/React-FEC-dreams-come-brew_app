@@ -6,7 +6,6 @@ import Summary from './Summary';
 
 
 
-
 const Cart = () => {
     const { cart } = useContext(CartContext)
 

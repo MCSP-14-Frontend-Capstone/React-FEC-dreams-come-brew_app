@@ -22,7 +22,6 @@ import Index from "./pages/Index";
 import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import CheckoutPage from "./pages/Cart/CheckoutPage";
-import Summary from "./pages/Cart/Summary";
 import HotItems from "./pages/HotItem";
 import footer from "./components/footer";
 

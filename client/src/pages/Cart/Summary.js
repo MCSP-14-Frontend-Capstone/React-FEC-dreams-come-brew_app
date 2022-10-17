@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useContext } from "react";
 import LoginContext from '../../context/LoginContext';
-const Summary = () => {
-    const { logInIcon } = useContext(LoginContext)
 import CartContext from '../../context/CartContext';
 
 const Summary = () => {
@@ -12,6 +10,7 @@ const Summary = () => {
     const tax = subTotal * 0.15
     const fees = 1.75
     const grandTotal = subTotal + tax + fees
+
 
     if (logInIcon === false) {
         return (

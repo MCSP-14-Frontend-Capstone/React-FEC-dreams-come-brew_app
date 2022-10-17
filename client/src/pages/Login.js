@@ -21,17 +21,8 @@ const Login = () => {
   if (logInIcon === true) {
     return (
       <>
-        <h1 className="loggedinHeader">Login Successful</h1>
-      <div className="loginSuccessButtonDivs">
-        <Link to="/Cart">
-          <button className="loginButtons">
-            Back To Cart
-          </button>
-        </Link>
+        <h1 className="loggedinHeader">You are now logged in.</h1>
         <button className="loginButtons" onClick={logOut}>
-          Log Out
-        </button>{" "}
-      </div>
           Click To Log Out
         </button>{" "}
         <br></br>
@@ -45,12 +36,11 @@ const Login = () => {
   } else {
     return (
       <>
-        <h1 className="loginHeader">Log In Or Create An Account</h1>
-      <div className="mainDivContainer">
+        <h1 className="loginHeader">Please Log In Or Create An Account</h1>
 
         {/*Login for existing users*/}
-        <div className="login-createContainers">
-          <h4 className="create-login-headers">Log In</h4>
+        <div>
+          <h4 className="create-login-headers">Existing Users Login</h4>
           <form onSubmit={toggleLogin}>
             <input
               className="inputBox"
@@ -62,7 +52,7 @@ const Login = () => {
             <br></br>
             <input
               className="inputBox"
-              type="password"
+              type="text"
               onChange={handlePassword}
               placeholder="Password"
               value={loginPassword}
@@ -75,7 +65,7 @@ const Login = () => {
           </form>
         </div>
 
-        <div className="login-createContainers">
+        <div className="newUsers">
           <h2 className="create-login-headers"> Create Account </h2>
           <form>
             <input
@@ -94,14 +84,14 @@ const Login = () => {
             <br></br>
             <input
               className="inputBox"
-              type="password"
+              type="text"
               placeholder="Password"
               required
             />
             <br></br>
             <input
               className="inputBox"
-              type="password"
+              type="text"
               placeholder="Confirm Password"
               required
             />
@@ -111,7 +101,6 @@ const Login = () => {
             </button>
           </form>
         </div>
-      </div>
       </>
     );
   }
