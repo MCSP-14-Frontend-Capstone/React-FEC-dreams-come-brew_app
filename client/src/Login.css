@@ -1,27 +1,29 @@
-
+@import url('http://fonts.cdnfonts.com/css/garamond-libre');
+@import url('http://fonts.cdnfonts.com/css/outfit');
+@import url('http://fonts.cdnfonts.com/css/maybe-coffee');
 
 .loginButtons{
-  box-shadow:inset 0px 1px 0px 0px #42A8C2;
-  background:linear-gradient(to bottom, #45C3C7 5%, #F07FF0 100%);
-  background-color:#45c3c7;
+  box-shadow:inset 0px 1px 0px 0px #000000;
+  background-color:#595959;
   border-radius:6px;
-  border:1px solid #AC05FF;
+  border:1px solid #000000;
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:'Dancing Script', cursive;;
-  font-size: 25px;
-  font-weight:bold;
-  padding:6px 24px;
+  font-family:'outfit', cursive;;
+  font-size: 18px;
+  padding:6px;
   text-decoration:none;
   text-shadow:0px 1px 0px #000000;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
   
 }
 .loginButtons:hover{
-background:linear-gradient(to bottom, #F07FF0 5%, #45C3C7 100%);
-background-color:#f07ff0;
+background-color: #ffffff;
+color: #595959;
 position:relative;
 top:1px;
 
@@ -31,35 +33,61 @@ top:1px;
   top:1px;
 }
 .inputBox{
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: lavender;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: 600;
-  font-style: italic;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  background-color: rgb(249, 249, 249);
+  font-family:'outfit', Times, serif;
+  font-weight: 400;
   font-size: medium;
-  border-radius: 1rem;
   text-align: center;
-  margin: .5rem
+  margin: .5rem;
+  border-top: none;
+  border-right: none;
+  margin-left: .5rem;
+  margin-right: .5rem;
   }
-.loginHeader{
-  font-family:'Dancing Script', cursive;;
-  font-size: 50px;
+
+  .inputBox:focus{
+    outline: none;
+  }
+
+/* .loginHeader{
+  font-family:'outfit';
+  font-size: 2.5rem;
   font-weight: 800px;
-  color:#f07ff0;
-  margin-top: 40px;
-  padding-top: 15px;
-}
+  color:#000000;
+  margin-top: 4px;
+  padding-top: 1px;
+} */
 .create-login-headers{
-  font-family:'Dancing Script', cursive;
+  font-family:'outfit';
   font-size: 25px;
   font-weight: 800px;
-  color:#45c3c7;
-  margin-top: 40px;
-  padding-top: 15px;
+  color:#000000;
+  margin-top: 4px;
+  padding-top: 1px;
 }
 
-.loggedinHeader {
-  margin-top: 40px;
-  padding-top: 15px;
+.login-createContainers{
+  border: solid black;
+  display:flexbox;
+  margin: auto;
+  width: 15rem;
+  height: 20rem;
+  padding: .5 rem;
+  background-color: rgb(219, 219, 214);
+}
+
+.mainDivContainer{
+  display:inline-flex;
+  justify-content: center;
+  position: relative;
+  margin:auto;
+}
+
+.loginSuccessButtonDivs{
+  display: flexbox;
+  margin: auto;
+  justify-content: center;
+  padding: .5 rem;
 }

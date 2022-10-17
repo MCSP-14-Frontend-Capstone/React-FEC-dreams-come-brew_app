@@ -21,6 +21,15 @@ const CheckoutPage = () => {
         )
     } else {
         return (
+        <div>
+            <div>YOU'RE GOOD TO GO
+                <h1>Thank You For Your Purchase</h1>
+            </div>
+            <Link to='/'>
+                <button>Back To Shopping</button>
+            </Link>
+        </div>
+    )
             <>
                 <div className='purchase-box'>
                     <div className='thanks-box'>
