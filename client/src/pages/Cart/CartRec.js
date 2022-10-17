@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const CartRec = () => {
 
     const sortedData = (elem) => {
-        if (elem.id > 7) {
+        if (elem.id > 14) {
             return elem.id
         }
     }

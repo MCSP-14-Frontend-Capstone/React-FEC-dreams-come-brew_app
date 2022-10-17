@@ -86,6 +86,7 @@ a:-webkit-any-link {
   margin: auto;
   display: flex;
   flex-direction: column;
+  margin-top: 15rem;
 }
 
 .error-text {
