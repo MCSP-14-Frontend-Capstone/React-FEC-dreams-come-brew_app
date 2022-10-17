@@ -42,13 +42,13 @@ const Index = () => {
       
         <img className="coffee-image" src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317" alt="" />
       </div>
-    <marquee scrolldelay="1" marquee loop="4" className='marquee'>Donate to Victims of hurrican Ian &nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp;&nbsp; Guided By Your Taste + Brewing Habits&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Flexible Plans &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Delivered on Your Schedule&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Ethically Sourced&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;  Support Local Businesses&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Free Shipping &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; 25+ Curated Coffees &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp; Family Owned </marquee>
         <h1 className='main-header'>Deals on top Brands</h1>
           <div className='home_row'>
             <ProductsItem items ={items} /> 
           </div>
           </div>
           <div className='homeBody'>
+    <marquee scrolldelay="1" marquee loop="4" className='marquee'>Donate to Victims of hurrican Ian &nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp;&nbsp; Guided By Your Taste + Brewing Habits&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Flexible Plans &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Delivered on Your Schedule&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Ethically Sourced&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;  Support Local Businesses&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Free Shipping &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; 25+ Curated Coffees &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp; Family Owned </marquee>
         <HomeCard items={items}/>    
         <DealsCompo items={items}/>
     </div>
