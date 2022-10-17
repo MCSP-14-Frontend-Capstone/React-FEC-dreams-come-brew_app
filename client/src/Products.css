@@ -526,7 +526,7 @@ sup {
 .marquee {
   height: 3rem;
   width: 80vw;
-  background-color: #fff;
+  background-color: #F3F3F3;
   color: #111;
   font-size: 1.25rem;
   margin-top: rem;
@@ -536,7 +536,6 @@ sup {
   animation: marquee 90s linear infinite;
   display: inline-block;
   position: static;
-
 }
 
 html {
