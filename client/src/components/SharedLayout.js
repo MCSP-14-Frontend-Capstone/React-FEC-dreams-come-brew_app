@@ -7,14 +7,11 @@ import { Outlet } from 'react-router-dom'
 
 const SharedLayout = () => {
   return (
-    <div>
-
+    <>
       <NavBar />
-
- 
       <Outlet />
        <Footer />
-    </div>
+    </>
   )
 }
 
