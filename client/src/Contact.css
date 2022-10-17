@@ -29,7 +29,7 @@
 
 .contactInfo {
   font-size: 1.4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .contactInfoTitle {
@@ -37,7 +37,25 @@
   font-size: 3rem;
   font-weight: bold;
   margin: auto;
-  padding: 3rem 0;
+  padding: 2rem;
+}
+
+.contactFooter {
+  background-color: var(--offWhite);
+  color: var(--offBlack);
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.contactFooterBold {
+  color: var(--highLight);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.hours {
+  margin: 0.5rem;
 }
 
 .infoElem {
@@ -98,16 +116,4 @@
 .contactSubmitBtn:hover {
   cursor: pointer;
   color: var(--highLight);
-}
-
-.contactFooter {
-  background-color: var(--offBlack);
-  color: var(--offWhite);
-  font-size: 1.1rem;
-  padding: .25rem;
-}
-
-.contactFooterBold {
-  color: var(--highLight);
-  font-weight: bold;
 }

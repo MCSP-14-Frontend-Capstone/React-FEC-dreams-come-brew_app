@@ -39,13 +39,19 @@ const Contact = () => {
   return (
     <div className='contactPage'>
 
-      <main className='ContainMain'> 
-      {/* main tag specifies  main context of a document */}
+      <main className='ContainMain'>
+        {/* main tag specifies  main context of a document */}
 
         <div className='contactImg'></div>
 
         <section className='contactInfo'>
           <h1 className='contactInfoTitle'>Contact Info</h1>
+          <section className='contactFooter'>
+            <h2 className='contactFooterBold'>Order Online 24/7</h2>
+            <h4 className='hours'>Contact Office Hours</h4>
+            <p className='hours'>Monday-Friday 9am to 7pm</p>
+            <p className='hours'>Saturday-Sunday 9am to 1pm</p>
+          </section>
           <div className='infoElem'>Phone Number: +1 (888) 888-8888</div>
           <div className='infoElem'>Email: customerservice@dreamscomebrew.net</div>
           <div className='infoElem'>Address: 789 Dream Street, Brewtown, California 98765</div>
@@ -58,7 +64,7 @@ const Contact = () => {
               type='text'
               placeholder='Full Name'
               value={cname}
-              onChange={handleChangeName}/>
+              onChange={handleChangeName} />
             <input
               className='contactInputBox'
               type='email'
@@ -82,12 +88,7 @@ const Contact = () => {
           </form>
         </article>
       </main>
-      <section className='contactFooter'>
-        <span className='contactFooterBold'>Order Online 24/7</span>
-        <footer>Contact Hours</footer>
-        <footer>Monday-Friday 9am to 7pm</footer>
-        <footer>Saturday-Sunday 9am to 1pm</footer>
-      </section>
+
 
 
     </div>

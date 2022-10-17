@@ -24,7 +24,7 @@ const SingleItem = ({ item }) => {
         <div className="single-item" id={item.id}>
 
             <div className="item-image-name">
-                <img style={{ width: '5rem', height: '7rem', margin: 'auto 10px' }} src={item.image} alt='' onClick={handleSPP} id={item.id} />
+                <img className="sspImg" style={{ width: '5rem', height: '7rem', margin: 'auto 10px' }} src={item.image} alt='' onClick={handleSPP} id={item.id} />
                 <div className="item-info-box">
                     <h1 className="item-name" onClick={handleSPP} id={item.id}>{item.name}</h1>
                     <p className="item-desc-text" onClick={handleSPP} id={item.id}>{item.description}</p>
