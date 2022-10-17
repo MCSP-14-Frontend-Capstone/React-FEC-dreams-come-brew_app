@@ -25,7 +25,9 @@ const Products = () => {
 
   return (
     <>
-      <SearchBar />
+    <div className="product_search_container">
+    <SearchBar />
+    </div>
       <div className="product-grid">
         {products.map((product) => {
           const { id } = product;
