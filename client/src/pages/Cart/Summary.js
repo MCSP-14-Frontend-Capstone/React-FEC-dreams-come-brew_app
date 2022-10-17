@@ -22,7 +22,10 @@ const Summary = () => {
                 <div className='total-elem'>Delivery: <div className='summaryElements'>Free</div></div>
                 <div className='grandTotal'>Grand Total: <div className='summaryElements'><span>$</span>{grandTotal.toFixed(2)}</div></div>
                 <Link to='/Login'>
-                    <button className='checkout-btn'>Sign-in to checkout</button>
+                    <div className='checkout-submit'>
+                        <button className='checkout-btn'>Sign-in to checkout</button>
+                    </div>
+
                 </Link>
             </main>
         )
