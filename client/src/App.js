@@ -10,6 +10,8 @@ import "./Cartanditem.css"
 import "./Login.css"
 import "./HomeIndex.css"
 import './Summary.css'
+import "./footer.css"
+
 
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -21,13 +23,19 @@ import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import CheckoutPage from "./pages/Cart/CheckoutPage";
 import Summary from "./pages/Cart/Summary";
+import HotItems from "./pages/HotItem";
+import footer from "./components/footer";
+
 const App = () => {
+
   return (
-    <Router>
+    <Router> 
       <div className="App">
         <Routes>
-          <Route path="/" element={<SharedLayout />}>
+          <Route path="/" element={<SharedLayout />}> 
+          {/* A path is just the route to the individual page  */}
             <Route index element={<Index />} />
+            {/* Element is the component being rendener*/}
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:productTarget" element={<Singleproduct />} />
@@ -35,6 +43,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/CheckoutPage" element={<CheckoutPage />} />
+            <Route path="/hotItems" element={<HotItems />} />
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>

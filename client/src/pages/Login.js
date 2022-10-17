@@ -32,6 +32,14 @@ const Login = () => {
           Log Out
         </button>{" "}
       </div>
+          Click To Log Out
+        </button>{" "}
+        <br></br>
+        <Link to="/Cart">
+          <button className="loginButtons" onClick={backToCart}>
+            Back To Cart
+          </button>
+        </Link>
       </>
     );
   } else {

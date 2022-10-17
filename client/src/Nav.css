@@ -1,27 +1,11 @@
+@import url("http://fonts.cdnfonts.com/css/maybe-coffee");
+
 :root {
   --primary-color: rgb(78, 112, 198);
   --grey: #bbb;
   --light: #eee;
   --selected: rgb(244, 167, 72);
-  --navbackground: rgba(13, 31, 78, 1);
-}
-
-@font-face {
-  font-family: "Waltograph UI";
-  src: url(./assets/WaltographUI-Bold.woff2) format("woff2"),
-    url(./assets/WaltographUI-Bold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Waltograph";
-  src: url(./assets/Waltograph.woff2) format("woff2"),
-    url(./assets/Waltograph.woff) format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  --navbackground: #266d6f;
 }
 
 .App {
@@ -37,11 +21,11 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--navbackground);
+  background-color: #343434;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 7vh;
+  height: 9vh;
 }
 
 .navlinks {
@@ -56,32 +40,70 @@ a:-webkit-any-link {
 }
 
 .link-selected {
-  color: var(--selected);
+  color: #ac05ff;
   font-size: 130%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .link-unselected {
-  color: var(--light);
+  color: #f3f3f3;
 }
 
 .logo {
-  background-color: var(--selected);
-  border-radius: 1rem;
-  padding: 6px 3px;
-  font-size: 1rem;
-  font-weight: 400;
-  max-height: 3rem;
-  font-family: Waltograph;
+  /* background-color: var(--selected); */
 
+  /* font-family: Waltograph; */
+  font-family: "Maybe Coffee", sans-serif;
+  display: flex;
+  flex-direction: row;
+  /* width: 13rem;  */
+  height: 3rem;
+  align-items: center;
 }
 
 .signin-icon {
-  color: var(--navbackground);
-
-  font-size: 1rem;
+  color: #ac05ff;
+  font-size: 2rem;
 }
 
 .login-icon {
-  color: var(--selected);
+  color: #ac05ff;
+}
+
+.cart-mini:nth-child(1) {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0 5px;
+  color: red;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+
+.error-box {
+  width: 80rem;
+  height: 15rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-text {
+  font-size: xxx-large;
+}
+
+.error-btn {
+  width: 15%;
+  height: 2.5rem;
+  /* border-radius: 30px; */
+  transition: .5s ease;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #444;
+  color: #eee;
+}
+
+.error-btn:hover {
+  cursor: pointer;
 }

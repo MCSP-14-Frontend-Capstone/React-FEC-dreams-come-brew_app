@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContext } from "react";
+import CartContext from "../context/CartContext";
 
 import {
   faCartShopping,
@@ -9,6 +11,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
+
+  const { cart } = useContext(CartContext)
+
+
+
   return (
     <nav className="navbar">
       <NavLink
@@ -19,10 +26,10 @@ const NavBar = () => {
       >
         <div className="logo">
           <p className="logo-text">Dreams Come Brew</p>
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             className="signin-icon"
             icon={faCoffee}
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
         </div>
       </NavLink>
       <div className="navlinks">
@@ -56,7 +63,7 @@ const NavBar = () => {
           }
           to="/cart"
         >
-          <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> Cart
+          <span className="cart-mini">{cart.length === 0 ? '' : cart.length}</span><FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> Cart
         </NavLink>
       </div>
 

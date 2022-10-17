@@ -4,10 +4,19 @@
   justify-content: space-around;
 }
 
+.main-cart-page {
+  margin-top: 4rem;
+}
+
 .cart-header-box {
   width: 60rem;
-  height: 10rem;
+  height: 5rem;
   margin: auto;
+  text-align: start;
+}
+
+.cart-header {
+  margin-top: 10rem
 }
 
 .item-text {
@@ -16,29 +25,32 @@
 }
 
 .items-checkout-box {
-  width: 60rem;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .single-item {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
   margin-top: 1rem;
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
 }
 
 .item-name {
-  width: 15rem;
+  width: 100%;
   text-align: left;
-  margin-left: 1rem;
 }
 
 
 .item-image-name {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .item-p-q-t {
@@ -50,16 +62,43 @@
   margin: 2rem;
 }
 
+.qty-btn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.qty-btn-count {
+  width: 2rem;
+  height: 1.5rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  background: transparent;
+}
+
+.qty-btn-count:hover {
+  cursor: pointer;
+}
+
+.cart-qty {
+  width: 2.5rem;
+}
+
 .remove-text {
   margin: 1rem;
+  transition: color .2s ease;
 }
 
 .remove-text:hover {
   cursor: pointer;
+  color: rgb(184, 17, 17)
 }
 
 .checkout-submit {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .cart-btn {
@@ -96,8 +135,8 @@
   justify-content: space-evenly;
   width: 60rem;
   margin: auto;
-  border-bottom: 1px solid;
   padding-bottom: 10px;
+  margin-top: 4rem;
 }
 
 .cart-empty-box {
@@ -122,3 +161,49 @@
   font-size: 0.8rem;
 }
 
+.items-page {
+  width: 100%;
+}
+
+
+.purchase-box {
+  margin-top: 10rem;
+}
+
+.thanks-box {
+  width: 50rem;
+  height: 11rem;
+  margin: auto;
+}
+
+.backTo-btn {
+  width: 10%;
+  height: 3vw;
+  /* border-radius: 30px; */
+  transition: .5s ease;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #444;
+  color: #eee;
+}
+
+.backTo-btn:hover {
+  cursor: pointer;
+}
+
+.cart-img-empty {
+  width: 11rem;
+  height: 11rem;
+}
+
+.item-desc-text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-info-box {
+  width: 20rem;
+}

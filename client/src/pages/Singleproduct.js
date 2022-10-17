@@ -1,48 +1,67 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import products from "../data";
-
+import CartContext from "../context/CartContext";
+import RandomContext from "../context/RandomContext";
+import randomFacts from "../randomFacts";
+import SearchBar from "../components/SearchBar";
 const Singleproduct = () => {
   const { productTarget } = useParams();
   const product = products.find((product) => product.target === productTarget);
-  const { name, image, price, detail, description,pic1,pic2,pic3,pic4 } = product;
+  const { name, image, price, detail, description, pic1, pic2, pic3, pic4 } =
+    product;
+  //useContext for the cartcontext
+  const { handleClick } = useContext(CartContext);
+  const {random, setRandom} = useContext(RandomContext)
+  //handleObj changes the useContext value to be added to the cart
+  const handleObj = () => {
+    handleClick(product);
+  };
+  const generateRandom = () => {
+   const oneFact = randomFacts[Math.floor(Math.random() * randomFacts.length)]
+    setRandom(oneFact)
+  console.log(oneFact)
+ }
 
   return (
-    <section key={product.id} id={product.id} className="single-product-page">
-      <div className="main-single">
-        <div className="single-product">
-          <header></header>
-          <img className="single-page-image" src={image} alt="" />
-            </div>
-          <div className="side-piece">
-           
-     
-                <h2 className="single-title">{name}</h2>
-                <p className="single-description">{description}</p>
-                <section className="single-detail">
-                  {detail}
-                </section>
-            
-                  <div className="helper-images">
-                    <img className="single-helper" src={pic1} alt="" />
-                    <img className="single-helper" src={pic2} alt="" />
-                    <img className="single-helper" src={pic3} alt="" />
-                    <img className="single-helper" src={pic4} alt="" />
-
-                  </div>
-            
-            <div className="single-btns">
-              <Link to="/Cart">
-                <button className="single-add-to-cart">Add to Cart</button>
-              </Link>
-                <Link to="/products">
-                  <button className="single-back-to-products">Products</button>
-                </Link>
-            </div>
+    <>
+    <SearchBar />
+    <div className="space">
+      <section key={product.id} id={product.id} className="main-single">
+        <img className="single-image" src={image} alt="" />
+        <div className="single-beside">
+          <h3>{name}</h3>
+          <p>{description}</p>
+          <p>{detail}</p>
+          <div className="helper-images">
+            <img src={pic1} alt="" />
+            <img src={pic2} alt="" />
+            <img src={pic3} alt="" />
+            <img src={pic4} alt="" />
           </div>
-       
+        <div className="single-btns">
+                <Link to="/Cart">
+                  <button className="single-add-to-cart" onClick={handleObj}>Add to Cart</button>
+                </Link>
+                <Link to="/hotItems">
+                    <button className="single-back-to-products">Hot Items</button>
+                  </Link>
+                  <Link to="/products">
+                    <button className="single-back-to-products">All Products</button>
+                  </Link>
+              </div>
+        </div>
+      </section>
+      <div className="fix-random">
+        <div className="random-div">
+          <h3>Try out our random coffee fact generator that'll wake you up!</h3>
+        
+          <p>  <hr />{random}</p>
+        </div>
+         <button className="random-button" onClick={generateRandom}>Get Fact</button>
       </div>
-    </section>
+    </div>
+    </>
   );
 };
 
