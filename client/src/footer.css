@@ -1,6 +1,6 @@
 .footer-main {
   height: 15rem;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
   display: flex;
   background-color: #000;
   flex-wrap: nowrap;
