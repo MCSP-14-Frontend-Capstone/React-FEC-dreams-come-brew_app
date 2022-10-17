@@ -19,13 +19,13 @@ const SearchBar = () => {
         <div className="search-pop">
           <form
             className="searchbar"
-            action="https://www.google.com/search"
-            method="get"
+        
+        
           >
             <input
               className="search"
               type="text"
-              placeholder="Search Anything"
+              placeholder="Search for any product"
               onChange={handleChange}
             />
             <button type="submit">
