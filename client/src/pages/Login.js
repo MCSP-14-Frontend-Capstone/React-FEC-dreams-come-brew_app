@@ -14,7 +14,6 @@ const Login = () => {
     logOut,
     loginPassword,
     loginName,
-    backToCart,
   } = useContext(LoginContext);
 
   console.log(logInIcon);
