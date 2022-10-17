@@ -1,11 +1,8 @@
 .newsletter {
   height: 14rem;
-  width: 179rem;
+  width: 50vw;
   margin-bottom: -15rem;
   /* font-family: "Quicksand"; */
- 
-
-  
 }
 
 .newsletter h3{
@@ -18,7 +15,7 @@
 }
 
 .news-input {
-  width: 40rem;
+  width: 20vw;
   height: 3rem;
   border-radius: 1rem;
 background-color: #eee;
@@ -48,12 +45,12 @@ input:hover {
 .underfoot {
   background-color: #000;
   height: 3rem;
-  width: 110rem;
+  /* width: 110rem; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: flex-end; */
- padding-left: 2.5rem;
+  justify-content: space-around;
+  padding-left: 2.5rem;
 }
 
 .underfoot p {
