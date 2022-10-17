@@ -15,13 +15,14 @@ const Index = () => {
   return (
     <div className='home'>
       <div className='home_container'>
+      <SearchBar />
             <h2 className='above-pics'>Enjoy at home,</h2>
            <div className='home-img-box'>
             <img className='home-img home-img-one' src="https://images.unsplash.com/photo-1493925410384-84f842e616fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80" alt="" />
             <img className='home-img home-img-two' src="https://images.unsplash.com/photo-1509047319667-c1a8de3000c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80" alt="" />
             <img className='home-img home-img-three' src="https://images.unsplash.com/photo-1512153371649-ebbe07fc197d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80" alt="" />
             <img className='home-img home-img-four' src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" />
-  <SearchBar />
+ 
     
 
             </div>
