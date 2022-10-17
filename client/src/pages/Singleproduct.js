@@ -33,9 +33,9 @@ const Singleproduct = () => {
 
   return (
     <>
-      <SearchBar />
+      {/* <SearchBar /> */}
       <div className="space">
-        <section key={product.id} id={product.id} className="main-single">
+        <div key={product.id} id={product.id} className="main-single">
           <img className="single-image" src={image} alt="" />
           <div className="single-beside">
             <h3>{name}</h3>
@@ -59,7 +59,7 @@ const Singleproduct = () => {
               </Link>
             </div>
           </div>
-        </section>
+        </div>
         <div className="fix-random">
           <div className="random-div">
             <h3>Try out our random coffee fact generator that'll wake you up!</h3>
