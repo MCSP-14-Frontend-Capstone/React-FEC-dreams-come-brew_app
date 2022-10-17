@@ -16,32 +16,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Products = () => {
-  const { handleClick, cart, setCart } = useContext(CartContext);
-  const {  addedText, changeText } =
+  const { handleClick, cart, setCart, Addon } = useContext(CartContext);
+  const { addedText, changeText } =
     useContext(AddedContext);
 
   const buttons = {};
 
+
   return (
     <>
-    <SearchBar />
+      <SearchBar />
       <div className="product-grid">
         {products.map((product) => {
           const { id } = product;
 
           const handleObj = (e) => {
-            handleClick(product);
             const id = e.target.id;
-     
-            changeText(id);
-
-            if (addedText == "REMOVE") {
-              const removeTheItem = (id) => {
-                const newArr = cart.filter((elem) => elem.id != id);
-                setCart(newArr);
-              };
-              removeTheItem(id);
+            const found = cart.find((elem) => elem.id === product.id)
+            if (found) {
+              console.log(found)
+              Addon(found)
+            } else {
+              console.log('elese')
+              handleClick(product);
             }
+            changeText(id);
+            // if (addedText == "REMOVE") {
+            //   const removeTheItem = (id) => {
+            //     const newArr = cart.filter((elem) => elem.id != id);
+            //     setCart(newArr);
+            //   };
+            //   removeTheItem(id);
+            // }
           };
 
 
@@ -68,14 +74,15 @@ const Products = () => {
                   >
                     {addedText}
                   </button>
-<Link to={'/cart'}> 
 
-                  <button className=" buy-now-btn" id={product.id} onClick={checkOutObj}>
-                    BUY NOW{" "}
-                    <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                  </button>
+                  <Link to={'/cart'}>
 
-</Link>
+                    <button className=" buy-now-btn" id={product.id} onClick={handleObj}>
+                      BUY NOW{" "}
+                      <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                    </button>
+
+                  </Link>
                 </div>
                 <div className="name-and-price">
                   <p className="product-name">{product.name}</p>
