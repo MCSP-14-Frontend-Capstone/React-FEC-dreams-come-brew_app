@@ -11,12 +11,14 @@
   cursor:pointer;
   color:#ffffff;
   font-family:'outfit', cursive;;
-  font-size: 25px;
-  padding:6px 24px;
+  font-size: 18px;
+  padding:6px;
   text-decoration:none;
   text-shadow:0px 1px 0px #000000;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
   
 }
 .loginButtons:hover{
@@ -36,38 +38,34 @@ top:1px;
   background-color: rgb(249, 249, 249);
   font-family:'outfit', Times, serif;
   font-weight: 400;
-  font-style: italic;
   font-size: medium;
   text-align: center;
   margin: .5rem;
   border-top: none;
   border-right: none;
+  margin-left: .5rem;
+  margin-right: .5rem;
   }
 
   .inputBox:focus{
     outline: none;
   }
 
-.loginHeader{
+/* .loginHeader{
   font-family:'outfit';
   font-size: 2.5rem;
   font-weight: 800px;
   color:#000000;
   margin-top: 4px;
   padding-top: 1px;
-}
+} */
 .create-login-headers{
   font-family:'outfit';
   font-size: 25px;
   font-weight: 800px;
   color:#000000;
-  margin-top: 1rem;
+  margin-top: 4px;
   padding-top: 1px;
-}
-
-.loggedinHeader {
-  margin-top: 40px;
-  padding-top: 15px;
 }
 
 .login-createContainers{
@@ -77,11 +75,19 @@ top:1px;
   width: 15rem;
   height: 20rem;
   padding: .5 rem;
-  background-color: rgb(254, 255, 234);
+  background-color: rgb(219, 219, 214);
 }
 
 .mainDivContainer{
-  display: flex;
+  display:inline-flex;
   justify-content: center;
-  background-color: ;
+  position: relative;
+  margin:auto;
+}
+
+.loginSuccessButtonDivs{
+  display: flexbox;
+  margin: auto;
+  justify-content: center;
+  padding: .5 rem;
 }

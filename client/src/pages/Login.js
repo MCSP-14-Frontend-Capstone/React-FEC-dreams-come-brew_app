@@ -21,16 +21,17 @@ const Login = () => {
   if (logInIcon === true) {
     return (
       <>
-        <h1 className="loggedinHeader">You are now logged in.</h1>
-        <button className="loginButtons" onClick={logOut}>
-          Click To Log Out
-        </button>{" "}
-        <br></br>
+        <h1 className="loggedinHeader">Login Successful</h1>
+      <div className="loginSuccessButtonDivs">
         <Link to="/Cart">
-          <button className="loginButtons" onClick={backToCart}>
+          <button className="loginButtons">
             Back To Cart
           </button>
         </Link>
+        <button className="loginButtons" onClick={logOut}>
+          Log Out
+        </button>{" "}
+      </div>
       </>
     );
   } else {
@@ -85,14 +86,14 @@ const Login = () => {
             <br></br>
             <input
               className="inputBox"
-              type="text"
+              type="password"
               placeholder="Password"
               required
             />
             <br></br>
             <input
               className="inputBox"
-              type="text"
+              type="password"
               placeholder="Confirm Password"
               required
             />
