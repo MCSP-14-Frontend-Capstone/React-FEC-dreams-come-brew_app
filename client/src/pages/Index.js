@@ -4,6 +4,7 @@ import products from '../data'
 import HomeCard from '../components/HomeCard.js';
 import ProductsItem from '../components/ProductsItem'
 import SearchBar from '../components/SearchBar';
+import Newsletter from '../components/Newsletter';
 const Index = () => {
 
   //This is the homepage
@@ -48,10 +49,12 @@ const Index = () => {
           </div>
           </div>
           <div className='homeBody'>
-    <marquee scrolldelay="1" marquee loop="4" className='marquee'>Donate to Victims of hurrican Ian &nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp;&nbsp; Guided By Your Taste + Brewing Habits&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Flexible Plans &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Delivered on Your Schedule&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Ethically Sourced&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;  Support Local Businesses&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Free Shipping &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; 25+ Curated Coffees &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp; Family Owned </marquee>
+    
         <HomeCard items={items}/>    
-        <DealsCompo items={items}/>
     </div>
+        <DealsCompo items={items}/>
+<Newsletter />
+<marquee scrolldelay="1" marquee loop="4" className='marquee'>Donate to Victims of hurrican Ian &nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp;&nbsp; Guided By Your Taste + Brewing Habits&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Flexible Plans &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Delivered on Your Schedule&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Ethically Sourced&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;  Support Local Businesses&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Free Shipping &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; 25+ Curated Coffees &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp; Family Owned </marquee>
     </div>
   )
 }

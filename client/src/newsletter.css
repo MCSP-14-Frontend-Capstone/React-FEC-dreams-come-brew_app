@@ -1,0 +1,79 @@
+.newsletter {
+  height: 14rem;
+  width: 179rem;
+  margin-bottom: -15rem;
+  /* font-family: "Quicksand"; */
+ 
+
+  
+}
+
+.newsletter h3{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 5rem;
+  font-family: "Quicksand";
+  font-weight: 600;
+
+}
+
+.news-input {
+  width: 40rem;
+  height: 3rem;
+  border-radius: 1rem;
+background-color: #eee;
+border: none;
+outline: 0;
+padding: 0rem 2rem;
+transition: 0.2s; 
+
+}
+
+.news-sub {
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+outline: 0;
+padding: 0 1.5rem;
+margin-left: 2rem;
+background-color: #222;
+color: #eee;
+cursor: pointer;
+
+}
+input:hover {
+  border: 1px solid #999;
+}
+
+.underfoot {
+  background-color: #000;
+  height: 3rem;
+  width: 110rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: flex-end; */
+ padding-left: 2.5rem;
+}
+
+.underfoot p {
+  font-size: 1.5rem;
+  margin: 0rem 2rem;
+  color: rgba(250, 235, 215, 0.459);
+  cursor: pointer;
+ 
+}
+
+.right-underfoot {
+  display: flex;
+margin-left: 61rem;
+  margin-top: 0.5rem;
+  height: 2rem;
+  background-color: #000;
+  padding-bottom: 2rem;
+}
+
+.right-underfoot p {
+  font-size: 1rem;
+
+}

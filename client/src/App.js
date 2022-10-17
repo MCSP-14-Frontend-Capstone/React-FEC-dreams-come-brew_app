@@ -11,6 +11,7 @@ import "./Login.css"
 import "./HomeIndex.css"
 import './Summary.css'
 import "./footer.css"
+import "./newsletter.css"
 
 
 import About from "./pages/About";
