@@ -258,20 +258,23 @@ sup {
 .fix-random {
   display: flex;
   flex-direction: column;
-  margin-top: -14rem;
-  /* justify-content: center; */
+  /* margin-top: -14rem; */
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 2rem;
 }
 
 .random-div {
-  height: 12rem;
+  height: 18rem;
   width: 25rem;
   border: 1px solid #bbb;
-  margin-top: 2rem;
-  margin-right: 5rem;
+  /* margin-top: 2rem; */
+  /* margin-right: 5rem; */
   background-color: #eee;
   color: #000;
   border-radius: 1rem;
-  margin-top: 14rem;
+  /* margin-top: 14rem; */
   padding: 1.5rem;
 }
 
@@ -298,34 +301,44 @@ sup {
 .space {
   display: flex;
   flex-direction: row;
-  margin-top: 18.7rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 60rem;
+  width: 100%;
 }
 
 .main-single {
   height: 35rem;
-  width: 65rem;
+  width: 70rem;
   border: 1px solid #aaa;
-  margin: auto;
-
-  margin-left: 2rem;
+  /* margin: auto; */
+  /* margin-left: 2rem; */
   display: flex;
-  /* justify-content:space-between; */
+  /* justify-content: space-between; */
   text-align: left;
   border-radius: 1rem;
 }
 
 .single-image {
   width: 30rem;
-  height: 76%;
+  height: 30rem;
   object-fit: contain;
-  margin-top: 1rem;
-  /* margin-left: rem; */
+  /* margin-top: 1rem; */
+  margin: 1rem;
 }
 
 .single-beside {
-  width: 40rem;
-  margin-right: 5rem;
+  /* width: 40rem; */
+  /* margin-right: 5rem; */
   /* margin-left: 2rem; */
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .single-beside h3 {

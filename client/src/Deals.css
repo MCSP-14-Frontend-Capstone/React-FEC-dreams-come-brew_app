@@ -138,7 +138,7 @@ margin: 0;
 .belowHotItem-image {
   background-color: #eee;
   text-align: left;
-  height: 20vh;
+  height: 10rem;
   max-width: 25rem;
   width: 16vw;
   display: flex;
@@ -169,9 +169,22 @@ margin: 0;
   margin-top: 2rem;
 }
 
+.HotItem-info{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
-
-
+.HotItem-qty{
+  display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+}
 
 
 
