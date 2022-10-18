@@ -74,7 +74,6 @@ top:1px;
 .mainDivContainer{
   display: flex;
   justify-content: center;
-  position: relative;
   margin:auto;
   flex-direction: column;
   padding: 10rem 3rem;
