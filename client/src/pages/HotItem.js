@@ -21,11 +21,33 @@ const HotItems = () => {
     <>
     <div className="HotItem-Head">HotItems Compo</div>
       <div className="HotItems-Container">
-        
-        {products.map((product) => {
+      {products.map((product) => {
+          const { id } = product;
+
+          const handleObj = (e) => {
+            const id = e.target.id;
+            const found = cart.find((elem) => elem.id === product.id)
+            if (found) {
+              console.log(found)
+              Addon(found)
+            } else {
+              console.log('elese')
+              handleClick(product);
+            }
+            changeText(id);
+            // if (addedText == "REMOVE") {
+            //   const removeTheItem = (id) => {
+            //     const newArr = cart.filter((elem) => elem.id != id);
+            //     setCart(newArr);
+            //   };
+            //   removeTheItem(id);
+            // }
+          };
+
+
+          const checkOutObj = () => {
+            handleClick(product)
           
-          const handleObj = () => {
-            handleClick(product);
           };
           return (
             <div className="HotItem-Card" key={product.id} id={product.id}>
