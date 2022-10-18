@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from "react";
 import products from "../data";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AddedContext from "../context/AddedContext";
 import CartContext from "../context/CartContext";
 
 
@@ -12,7 +13,9 @@ import { // This is how we import icon
 } from "@fortawesome/free-solid-svg-icons";
 
 const HotItems = () => {
-  const { handleClick } = useContext(CartContext);
+  const { handleClick, cart, setCart, Addon } = useContext(CartContext);
+  const { addedText, changeText } =
+    useContext(AddedContext);
 
   return (
     <>
@@ -31,28 +34,35 @@ const HotItems = () => {
                 <img className="HotItem-Img" src={product.image} alt="" />
               </Link>
               <div className="belowHotItem-image">
-                <div className="btn-group-card">
+              <div className="btn-group-card">
                   <button
                     onClick={handleObj}
+                    style={{
+                      color: "white",
+                      backgroundColor: "black"
+                    }}
                     className=" add-to-cart-btn"
                     id={product.id}
                   >
-                    ADD TO CART{" "}
-                    <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
- 
+                    {addedText}
                   </button>
-                  
-                  <button
-                    onClick={handleObj}
-                    className=" buy-now-btn"
-                    id={product.id}
-                  >
-                    BUY NOW{" "}
-                    <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                  </button>
-                </div>
-                  <p className="Hotproduct-name">{product.name}</p>
 
+                  <Link to={'/cart'}>
+
+                    <button className=" buy-now-btn" id={product.id} onClick={handleObj}>
+                      BUY NOW{" "}
+                      <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                    </button>
+
+                  </Link>
+                </div>
+                <div className="HotItem-info">
+                  <p className="Hotproduct-name">{product.name}</p>
+                  <p  className="price">${product.price}</p>
+                </div>
+                <div className="HotItem-qty">
+                  <p className="qty">{product.qty} left</p>
+                </div>
               </div>
             </div>
           );
