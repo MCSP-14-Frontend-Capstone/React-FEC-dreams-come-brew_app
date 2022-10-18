@@ -51,14 +51,22 @@
 }
 
 .contactInputBox {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
   border: none;
   display: flex;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
-  font-style: italic;
-  margin: 1rem;
-  padding: .25rem .5rem;
-  width: 35rem;
+  width: 23vw;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  border: none;
+  outline: 0;
+  padding: 0rem 2rem;
+  transition: 0.2s;
+  margin: 2.5rem auto;
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
+
 }
 
 .contactInputBox:focus {
@@ -68,15 +76,21 @@
 }
 
 .contactInputBoxDes {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
   border: none;
   display: flex;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
-  font-style: italic;
-  margin: 1rem;
-  padding: .25rem .5rem;
-  padding-bottom: 10rem;
-  width: 35rem;
+  width: 23vw;
+  height: 8rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  border: none;
+  outline: 0;
+  padding: 0rem 2rem;
+  transition: 0.2s;
+  margin: 2.5rem auto;
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
 }
 
 .contactInputBoxDes:focus {
@@ -92,7 +106,8 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   padding: .25rem .5rem;
-  width: 35rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .contactSubmitBtn:hover {

@@ -70,6 +70,8 @@
   width: 17vw;
   background: #F3F3F3;
   justify-content: center;
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
+  border-radius: .5rem;
 }
 
 .Card-div:hover {
@@ -190,9 +192,12 @@ margin: 0;
   justify-content: center;
   margin: 10px;
   width: 10rem;
+  margin-bottom: 15px;
   background-color: #F3F3F3;
   /* border: #343434; */
   box-sizing: border-box;
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
+  border-radius: .5rem;
 }
 
 .product>img {
@@ -213,6 +218,7 @@ margin: 0;
   border-color: #F3F3F3;
   color: #343434;
   cursor: pointer;
+  border-radius: .5rem;
 }
 
 .myButton.hover {

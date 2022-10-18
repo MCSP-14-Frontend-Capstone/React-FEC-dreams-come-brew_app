@@ -26,10 +26,11 @@ const CheckoutPage = () => {
                     <div className='thanks-box'>
                         <h1 className='thanks-text'>Thank You For Your Purchase</h1>
                         <h2>Your shipping order is: {letter() + random}</h2>
+                        <Link to='/' >
+                            <button className='backTo-btn'>Back To Shopping</button>
+                        </Link>
                     </div>
-                    <Link to='/' >
-                        <button className='backTo-btn'>Back To Shopping</button>
-                    </Link>
+
                 </div>
                 <div className='rec-display'>
                     <div className='rec-container'>
