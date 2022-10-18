@@ -23,6 +23,9 @@
   outline: 0;
   padding: 0rem 2rem;
   transition: 0.2s;
+}
+
+.news-input:hover {
   box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
 }
 
