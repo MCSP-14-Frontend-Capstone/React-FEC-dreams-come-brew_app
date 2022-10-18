@@ -20,6 +20,7 @@
   width: 8rem;
   height: 8rem;
   border-radius: 100%;
+  border: 2px solid #F3F3F3;
 }
 
 .DealItemName {
@@ -67,7 +68,7 @@
   align-items: center;
   height: 22vh;
   width: 17vw;
-  background: #eeeeee;
+  background: #F3F3F3;
   justify-content: center;
 }
 
@@ -189,8 +190,8 @@ margin: 0;
   justify-content: center;
   margin: 10px;
   width: 10rem;
-  background-color: #343434;
-  border: #343434;
+  background-color: #F3F3F3;
+  /* border: #343434; */
   box-sizing: border-box;
 }
 
@@ -206,11 +207,11 @@ margin: 0;
 }
 
 .product>button {
-  background: #343434;
+  background: #F3F3F3;
   border: 3px solid;
   margin-top: 10px;
-  border-color: #8c0fc6 #8c0fc6 #8c0fc6;
-  color: white;
+  border-color: #F3F3F3;
+  color: #343434;
   cursor: pointer;
 }
 
@@ -301,9 +302,9 @@ margin: 0;
 }
 
 .deals-header {
-  color: white;
+  color: #343434;
 }
 
 .coffee-name {
-  color: white;
+  color: #343434;
 }

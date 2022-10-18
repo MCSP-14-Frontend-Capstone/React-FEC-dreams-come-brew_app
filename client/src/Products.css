@@ -22,7 +22,7 @@
   background: var(--offWhite);
 }
 
-.product_search_container{
+.product_search_container {
   margin-top: -2.8rem;
 }
 
@@ -34,9 +34,7 @@ img {
 
 .beside-search {
   width: 60%;
-  background-image: linear-gradient(to bottom right,
-      rgba(34, 33, 33, 0.971) 50%,
-      rgb(152, 71, 170) 50%);
+  background-image: linear-gradient(to bottom right, #F3F3F3 -10%, #343434 55%);
   text-align: center;
   display: flex;
   align-items: center;
@@ -133,10 +131,10 @@ img {
 }
 
 .below-image {
-  background-color: #eee;
   text-align: left;
   height: 10rem;
   /* border-radius: .5rem; */
+  background: var(--offWhite);
 }
 
 .product-name {
@@ -158,11 +156,17 @@ img {
 }
 
 .add-to-cart-btn {
-  /* background-color: #222;
-  color: white; */
   border: 0;
   width: 8rem;
+  color: white;
+  background-color: var(--offBlack)
 }
+
+.add-to-cart-btn:hover {
+  color: #ddb892;
+}
+
+
 
 .buy-now-btn {
   background-color: #fff;
@@ -174,7 +178,6 @@ img {
 
 .App {
   background-color: var(--offWhite);
-  ;
 }
 
 .rating-icon {
@@ -427,12 +430,7 @@ sup {
   height: inherit;
   background: rgb(0, 0, 0);
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 34%,
-      rgba(50, 50, 50, 0.5) 56%,
-      rgba(255, 255, 255, 1) 87%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 14%, rgba(50, 50, 50, 0.5) 36%, rgba(255, 255, 255, 1) 170%);
 }
 
 .coffee-image {
@@ -484,7 +482,7 @@ sup {
   margin-bottom: 4rem;
   background-color: #ccc;
   padding: 2rem 0;
-  background-color: rgba(152, 71, 170, 0.85);
+  background-color: var(--offWhite);
   margin-bottom: 5rem;
 }
 
@@ -516,7 +514,7 @@ sup {
 }
 
 .review {
-  color: #ddd;
+  color: var(--offBlack);
   text-decoration: solid;
 }
 
