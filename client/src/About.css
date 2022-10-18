@@ -16,7 +16,7 @@
 }
 
 .about-b-bdr {
-  background-image: linear-gradient(rgba(255, 255, 255, 0), #F3F3F3);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #f3f3f3);
   height: 15rem;
 }
 
@@ -40,7 +40,6 @@
   margin: 0;
 }
 
-
 .aboutme-p {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(219, 219, 219);
@@ -49,7 +48,7 @@
 .aboutPhotosContainer {
   padding-bottom: 4rem;
   display: flex;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   justify-content: center;
   flex-direction: column;
 }
@@ -71,10 +70,7 @@
   /* background-size: contain; */
   background-repeat: no-repeat;
   object-fit: contain;
-
-
 }
-
 
 .home-img-box {
   display: flex;
@@ -111,7 +107,7 @@
   width: 60vw;
   margin: auto;
   height: 25rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
   /* box-shadow: 5px 5px 4px 2px rgb(215, 228, 238); */
 }
@@ -119,34 +115,39 @@
 .empty-div h2 {
   font-size: 2rem;
   margin-top: 2rem;
-
-
 }
 
 .beside-empty {
   height: 25rem;
   border: 1px solid black;
   width: 25rem;
-  border-radius: .5rem;
-
+  border-radius: 0.5rem;
 }
 
 .empty-main {
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
- }
- 
-.hide{
-  height:fit-content;
-  background-color: #eee;
-  border-radius: 2rem;
+}
+
+.hide {
+  height: 1px;
+
+  border-radius: 4rem;
   margin-top: 1rem;
 }
 .hide2:nth-of-type(even) {
-  background-color: #dbcfe2;
+  background-color: #fff;
 }
 .hide2 li {
   font-size: 0.7rem;
   padding: 0.75rem;
+  /* background-color:#fff */
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #111;
+  height: 3rem;
+}
+.hide2 {
+  background-color: #ddd;
 }
