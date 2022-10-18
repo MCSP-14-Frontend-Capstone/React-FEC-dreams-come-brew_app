@@ -19,7 +19,7 @@ const HotItems = () => {
 
   return (
     <>
-    <div className="HotItem-Head">HotItems Compo</div>
+    <div className="HotItem-Head"></div>
       <div className="HotItems-Container">
       {products.map((product) => {
           const { id } = product;
