@@ -40,7 +40,7 @@ a:-webkit-any-link {
 }
 
 .link-selected {
-  color: #ac05ff;
+  color: #ddb892;
   font-size: 130%;
   transition: 0.5s;
 }
@@ -62,12 +62,12 @@ a:-webkit-any-link {
 }
 
 .signin-icon {
-  color: #ac05ff;
+  color: #ddb892;
   font-size: 2rem;
 }
 
 .login-icon {
-  color: #ac05ff;
+  color: #ddb892;
 }
 
 .cart-mini:nth-child(1) {

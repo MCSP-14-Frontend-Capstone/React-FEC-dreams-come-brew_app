@@ -17,13 +17,14 @@
   background-color: var(--offWhite);
   font-family: 'Outfit', sans-serif;
   margin: 0;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .contactImg {
-  background: url(pages/images/captial-mall-northwest-grind-coffee-flight.jpg) no-repeat center;
-  background-size: contain;
-  height: 20pc;
+  background: url(pages/images/captial-mall-northwest-grind-coffee-flight.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 55vw;
   margin: 0;
 }
 
@@ -48,7 +49,7 @@
 }
 
 .contactFooterBold {
-  color: var(--highLight);
+  color: var(--offBlack);
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -69,38 +70,60 @@
 }
 
 .contactInputBox {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
   border: none;
   display: flex;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
-  font-style: italic;
-  margin: 1rem;
-  padding: .25rem .5rem;
-  width: 35rem;
+  width: 23vw;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  border: none;
+  outline: 0;
+  padding: 0rem 2rem;
+  transition: 0.2s;
+  margin: 2.5rem auto;
+
+}
+
+.contactInputBox:hover {
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
 }
 
 .contactInputBox:focus {
-  border-bottom: 2px solid var(--highLight);
+  border-bottom: 2px solid #ddb892;
   font-style: normal;
   outline: none;
 }
 
 .contactInputBoxDes {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
   border: none;
   display: flex;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
-  font-style: italic;
-  margin: 1rem;
-  padding: .25rem .5rem;
-  padding-bottom: 10rem;
-  width: 35rem;
+  width: 23vw;
+  height: 8rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  border: none;
+  outline: 0;
+  padding: 0rem 2rem;
+  transition: 0.2s;
+  margin: 2.5rem auto;
+
+}
+
+.contactInputBoxDes:hover {
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
 }
 
 .contactInputBoxDes:focus {
-  border-bottom: 2px solid var(--highLight);
+  border-bottom: 2px solid #ddb892;
   font-style: normal;
   outline: none;
+
 }
 
 .contactSubmitBtn {
@@ -110,10 +133,11 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   padding: .25rem .5rem;
-  width: 35rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .contactSubmitBtn:hover {
   cursor: pointer;
-  color: var(--highLight);
+  color: #ddb892;
 }

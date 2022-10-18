@@ -25,9 +25,9 @@ const Products = () => {
 
   return (
     <>
-    <div className="product_search_container">
-    <SearchBar />
-    </div>
+      <div className="product_search_container">
+        <SearchBar />
+      </div>
       <div className="product-grid">
         {products.map((product) => {
           const { id } = product;
@@ -67,10 +67,6 @@ const Products = () => {
                 <div className="btn-group-card">
                   <button
                     onClick={handleObj}
-                    style={{
-                      color: "white",
-                      backgroundColor: "black"
-                    }}
                     className=" add-to-cart-btn"
                     id={product.id}
                   >

@@ -2,90 +2,116 @@
 @import url('http://fonts.cdnfonts.com/css/outfit');
 @import url('http://fonts.cdnfonts.com/css/maybe-coffee');
 
-.loginButtons{
-  box-shadow:inset 0px 1px 0px 0px #000000;
-  background-color:#595959;
-  border-radius:6px;
-  border:1px solid #000000;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:'outfit', cursive;;
-  font-size: 18px;
-  padding:6px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #000000;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
-  
+.loginButtons {
+  border: none;
+  background-color: var(--offBlack);
+  color: var(--offWhite);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
 }
-.loginButtons:hover{
-background-color: #ffffff;
-color: #595959;
-position:relative;
-top:1px;
+
+.login-Buttons {
+  border: none;
+  background-color: var(--offBlack);
+  color: var(--offWhite);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  width: 15%;
+  border-radius: 1rem;
+  margin: 2rem auto;
 
 }
-.loginButtons:active{
-  position:relative;
-  top:1px;
+
+.loginButtons:hover {
+  color: #ddb892;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
 }
-.inputBox{
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  background-color: rgb(249, 249, 249);
-  font-family:'outfit', Times, serif;
+
+.login-Buttons:hover {
+  color: #ddb892;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+
+.loginButtons:active {
+  position: relative;
+  top: 1px;
+}
+
+.inputBox {
+  font-family: 'outfit', Times, serif;
   font-weight: 400;
   font-size: medium;
-  text-align: center;
-  margin: .5rem;
-  border-top: none;
-  border-right: none;
-  margin-left: .5rem;
-  margin-right: .5rem;
-  }
+  width: 16vw;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  border: none;
+  outline: 0;
+  padding: 0rem 2rem;
+  transition: 0.2s;
+  margin: .5rem auto;
+}
 
-  .inputBox:focus{
-    outline: none;
-  }
 
-.create-login-headers{
-  font-family:'outfit';
+
+
+
+.inputBox:hover {
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
+}
+
+.inputBox:focus {
+  outline: none;
+}
+
+.create-login-headers {
+  font-family: 'outfit';
   font-size: 25px;
   font-weight: 800px;
-  color:#000000;
+  color: #000000;
   margin-top: 4px;
   padding-top: 1px;
 }
 
-.login-createContainers{
-  border: solid black;
-  display:flexbox;
-  margin: auto;
-  width: 15rem;
-  height: 20rem;
-  padding: .5 rem;
-  background-color: rgb(219, 219, 214);
-  margin-top: .5rem;
+
+.loginHeader {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
-.mainDivContainer{
-  display: flex;
-  justify-content: center;
-  margin:auto;
-  flex-direction: column;
-  padding: 10rem 3rem;
-}
-
-.loginSuccessButtonDivs{
+.login-createContainers {
   display: flexbox;
   margin: auto;
-  justify-content: center;
+  margin-bottom: 4rem;
+  width: 16vw;
+  height: 20rem;
   padding: .5 rem;
+  background-color: var(--offWhite);
 }
 
-.loginHeader{
+.mainDivContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.loginSuccessButtonDivs {
+  margin: auto;
+  margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.loggedinHeader {
+  margin-bottom: 5rem;
   margin-top: 5rem;
 }

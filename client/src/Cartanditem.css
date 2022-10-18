@@ -38,6 +38,11 @@
   justify-content: space-around;
   /* border-bottom: 1px solid; */
   margin-top: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 0.5rem;
+}
+
+.single-item:hover {
   box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
 }
 
@@ -54,7 +59,7 @@
   /* margin-bottom: 10px; */
 }
 
-.sspImg{
+.sspImg {
   cursor: pointer;
 }
 
@@ -177,12 +182,15 @@
 
 .thanks-box {
   width: 50rem;
-  height: 11rem;
+  height: 17rem;
   margin: auto;
+  padding: 1rem;
+  box-shadow: 0 6px 20px 0 rgb(149 173 240 / 55%);
+  border-radius: .5rem;
 }
 
 .backTo-btn {
-  width: 10%;
+  width: 20%;
   height: 3vw;
   /* border-radius: 30px; */
   transition: .5s ease;
