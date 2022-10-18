@@ -39,7 +39,7 @@ top:1px;
   font-family:'outfit', Times, serif;
   font-weight: 400;
   font-size: medium;
-  text-align: left;
+  text-align: center;
   margin: .5rem;
   border-top: none;
   border-right: none;
@@ -60,11 +60,6 @@ top:1px;
   padding-top: 1px;
 }
 
-.loginHeader{
-  position: relative;
-  margin-bottom: 1rem;
-  margin-top: 4rem
-}
 .login-createContainers{
   border: solid black;
   display:flexbox;
@@ -73,15 +68,16 @@ top:1px;
   height: 20rem;
   padding: .5 rem;
   background-color: rgb(219, 219, 214);
+  margin-top: .5rem;
 }
 
 .mainDivContainer{
-  display:inline-flex;
+  display: flex;
   justify-content: center;
-  position:static;
+  position: relative;
   margin:auto;
-  z-index: auto;
-  margin-bottom: auto;
+  flex-direction: column;
+  padding: 10rem 3rem;
 }
 
 .loginSuccessButtonDivs{
@@ -91,7 +87,6 @@ top:1px;
   padding: .5 rem;
 }
 
-.loggedinHeader{
-  position: relative;
-  margin-top: 4rem;
+.loginHeader{
+  margin-top: 5rem;
 }
