@@ -1,6 +1,6 @@
 .footer-main {
   height: 15rem;
-  /* margin-top: 15rem; */
+  margin-top: 3rem;
   display: flex;
   background-color: #000;
   flex-wrap: nowrap;
@@ -19,15 +19,16 @@
   text-align: left;
   margin-left: 5rem;
 }
+
 .footer-text-main {
   margin-top: 1rem;
   margin-bottom: 0rem;
   color: #eee;
-margin-right: 1rem;
-font-weight: 600;
+  margin-right: 1rem;
+  font-weight: 600;
 }
 
-.footer-divs p:hover{
-color: #fff;
-cursor: pointer;
+.footer-divs p:hover {
+  color: #fff;
+  cursor: pointer;
 }

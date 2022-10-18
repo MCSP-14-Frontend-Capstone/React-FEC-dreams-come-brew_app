@@ -23,9 +23,9 @@ const Login = () => {
         <h1 className="loggedinHeader">Login Successful</h1>
         <div className="loginSuccessButtonDivs">
           <Link to="/Cart">
-            <button className="loginButtons">Back To Cart</button>
+            <button className="login-Buttons">Back To Cart</button>
           </Link>
-          <button className="loginButtons" onClick={logOut}>
+          <button className="login-Buttons" onClick={logOut}>
             Log Out
           </button>{" "}
         </div>
