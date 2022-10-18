@@ -17,13 +17,14 @@
   background-color: var(--offWhite);
   font-family: 'Outfit', sans-serif;
   margin: 0;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .contactImg {
-  background: url(pages/images/captial-mall-northwest-grind-coffee-flight.jpg) no-repeat center;
-  background-size: contain;
-  height: 20pc;
+  background: url(pages/images/captial-mall-northwest-grind-coffee-flight.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 55vw;
   margin: 0;
 }
 
@@ -48,7 +49,7 @@
 }
 
 .contactFooterBold {
-  color: var(--highLight);
+  color: var(--offBlack);
   font-weight: bold;
   margin: 0;
   padding: 0;
