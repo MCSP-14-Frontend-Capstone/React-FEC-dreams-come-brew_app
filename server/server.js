@@ -13,24 +13,24 @@ const PORT = process.env.PORT || 3500;
 app.use(express.json());
 app.use(cors());
 
-//Products Routes
+// //Products Routes
 
 
-//Purchase Routes
+// //Purchase Routes
 
 
-//User Routes
+// //User Routes
 
 
 
-//Contact Routes
-app.get('/contacts', contact.getAllContacts)
+// //Contact Routes
+// app.get('/contacts', contact.getAllContacts)
 
-app.get('/contacts/:id', contact.getOneContact)
+// app.get('/contacts/:id', contact.getOneContact)
 
-app.post('/contacts/post', contact.postContact)
+// app.post('/contacts/post', contact.postContact)
 
-app.delete('/contacts/:id', contact.deleteContact)
+// app.delete('/contacts/:id', contact.deleteContact)
 
 
 
