@@ -39,3 +39,5 @@ CREATE TABLE contact(
     email VARCHAR,
     description TEXT
 );
+
+INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('test', 'test', 'test', 1, 1, False, True, null);

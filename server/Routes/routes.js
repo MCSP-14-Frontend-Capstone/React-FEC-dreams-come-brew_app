@@ -1,9 +1,9 @@
-const pool = require('./pool')
+const pool = require('./pool');
 
 const getAllProducts = async (req, res) => {
     try {
-        // const {rows} = await pool.query('SELECT * FROM ---')
-        res.status(200).send("we hit get all")
+        const {rows} = await pool.query('SELECT * FROM products')
+        res.status(200).send(rows)
     } catch (error) {
         console.error(error.message)
     }
