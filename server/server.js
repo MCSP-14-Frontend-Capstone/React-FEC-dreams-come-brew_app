@@ -1,5 +1,6 @@
-const pool = require("./Routes/pool")
-const routes = require('./Routes/routes')
+// const pool = require('./Backend/pool')
+const routes = require('./Backend/Routes/Products')
+const contact = require('./Backend/Routes/Contact')
 // require('dotenv').config()
 
 
@@ -12,16 +13,21 @@ const PORT = process.env.PORT || 3500;
 app.use(express.json());
 app.use(cors());
 
-
+//Products Routes
 app.get('/products', routes.getAllProducts)
 
 app.get('/products/:id', routes.getOneProduct)
 
-app.post('/purchase', routes.addToCart)
+//Purchase Routes
 
-app.patch('/product/edit/:id', routes.editQuantity)
 
-app.delete('/product/remove', routes.deleteCart)
+//User Routes
+
+
+
+//Contact Routes
+app.get('/contacts', contact.getAllContacts)
+
 
 
 
