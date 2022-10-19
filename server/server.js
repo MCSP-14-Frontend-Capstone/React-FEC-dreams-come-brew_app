@@ -14,9 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 //Products Routes
-app.get('/products', routes.getAllProducts)
 
-app.get('/products/:id', routes.getOneProduct)
 
 //Purchase Routes
 
@@ -27,6 +25,12 @@ app.get('/products/:id', routes.getOneProduct)
 
 //Contact Routes
 app.get('/contacts', contact.getAllContacts)
+
+app.get('/contacts/:id', contact.getOneContact)
+
+app.post('/contacts/post', contact.postContact)
+
+app.delete('/contacts/:id', contact.deleteContact)
 
 
 
