@@ -1,5 +1,8 @@
+const contact = require('./Backend/Routes/Contact')
+
 const pool = require("../server/Backend/pool")
 const users = require('../server/Backend/Routes/users')
+
 // require('dotenv').config()
 
 
@@ -12,16 +15,21 @@ const PORT = process.env.PORT || 3500;
 app.use(express.json());
 app.use(cors());
 
+// //Products Routes
 
-// app.get('/products', routes.getAllProducts)
 
-// app.get('/products/:id', routes.getOneProduct)
+// //User Routes
 
-// app.post('/purchase', routes.addToCart)
 
-// app.patch('/product/edit/:id', routes.editQuantity)
 
-// app.delete('/product/remove', routes.deleteCart)
+// //Contact Routes
+// app.get('/contacts', contact.getAllContacts)
+
+// app.get('/contacts/:id', contact.getOneContact)
+
+// app.post('/contacts/post', contact.postContact)
+
+// app.delete('/contacts/:id', contact.deleteContact)
 
 
 
@@ -34,6 +42,7 @@ app.use(cors());
 // app.patch('/users/:id', users.editUser)
 
 // app.delete('/users/:id', users.deleteUser)
+
 
 
 
