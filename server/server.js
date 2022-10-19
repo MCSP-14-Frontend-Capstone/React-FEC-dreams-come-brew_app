@@ -1,6 +1,8 @@
-// const pool = require('./Backend/pool')
-const routes = require('./Backend/Routes/Products')
 const contact = require('./Backend/Routes/Contact')
+
+const pool = require("../server/Backend/pool")
+const users = require('../server/Backend/Routes/users')
+
 // require('dotenv').config()
 
 
@@ -16,9 +18,6 @@ app.use(cors());
 // //Products Routes
 
 
-// //Purchase Routes
-
-
 // //User Routes
 
 
@@ -31,6 +30,18 @@ app.use(cors());
 // app.post('/contacts/post', contact.postContact)
 
 // app.delete('/contacts/:id', contact.deleteContact)
+
+
+
+// app.get('/users', users.getAllUsers)
+
+// app.get('/users/:id', users.getOneUser)
+
+// app.post('/users', users.addUser)
+
+// app.patch('/users/:id', users.editUser)
+
+// app.delete('/users/:id', users.deleteUser)
 
 
 
