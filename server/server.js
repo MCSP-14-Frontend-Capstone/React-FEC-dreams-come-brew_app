@@ -25,15 +25,15 @@ app.use(cors());
 
 
 
-app.get('/users', users.getAllUsers)
+// app.get('/users', users.getAllUsers)
 
-app.get('/users/:id', users.getOneUser)
+// app.get('/users/:id', users.getOneUser)
 
-app.post('/users', users.addUser)
+// app.post('/users', users.addUser)
 
-app.patch('/users/:id', users.editUser)
+// app.patch('/users/:id', users.editUser)
 
-app.delete('/users/:id', users.deleteUser)
+// app.delete('/users/:id', users.deleteUser)
 
 
 
