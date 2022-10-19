@@ -30,6 +30,16 @@ const postContact = async (req, res) => {
     }
 }
 
+const deleteContact = async (req, res) => {
+    const {id} = req.params
+    try {
+        const {rows} = await pool.query('DELETE FROM contact WHERE id = $1', [id])
+        res.status(200).send(rows)
+    } catch (error) {
+        console.error(error.message)
+    }
+}
 
 
-module.exports = { getAllContacts, getOneContact, postContact }
+
+module.exports = { getAllContacts, getOneContact, postContact, deleteContact }
