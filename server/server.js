@@ -1,8 +1,9 @@
 
-const product = require('./Backend/Routes/Products')
 
+const product = require('./Backend/Routes/Products')
+const purchase = require('./Backend/Routes/Purchase')
 const contact = require('./Backend/Routes/Contact')
-const users = require('../server/Backend/Routes/users')
+const users = require('./Backend/Routes/Users')
 
 
 const express = require('express')
@@ -16,40 +17,34 @@ app.use(express.json());
 app.use(cors());
 
 
-
-// Contact Routes
-
+// //Contact Routes
 app.get('/contacts', contact.getAllContacts)
-
 app.get('/contacts/:id', contact.getOneContact)
-
 app.post('/contacts/post', contact.postContact)
-
 app.delete('/contacts/:id', contact.deleteContact)
 
-
-//User Routes
-
+//Product Routes
 app.get('/products', product.getAllProducts)
-
 app.get('/products/:id', product.getOneProduct)
-
 app.post('/purchase', product.addToProduct)
-
 app.patch('/product/edit/:id', product.editQuantity)
-
 app.delete('/product/remove', product.deleteCart)
 
-
-// app.get('/users', users.getAllUsers)
-
+//User Routes
+app.get('/users', users.getAllUsers)
 app.get('/users/:id', users.getOneUser)
-
 app.post('/users', users.addUser)
-
 app.patch('/users/:id', users.editUser)
-
 app.delete('/users/:id', users.deleteUser)
+
+
+//Purchase Routes
+app.get('/purchase', purchase.getAllPurchase)
+app.get('/purchase/:id', purchase.getOnePurchase)
+app.post('/purchase', purchase.AddPurchase)
+app.put('/purchase/:id', purchase.EditPurchase)
+app.delete('/purchase/:id', purchase.DeletePurchase)
+
 
 
 
