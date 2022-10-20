@@ -20,7 +20,7 @@ app.use(cors());
 // //Contact Routes
 app.get('/contacts', contact.getAllContacts)
 app.get('/contacts/:id', contact.getOneContact)
-app.post('/contacts/post', contact.postContact)
+app.post('/contacts/', contact.postContact)
 app.delete('/contacts/:id', contact.deleteContact)
 
 //Product Routes
