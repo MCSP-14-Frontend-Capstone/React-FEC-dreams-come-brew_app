@@ -1,3 +1,7 @@
+
+// const pool = require("./Routes/pool")
+const product = require('./Backend/Routes/Products')
+
 const contact = require('./Backend/Routes/Contact')
 
 const pool = require("../server/Backend/pool")
@@ -8,6 +12,7 @@ const users = require('../server/Backend/Routes/users')
 
 const express = require('express');
 const cors = require('cors');
+// const { default: products } = require("../client/src/data");
 const app = express();
 const PORT = process.env.PORT || 3500;
 
@@ -33,6 +38,19 @@ app.use(cors());
 
 
 
+
+
+app.get('/products', product.getAllProducts)
+
+app.get('/products/:id', product.getOneProduct)
+
+app.post('/purchase', product.addToProduct)
+
+app.patch('/product/edit/:id', product.editQuantity)
+
+app.delete('/product/remove', product.deleteCart)
+
+
 // app.get('/users', users.getAllUsers)
 
 // app.get('/users/:id', users.getOneUser)
@@ -42,6 +60,7 @@ app.use(cors());
 // app.patch('/users/:id', users.editUser)
 
 // app.delete('/users/:id', users.deleteUser)
+
 
 
 
