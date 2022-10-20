@@ -29,7 +29,7 @@ const Index = () => {
               <hr />
             <p>Named for a desire to change the picture of what comes to mind when people think of specialty coffee, Dreams come Brew is as committed to rewriting that narrative as it is to reflecting the history and culture of its Fort Hood Texas Community.
             Named for a desire to change the picture of what comes to mind when people think of specialty coffee, Dreams come Brew is as committed to rewriting that narrative as it is to reflecting the history and culture of its Fort Hood Texas Community.
-            Named for a desire to change the picture of what comes to mind when people think of specialty coffee, Dreams come Brew is as committed to rewriting that narrative as it is to reflecting the history and culture of its Fort Hood Texas Community.
+            
             </p>
             </div>
            <img className="bottom-div" src="https://img.freepik.com/free-photo/coffee-beans-heart-form_23-2147896435.jpg?w=2000&t=st=1666049946~exp=1666050546~hmac=32fc28baec9aa6934ece03cb7715cf66f8a4bd3ca7e1bb3d7af69062ebc96a07" alt="" />
