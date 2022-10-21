@@ -5,8 +5,8 @@ DROP TABLE IF EXISTS contact;
 
 CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
+    target TEXT,
     name TEXT,
-    category TEXT,
     description TEXT,
     original_price INTEGER,
     sale_price INTEGER,
@@ -45,26 +45,26 @@ CREATE TABLE contact (
     description TEXT
 );
 
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Jasmines Roast', 'coffee', 'Premium coffe cultivated in the best farms in...', 25, 19, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Mulans Bean', 'coffee', 'Premium coffe cultivated in the best farms in...', 35, 24, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Tam Coffee', 'coffee', 'Premium coffe cultivated in the best farms in...', 55, 49, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Auroras Cure',  'coffee', 'Premium coffe cultivated in the best farms in...', 15, 9, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Mirabel Espesso', 'coffee', 'Premium coffe cultivated in the best farms in...', 25, 19, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Ariels Coffee', 'coffee', 'Premium coffe cultivated in the best farms in...', 35, 24, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Tianas  Bean', 'coffee', 'Premium coffe cultivated in the best farms in...', 55, 49, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Cinderella Ride',  'coffee', 'Premium coffe cultivated in the best farms in...', 15, 9, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Snow White Coffee', 'coffee', 'Premium coffe cultivated in the best farms in...', 25, 19, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Elsas  Latte', 'coffee', 'Premium coffe cultivated in the best farms in...', 25, 19, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Small Planes', 'coffee', 'Premium coffe cultivated in the best farms in...', 25, 15, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Feast latte',  'coffee', 'Premium coffe cultivated in the best farms in...', 20, 12, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Alma Coffee', 'coffee', 'Premium coffe cultivated in the best farms in...', 20, 17, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('AM Blend', 'coffee', 'Premium coffe cultivated in the best farms in...', 50, 42, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Folgers', 'coffee', 'Premium coffe cultivated in the best farms in...', 20, 10, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('American Coffee',  'coffee', 'Premium coffe cultivated in the best farms in...', 20, 16, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Colombian Coffee', 'coffee', 'Premium coffe cultivated in the best farms in...', 20, 15, True, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Espresso Italiano', 'coffee', 'Premium coffe cultivated in the best farms in...', 25, 19, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Buffalo Blend', 'coffee','Premium coffe cultivated in the best farms in...', 25, 19, False, False, null);
-INSERT INTO products (name, category, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Louisiane Coffee',  'coffee', 'Premium coffe cultivated in the best farms in...', 20, 15, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Jasmines Roast','1', 'Premium coffe cultivated in the best farms in...', 25, 19, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Mulans Bean', '2', 'Premium coffe cultivated in the best farms in...', 35, 24, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Tam Coffee', '3', 'Premium coffe cultivated in the best farms in...', 55, 49, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Auroras Cure', '4', 'Premium coffe cultivated in the best farms in...', 15, 9, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Mirabel Espesso', '5', 'Premium coffe cultivated in the best farms in...', 25, 19, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Ariels Coffee', '6', 'Premium coffe cultivated in the best farms in...', 35, 24, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Tianas  Bean', '7', 'Premium coffe cultivated in the best farms in...', 55, 49, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Cinderella Ride', '8', 'Premium coffe cultivated in the best farms in...', 15, 9, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Snow White Coffee', '9', 'Premium coffe cultivated in the best farms in...', 25, 19, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Elsas  Latte', '10', 'Premium coffe cultivated in the best farms in...', 25, 19, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Small Planes', '11', 'Premium coffe cultivated in the best farms in...', 25, 15, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Feast latte', '12','Premium coffe cultivated in the best farms in...', 20, 12, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Alma Coffee', '13','Premium coffe cultivated in the best farms in...', 20, 17, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('AM Blend', '14','Premium coffe cultivated in the best farms in...', 50, 42, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Folgers', '15', 'Premium coffe cultivated in the best farms in...', 20, 10, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('American Coffee', '16', 'Premium coffe cultivated in the best farms in...', 20, 16, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Colombian Coffee', '17','Premium coffe cultivated in the best farms in...', 20, 15, True, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Espresso Italiano', '18', 'Premium coffe cultivated in the best farms in...', 25, 19, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Buffalo Blend', '19','Premium coffe cultivated in the best farms in...', 25, 19, False, False, null);
+INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Louisiane Coffee', '20', 'Premium coffe cultivated in the best farms in...', 20, 15, False, False, null);
 
 
 INSERT INTO users (user_name,password,confirm_password) VALUES('username1','password', 'password');
