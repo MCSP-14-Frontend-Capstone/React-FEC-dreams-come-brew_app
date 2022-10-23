@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from 'axios';
 import SharedLayout from "./components/SharedLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./Nav.css";
@@ -27,6 +28,19 @@ import HotItems from "./pages/HotItem";
 import footer from "./components/footer";
 
 const App = () => {
+
+  // useEffect(()=>{
+  //   const test = async () => {
+  //     try {
+  //         const {data} = await axios.get('https://dreamcomebrewserver.onrender.com/products')
+  //         console.log(data)
+  //     } catch (error) {
+  //         console.log(error.message)
+  //     }
+  //   }
+  //   test();
+  // },[])
+
 
   return (
     <Router> 
