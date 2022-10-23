@@ -7,13 +7,7 @@ const pool = new Pool({
   connectionString,
 });
 
-// const pool = new Pool({
-//   user: "abela",
-//   password: "812315",
-//   host: "localhost",
-//   port: 5432,
-//   database: "sdc_app"
-// });
+
 
 
 
