@@ -16,7 +16,8 @@ const Login = () => {
     loginName,
   } = useContext(LoginContext);
 
-  console.log(logInIcon);
+
+
   if (logInIcon === true) {
     return (
       <>

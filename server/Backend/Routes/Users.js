@@ -1,5 +1,7 @@
 const pool = require("../pool");
 const queries = require("../../DB/queries");
+const bcrypt = require('bcrypt')
+
 
 const getAllUsers = async (req, res) => {
   try {
@@ -10,7 +12,7 @@ const getAllUsers = async (req, res) => {
   }
 };
 
-const getOneUser = async(req, res) => {
+const getOneUser = async (req, res) => {
   const { id } = req.params;
   try {
     const { rows } = await pool.query(queries.getOneUser, [id]);
@@ -21,7 +23,8 @@ const getOneUser = async(req, res) => {
 };
 
 const addUser = async (req, res) => {
-  const { user_name, password, confirm_password } = req.body;
+  const { user_name, password, confirm_password, } = req.body;
+
   try {
     const { rows } = await pool.query(queries.addUser, [
       user_name,
@@ -33,6 +36,33 @@ const addUser = async (req, res) => {
     console.error(err.message);
   }
 };
+
+const LoginUser = async (req, res) => {
+  const { loginName, loginPassword } = req.body;
+
+  try {
+    const { rows } = await pool.query(queries.getAllUsers);
+    const user = rows.find((user) => user.user_name === loginName)
+
+    if (await user === undefined) {
+      res.send(false)
+    } else {
+      if (await user.password === loginPassword) {
+        res.send(true)
+      } else {
+        res.send(false)
+      }
+    }
+
+  } catch (err) {
+    console.error(err.message);
+  }
+};
+
+
+
+
+
 
 const editUser = async (req, res) => {
   const { id } = req.params;
@@ -66,4 +96,5 @@ module.exports = {
   addUser,
   editUser,
   deleteUser,
+  LoginUser
 };

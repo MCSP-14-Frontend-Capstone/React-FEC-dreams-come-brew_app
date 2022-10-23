@@ -1,4 +1,5 @@
 import { useState, createContext } from "react";
+import axios from 'axios'
 
 const LoginContext = createContext();
 
@@ -7,10 +8,21 @@ export const LoginProvider = ({ children }) => {
   const [loginPassword, setLoginPassword] = useState("");
   const [logInIcon, setLoginInIcon] = useState(false);
 
-  const toggleLogin = () => {
-    setLoginName("");
-    setLoginPassword("");
-    setLoginInIcon(!logInIcon);
+  const toggleLogin = async (e) => {
+    e.preventDefault()
+    try {
+      const response = await axios.post('http://localhost:3500/users/login', { loginName, loginPassword })
+      // const response = await axios.post('https://dreamcomebrewserver.onrender.com/users/login', { loginName, loginPassword })
+
+      const result = response.data
+      setLoginName("");
+      setLoginPassword("");
+      setLoginInIcon(result);
+    } catch (error) {
+      console.error(error.message)
+    }
+
+
   };
 
   const logOut = (e) => {
@@ -19,12 +31,10 @@ export const LoginProvider = ({ children }) => {
   };
 
   const logIn = (e) => {
-    e.preventDefault();
     setLoginName(e.target.value);
   };
 
   const handlePassword = (e) => {
-    e.preventDefault();
     setLoginPassword(e.target.value);
   };
 
