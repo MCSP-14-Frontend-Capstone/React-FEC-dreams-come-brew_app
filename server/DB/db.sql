@@ -67,10 +67,10 @@ INSERT INTO products (name, target, description, original_price, sale_price, on_
 INSERT INTO products (name, target, description, original_price, sale_price, on_sale, popular_item, image) VALUES('Louisiane Coffee', '20', 'Premium coffe cultivated in the best farms in...', 20, 15, False, False, null);
 
 
-INSERT INTO users (user_email,user_name,password,confirm_password) VALUES('user@gmail.com','username1','password');
-INSERT INTO users (user_email,user_name,password,confirm_password) VALUES('user@gmail.com','username2','password');
-INSERT INTO users (user_email,user_name,password,confirm_password) VALUES('user@gmail.com','test','password');
-INSERT INTO users (user_email,user_name,password,confirm_password) VALUES('bob@gmail.com','bob','12345');
+INSERT INTO users (user_email,user_name,password) VALUES('user@gmail.com','username1','password');
+INSERT INTO users (user_email,user_name,password) VALUES('user@gmail.com','username2','password');
+INSERT INTO users (user_email,user_name,password) VALUES('user@gmail.com','test','password');
+INSERT INTO users (user_email,user_name,password) VALUES('bob@gmail.com','bob','12345');
 
 
 INSERT INTO purchase (user_name, product_name, order_quantity, order_total, fees, taxes, grand_total, users_id, product_id) VALUES('test1', 'test', 1, 2, 1, 2, 1, 1, 1);
