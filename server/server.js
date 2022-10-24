@@ -35,6 +35,7 @@ app.delete('/product/remove', product.deleteCart)
 app.get('/users', users.getAllUsers)
 app.get('/users/:id', users.getOneUser)
 app.post('/users', users.addUser)
+app.post('/users/login', users.LoginUser)
 app.patch('/users/:id', users.editUser)
 app.delete('/users/:id', users.deleteUser)
 
