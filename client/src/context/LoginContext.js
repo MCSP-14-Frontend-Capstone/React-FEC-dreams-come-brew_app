@@ -19,7 +19,8 @@ export const LoginProvider = ({ children }) => {
   const toggleLogin = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://localhost:3500/users/login', { loginName, loginPassword })
+      //login test//pass
+      const response = await axios.post('https://dreamcomebrewserver.onrender.com/users/login', { loginName, loginPassword })
       // const response = await axios.post('https://dreamcomebrewserver.onrender.com/users/login', { loginName, loginPassword })
 
       const result = response.data
@@ -63,7 +64,8 @@ export const LoginProvider = ({ children }) => {
   const handleCreateNewUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3500/users', { newUser, newEmail, newPwd })
+      //test create user//pass
+      const response = await axios.post('https://dreamcomebrewserver.onrender.com/users', { newUser, newEmail, newPwd })
       const result = response.data
       console.log(result)
       setNewEmail("")
