@@ -23,14 +23,13 @@ const getOneUser = async (req, res) => {
 };
 
 const addUser = async (req, res) => {
-  const { user_name, password, confirm_password, } = req.body;
+  let { newUser, newEmail, newPwd } = req.body;
+  const hashedPwd = await bcrypt.hash(newPwd, 10)
+  newPwd = hashedPwd
 
   try {
-    const { rows } = await pool.query(queries.addUser, [
-      user_name,
-      password,
-      confirm_password,
-    ]);
+    console.log(newPwd)
+    await pool.query(queries.addUser, [newEmail, newUser, newPwd]);
     res.status(201).send("User created");
   } catch (err) {
     console.error(err.message);
@@ -39,7 +38,6 @@ const addUser = async (req, res) => {
 
 const LoginUser = async (req, res) => {
   const { loginName, loginPassword } = req.body;
-
   try {
     const { rows } = await pool.query(queries.getAllUsers);
     const user = rows.find((user) => user.user_name === loginName)
@@ -47,7 +45,7 @@ const LoginUser = async (req, res) => {
     if (await user === undefined) {
       res.send(false)
     } else {
-      if (await user.password === loginPassword) {
+      if (await bcrypt.compare(loginPassword, user.password)) {
         res.send(true)
       } else {
         res.send(false)
