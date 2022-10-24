@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from "axios"
 
 const Contact = () => {
 
@@ -8,20 +9,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();//stop the form from repeating
+
+    axios.post('https://dreamscomebrew.onrender.com/https://dreamscomebrew.onrender.com/contacts', {
+      names: cname,
+      email: cemail,
+      description: cdes
+  })
     setCname('');
     setCemail('');
     setCdes('');
     alert('Thank you for contacting us, we will get back to you as soon as possible');
-    //   try {
-    //     const body = { cname, cemail, cdes  };
-    //     const response = fetch('http://localhost:NEED A ROUTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/', {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify(body)
-    //     });
-    // } catch (error) {
-    //     console.error(err.message);
-    // }
+
   };
 
   const handleChangeName = (e) => {
