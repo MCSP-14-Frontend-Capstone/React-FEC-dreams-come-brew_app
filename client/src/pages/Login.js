@@ -14,8 +14,19 @@ const Login = () => {
     logOut,
     loginPassword,
     loginName,
+    handleEmail,
+    handleNewPwd,
+    handleUserName,
+    newUser,
+    newPwd,
+    newEmail
   } = useContext(LoginContext);
 
+
+
+  const handleSubmit = (e) => {
+    console.log('jdkf')
+  }
 
 
   if (logInIcon === true) {
@@ -66,11 +77,13 @@ const Login = () => {
 
           <div className="login-createContainers">
             <h2 className="create-login-headers"> Create Account </h2>
-            <form>
+            <form onSubmit={handleCreateNewUser}>
               <input
                 className="inputBox"
                 type="text"
                 placeholder="User Name"
+                onChange={handleUserName}
+                value={newUser}
                 required
               />
               <br></br>
@@ -78,6 +91,8 @@ const Login = () => {
                 className="inputBox"
                 type="email"
                 placeholder="Email"
+                onChange={handleEmail}
+                value={newEmail}
                 required
               />
               <br></br>
@@ -85,17 +100,19 @@ const Login = () => {
                 className="inputBox"
                 type="password"
                 placeholder="Password"
+                onChange={handleNewPwd}
+                value={newPwd}
                 required
               />
               <br></br>
-              <input
+              {/* <input
                 className="inputBox"
                 type="password"
                 placeholder="Confirm Password"
                 required
-              />
+              /> */}
               <br></br>
-              <button onClick={handleCreateNewUser} className="loginButtons">
+              <button type="submit" className="loginButtons">
                 Create Account
               </button>
             </form>

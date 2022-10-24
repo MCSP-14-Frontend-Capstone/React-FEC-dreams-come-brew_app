@@ -8,6 +8,14 @@ export const LoginProvider = ({ children }) => {
   const [loginPassword, setLoginPassword] = useState("");
   const [logInIcon, setLoginInIcon] = useState(false);
 
+  const [newUser, setNewUser] = useState("")
+  const [newEmail, setNewEmail] = useState("")
+  const [newPwd, setNewPwd] = useState("")
+
+
+
+
+
   const toggleLogin = async (e) => {
     e.preventDefault()
     try {
@@ -38,10 +46,36 @@ export const LoginProvider = ({ children }) => {
     setLoginPassword(e.target.value);
   };
 
-  const handleCreateNewUser = (e) => {
+
+  const handleUserName = (e) => {
+    setNewUser(e.target.value)
+  }
+
+  const handleEmail = (e) => {
+    setNewEmail(e.target.value)
+  }
+
+  const handleNewPwd = (e) => {
+    setNewPwd(e.target.value)
+  }
+
+
+  const handleCreateNewUser = async (e) => {
     e.preventDefault();
-    console.log(e);
+    try {
+      const response = await axios.post('http://localhost:3500/users', { newUser, newEmail, newPwd })
+      const result = response.data
+      console.log(result)
+      setNewEmail("")
+      setNewPwd("")
+      setNewUser("")
+
+    } catch (error) {
+      console.error(error.message)
+    }
+
   };
+
 
   return (
     <LoginContext.Provider
@@ -54,6 +88,12 @@ export const LoginProvider = ({ children }) => {
         logOut,
         loginName,
         loginPassword,
+        handleEmail,
+        handleNewPwd,
+        handleUserName,
+        newUser,
+        newPwd,
+        newEmail
       }}
     >
       {children}
