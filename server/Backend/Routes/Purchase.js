@@ -24,7 +24,7 @@ const getOnePurchase = async (req, res) => {
 
 
 const AddPurchase = async (req, res) => {
-    const { user_name, product_name, order_quantity, order_total, fees, taxes, grand_total } = req.body
+    const { user_name, product_name, order_quantity, order_total, fees, taxes, grand_total,} = req.body
     try {
         const { rows } = await pool.query('INSERT INTO purchase( user_name, product_name, order_quantity, order_total, fees, taxes, grand_total) VALUES($1, $2,$3,$4,$5,$6,$7)RETURNING *', [user_name, product_name, order_quantity, order_total, fees, taxes, grand_total])
         res.status(201).send(rows)
