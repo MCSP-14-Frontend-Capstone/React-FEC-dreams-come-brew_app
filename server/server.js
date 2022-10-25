@@ -27,7 +27,7 @@ app.delete('/contacts/:id', contact.deleteContact)
 //Product Routes
 app.get('/products', product.getAllProducts)
 app.get('/products/:id', product.getOneProduct)
-app.post('/purchase', product.addToProduct)
+//app.post('/products', product.addToProduct)
 app.patch('/product/edit/:id', product.editQuantity)
 app.delete('/product/remove', product.deleteCart)
 
