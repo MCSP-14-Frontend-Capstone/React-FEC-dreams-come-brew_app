@@ -7,10 +7,10 @@ const Contact = () => {
   const [cemail, setCemail] = useState('');
   const [cdes, setCdes] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();//stop the form from repeating
 
-    axios.post('https://dreamscomebrew.onrender.com/contacts', {
+    await axios.post('https://dreamcomebrewserver.onrender.com/contacts', {
       names: cname,
       email: cemail,
       description: cdes
