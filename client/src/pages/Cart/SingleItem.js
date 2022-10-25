@@ -9,7 +9,7 @@ const SingleItem = ({ item }) => {
     const navigate = useNavigate();
 
     const { removeItem, Addon, onRemove } = useContext(CartContext)
-    const total = item.price * item.cartQty
+    const total = item.original_price * item.cartqty
     const handleRemove = (e) => {
         const id = e.target.id
         removeItem(id)
@@ -30,16 +30,16 @@ const SingleItem = ({ item }) => {
                     <p className="item-desc-text" onClick={handleSPP} id={item.id}>{item.description}</p>
                 </div>
             </div>
-            <h1 className="item-p-q-t"><span>$</span>{item.price.toFixed(2)}</h1>
+            <h1 className="item-p-q-t"><span>$</span>{item.original_price}</h1>
             <div className="item-qty">
                 <div className="qty-btn">
                     <button className="qty-btn-count" onClick={() => { onRemove(item) }}>-</button>
-                    <p className="cart-qty">{item.cartQty}</p>
+                    <p className="cart-qty">{item.cartqty}</p>
                     <button className="qty-btn-count" onClick={() => { Addon(item) }}>+</button>
                 </div>
-                <div className="remove-text" onClick={handleRemove} id={item.id}>Remove</div>
+                <div className="remove-text" onClick={handleRemove} id={item.product_id}>Remove</div>
             </div>
-            <h1 className="item-p-q-t"><span>$</span>{total.toFixed(2)}</h1>
+            <h1 className="item-p-q-t"><span>$</span>{total}</h1>
 
         </div >
     )
