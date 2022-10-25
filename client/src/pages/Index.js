@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useState , useEffect} from "react";
 import DealsCompo from "../components/DealsCompo";
-import products from "../data";
 import HomeCard from "../components/HomeCard.js";
 import ProductsItem from "../components/ProductsItem";
 import SearchBar from "../components/SearchBar";
 
 const Index = () => {
   //This is the homepage
-  const [items, setItems] = useState(products); // from data.js
+  const [items, setItems] = useState([]); // from data.js
+
+      //API call to get products data
+      useEffect(() => {
+        const getProducts = async () => {
+        const {data} = await axios.get('https://dreamcomebrewserver.onrender.com/products');
+        setItems(data)
+      };
+      getProducts()
+      },[]);
 
   return (
     <div className="home">
