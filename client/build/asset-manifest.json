@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.89fc4081.css",
-    "main.js": "/static/js/main.071645b6.js",
+    "main.js": "/static/js/main.e2f7193f.js",
     "static/media/captial-mall-northwest-grind-coffee-flight.jpg": "/static/media/captial-mall-northwest-grind-coffee-flight.b318913a1a878662089e.jpg",
     "static/media/coffee-3.jpeg": "/static/media/coffee-3.cdaf318f906c80d27ddb.jpeg",
     "static/media/about-me-coffee.jpeg": "/static/media/about-me-coffee.baae511b8fdb0c5f4116.jpeg",
@@ -12,10 +12,10 @@
     "static/media/coffee-1.jpeg": "/static/media/coffee-1.79830df27ee1d07512b0.jpeg",
     "index.html": "/index.html",
     "main.89fc4081.css.map": "/static/css/main.89fc4081.css.map",
-    "main.071645b6.js.map": "/static/js/main.071645b6.js.map"
+    "main.e2f7193f.js.map": "/static/js/main.e2f7193f.js.map"
   },
   "entrypoints": [
     "static/css/main.89fc4081.css",
-    "static/js/main.071645b6.js"
+    "static/js/main.e2f7193f.js"
   ]
 }
