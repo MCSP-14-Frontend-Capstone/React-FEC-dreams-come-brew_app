@@ -14,11 +14,11 @@ const Contact = () => {
       names: cname,
       email: cemail,
       description: cdes
-  })
+    })
     setCname('');
     setCemail('');
     setCdes('');
-    alert('Thank you for contacting us, we will get back to you as soon as possible');
+    alert('Thank you for contacting us, we will get back to you as soon as possible.');
 
   };
 
