@@ -33,7 +33,7 @@ export const CartProvider = ({ children }) => {
         } else {
             setCart(
                 cart.map((x) =>
-                    x.id === item.product_id ? { ...exist, cartqty: exist.cartqty - 1 } : x
+                    x.product_id === item.product_id ? { ...exist, cartqty: exist.cartqty - 1 } : x
                 )
             )
         }
