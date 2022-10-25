@@ -1,5 +1,3 @@
-
-
 import { useState, createContext } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,28 +12,28 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
     const Addon = (item) => {
-        const exist = cart.find((x) => x.id === item.id)
-
+        const exist = cart.find((x) => x.product_id === item.product_id)
+        console.log(exist)
         if (exist) {
             setCart(
                 cart.map((x) =>
-                    x.id === item.id ? { ...exist, cartQty: exist.cartQty + 1 } : x
+                    x.product_id === item.product_id ? { ...exist, cartqty: exist.cartqty + 1 } : x
                 )
             )
         } else {
-            setCart([...cart, { ...item, cartQty: 1 }])
+            setCart([...cart, { ...item, cartqty: 1 }])
         }
     }
 
     const onRemove = (item) => {
-        const exist = cart.find((x) => x.id === item.id)
+        const exist = cart.find((x) => x.product_id === item.product_id)
 
-        if (exist.cartQty === 1) {
+        if (exist.cartqty === 1) {
             console.log('nothing')
         } else {
             setCart(
                 cart.map((x) =>
-                    x.id === item.id ? { ...exist, cartQty: exist.cartQty - 1 } : x
+                    x.id === item.product_id ? { ...exist, cartqty: exist.cartqty - 1 } : x
                 )
             )
         }
@@ -61,7 +59,7 @@ export const CartProvider = ({ children }) => {
 
     const removeItem = (id) => {
         const itemRemoved = () => toast.success("Item removed from cart.")
-        const newArr = cart.filter((elem) => elem.id != id)
+        const newArr = cart.filter((elem) => elem.product_id != id)
         setCart(newArr)
         itemRemoved()
     }

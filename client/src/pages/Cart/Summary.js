@@ -6,7 +6,7 @@ import CartContext from '../../context/CartContext';
 const Summary = () => {
     const { logInIcon } = useContext(LoginContext)
     const { cart, emptyCart } = useContext(CartContext)
-    const subTotal = cart.reduce((total, item) => total + item.price * item.cartQty, 0)
+    const subTotal = cart.reduce((total, item) => total + item.original_price * item.cartqty, 0)
     const tax = subTotal * 0.15
     const fees = 1.75
     const grandTotal = subTotal + tax + fees

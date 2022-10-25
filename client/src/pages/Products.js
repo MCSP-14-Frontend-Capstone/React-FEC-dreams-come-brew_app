@@ -17,18 +17,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Products = () => {
-  const { handleClick, cart, setCart, Addon, setProducts, products} = useContext(CartContext);
+  const { handleClick, cart, setCart, Addon, setProducts, products } = useContext(CartContext);
   const { addedText, changeText } =
     useContext(AddedContext);
 
-    //API call to get products data
-    useEffect(() => {
-      const getProducts = async () => {
-      const {data} = await axios.get('https://dreamcomebrewserver.onrender.com/products');
+  //API call to get products data
+  useEffect(() => {
+    const getProducts = async () => {
+      const { data } = await axios.get('https://dreamcomebrewserver.onrender.com/products');
       setProducts(data)
     };
     getProducts()
-    },[]);
+  }, []);
 
 
 
@@ -46,7 +46,7 @@ const Products = () => {
 
           const handleObj = (e) => {
             const id = e.target.id;
-            const found = cart.find((elem) => elem.id === product.id)
+            const found = cart.find((elem) => elem.product_id === product.product_id)
             if (found) {
               console.log(found)
               Addon(found)
@@ -71,7 +71,7 @@ const Products = () => {
 
           return (
 
-            <article className="product-col" key={product.id} id={product.id}>
+            <article className="product-col" key={product.product_id} id={product.product_id}>
               <Link className="single-link" to={`/products/${product.target}`}>
                 <img src={product.image} alt="" />
               </Link>
@@ -80,14 +80,14 @@ const Products = () => {
                   <button
                     onClick={handleObj}
                     className=" add-to-cart-btn"
-                    id={product.id}
+                    id={product.product_id}
                   >
                     {addedText}
                   </button>
 
                   <Link to={'/cart'}>
 
-                    <button className=" buy-now-btn" id={product.id} onClick={handleObj}>
+                    <button className=" buy-now-btn" id={product.product_id} onClick={handleObj}>
                       BUY NOW{" "}
                       <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                     </button>
