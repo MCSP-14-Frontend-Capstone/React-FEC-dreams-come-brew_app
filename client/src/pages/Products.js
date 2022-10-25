@@ -1,5 +1,6 @@
-import React, { Fragment, useContext, useState } from "react";
-import products from "../data";
+import React, { Fragment, useContext, useEffect, useState } from "react";
+import axios from 'axios';
+// import products from "../data";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartContext from "../context/CartContext";
@@ -16,9 +17,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Products = () => {
-  const { handleClick, cart, setCart, Addon } = useContext(CartContext);
+  const { handleClick, cart, setCart, Addon, setProducts, products} = useContext(CartContext);
   const { addedText, changeText } =
     useContext(AddedContext);
+
+    //API call to get products data
+    useEffect(() => {
+      const getProducts = async () => {
+      const {data} = await axios.get('https://dreamcomebrewserver.onrender.com/products');
+      setProducts(data)
+    };
+    getProducts()
+    },[]);
+
+
 
   const buttons = {};
 
