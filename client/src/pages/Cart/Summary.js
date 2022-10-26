@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from "react";
 import LoginContext from '../../context/LoginContext';
 import CartContext from '../../context/CartContext';
-
+import axios from 'axios';
 const Summary = () => {
     const { logInIcon } = useContext(LoginContext)
     const { cart, emptyCart } = useContext(CartContext)
@@ -10,7 +10,17 @@ const Summary = () => {
     const tax = subTotal * 0.15
     const fees = 1.75
     const grandTotal = subTotal + tax + fees
-
+       
+    
+    const onSubmitform = async (e) =>{
+        e.preventDefault();
+        try {
+           const response = await axios.post("http://localhost:3500/purchase",{cart,subTotal,tax,fees,grandTotal});
+           console.log(response.data);    
+        } catch (err) {
+            console.log(err.response);
+        }
+    }
 
     if (logInIcon === false) {
         return (
@@ -40,7 +50,7 @@ const Summary = () => {
                 <div className='grandTotal'>Grand Total: <div className='summaryElements'><span>$</span>{grandTotal.toFixed(2)}</div></div>
                 <Link to='/CheckoutPage'>
                     <div className='checkout-submit'>
-                        <button className='checkout-btn' onClick={emptyCart}>CHECKOUT</button>
+                        <button className='checkout-btn' onClick={onSubmitform}>CHECKOUT</button>
                     </div>
                 </Link>
             </div>
