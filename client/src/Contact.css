@@ -21,7 +21,7 @@
 }
 
 .contactImg {
-  background: url(pages/images/captial-mall-northwest-grind-coffee-flight.jpg) no-repeat;
+  background: url("https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/Northwest-Cover.jpg") no-repeat;
   background-size: cover;
   width: 100%;
   height: 55vw;
