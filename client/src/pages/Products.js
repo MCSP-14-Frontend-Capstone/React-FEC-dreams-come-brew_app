@@ -99,9 +99,9 @@ const Products = () => {
 
                   <p className="price">
                     <p className="old-price">
-                      <s>${product.oldprice}</s>
+                      <s>${product.original_price}</s>
                     </p>
-                    ${product.price}
+                    ${product.sale_price}
                     <sup>99</sup> <p className="qty">{product.qty} left</p>
                   </p>
                 </div>
