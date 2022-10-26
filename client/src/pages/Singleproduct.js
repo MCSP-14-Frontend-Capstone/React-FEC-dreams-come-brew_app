@@ -18,7 +18,7 @@ const Singleproduct = () => {
   const handleObj = (e) => {
     const id = e.target.id;
     console.log(id);
-    const found = cart.find((elem) => elem.id === product.product_id)
+    const found = cart.find((elem) => elem.product_id === product.product_id)
     if (found) {
       console.log(found)
       Addon(found)
@@ -37,7 +37,7 @@ const Singleproduct = () => {
     <>
       {/* <SearchBar /> */}
       <div className="space">
-        <div key={product.id} id={product.product_id} className="main-single">
+        <div key={product.product_id} id={product.product_id} className="main-single">
           <img className="single-image" src={product.image} alt="" />
           <div className="single-beside">
             <h3>{product.name}</h3>
