@@ -1,10 +1,4 @@
 import React from 'react'
-import coffee1 from './images/coffee-1.jpeg'
-import coffee2 from './images/coffee-2.jpeg'
-import coffee3 from './images/coffee-3.jpeg'
-import coffee4 from './images/coffee-4.jpeg'
-import coffee5 from './images/coffee-5.jpeg'
-import coffee6 from './images/coffee-6.jpeg'
 
 const About = () => {
   return (<div className='aboutBody'>
@@ -23,14 +17,14 @@ const About = () => {
     <div className='aboutPhotosContainer'>
         <h1>Photos</h1>
       <div>
-        <img className="aboutpics" src={coffee1} alt=' '/>
-        <img className="aboutpics" src={coffee2} alt=' '/>
-        <img className="aboutpics" src={coffee3} alt=' '/>
-        <img className="aboutpics" src={coffee4} alt=' '/>
-        <img className="aboutpics" src={coffee5} alt=' '/>
-        <img className="aboutpics" src={coffee6} alt=' '/>
-        <img className="aboutpics" src={coffee5} alt=' '/>
-        <img className="aboutpics" src={coffee6} alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-1.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-2.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-3.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-4.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-5.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-6.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-5.jpg" alt=' '/>
+        <img className="aboutpics" src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/aboutpage/coffee-6.jpg" alt=' '/>
       </div>
     </div>
   </div>
