@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.89fc4081.css",
-    "main.js": "/static/js/main.2da89cbd.js",
-    "static/media/captial-mall-northwest-grind-coffee-flight.jpg": "/static/media/captial-mall-northwest-grind-coffee-flight.b318913a1a878662089e.jpg",
+    "main.css": "/static/css/main.170e7883.css",
+    "main.js": "/static/js/main.cda8e679.js",
     "static/media/coffee-3.jpeg": "/static/media/coffee-3.cdaf318f906c80d27ddb.jpeg",
     "static/media/about-me-coffee.jpeg": "/static/media/about-me-coffee.baae511b8fdb0c5f4116.jpeg",
     "static/media/coffee-2.jpeg": "/static/media/coffee-2.b13801c476f3e7ba32aa.jpeg",
@@ -11,11 +10,11 @@
     "static/media/coffee-4.jpeg": "/static/media/coffee-4.69185c048999842cfa02.jpeg",
     "static/media/coffee-1.jpeg": "/static/media/coffee-1.79830df27ee1d07512b0.jpeg",
     "index.html": "/index.html",
-    "main.89fc4081.css.map": "/static/css/main.89fc4081.css.map",
-    "main.2da89cbd.js.map": "/static/js/main.2da89cbd.js.map"
+    "main.170e7883.css.map": "/static/css/main.170e7883.css.map",
+    "main.cda8e679.js.map": "/static/js/main.cda8e679.js.map"
   },
   "entrypoints": [
-    "static/css/main.89fc4081.css",
-    "static/js/main.2da89cbd.js"
+    "static/css/main.170e7883.css",
+    "static/js/main.cda8e679.js"
   ]
 }
