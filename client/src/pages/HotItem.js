@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from "react";
-import products from "../data";
+// import products from "../data";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AddedContext from "../context/AddedContext";
@@ -13,7 +13,7 @@ import { // This is how we import icon
 } from "@fortawesome/free-solid-svg-icons";
 
 const HotItems = () => {
-  const { handleClick, cart, setCart, Addon } = useContext(CartContext);
+  const { handleClick, cart, setCart, Addon,products } = useContext(CartContext);
   const { addedText, changeText } =
     useContext(AddedContext);
 
@@ -22,11 +22,11 @@ const HotItems = () => {
     <div className="HotItem-Head"></div>
       <div className="HotItems-Container">
       {products.map((product) => {
-          const { id } = product;
+          const { products_id } = product;
 
           const handleObj = (e) => {
             const id = e.target.id;
-            const found = cart.find((elem) => elem.id === product.id)
+            const found = cart.find((elem) => elem.product_id === product.product_id)
             if (found) {
               console.log(found)
               Addon(found)
