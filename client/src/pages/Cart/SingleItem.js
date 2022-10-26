@@ -18,6 +18,7 @@ const SingleItem = ({ item }) => {
     const handleSPP = (e) => {
         const id = e.target.id
         navigate(`/products/${id}`)
+        console.log(e.target.id)
     }
 
     return (
@@ -26,8 +27,8 @@ const SingleItem = ({ item }) => {
             <div className="item-image-name">
                 <img className="sspImg" style={{ width: '5rem', height: '7rem', margin: 'auto 10px' }} src={item.image} alt='' onClick={handleSPP} id={item.id} />
                 <div className="item-info-box">
-                    <h1 className="item-name" onClick={handleSPP} id={item.id}>{item.name}</h1>
-                    <p className="item-desc-text" onClick={handleSPP} id={item.id}>{item.description}</p>
+                    <h1 className="item-name" onClick={handleSPP} id={item.target}>{item.name}</h1>
+                    <p className="item-desc-text" onClick={handleSPP} id={item.target}>{item.description}</p>
                 </div>
             </div>
             <h1 className="item-p-q-t"><span>$</span>{item.original_price}</h1>
