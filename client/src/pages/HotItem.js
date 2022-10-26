@@ -50,7 +50,7 @@ const HotItems = () => {
           
           };
           return (
-            <div className="HotItem-Card" key={product.id} id={product.id}>
+            <div className="HotItem-Card" key={product.product_id} id={product.product_id}>
               
               <Link className="single-link" to={`/products/${product.target}`}>
                 <img className="HotItem-Img" src={product.image} alt="" />
@@ -64,14 +64,14 @@ const HotItems = () => {
                       backgroundColor: "black"
                     }}
                     className=" add-to-cart-btn"
-                    id={product.id}
+                    id={product.product_id}
                   >
                     {addedText}
                   </button>
 
                   <Link to={'/cart'}>
 
-                    <button className=" buy-now-btn" id={product.id} onClick={handleObj}>
+                    <button className=" buy-now-btn" id={product.product_id} onClick={handleObj}>
                       BUY NOW{" "}
                       <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                     </button>
@@ -80,7 +80,7 @@ const HotItems = () => {
                 </div>
                 <div className="HotItem-info">
                   <p className="Hotproduct-name">{product.name}</p>
-                  <p  className="price">${product.price}</p>
+                  <p  className="price">${product.sale_price}</p>
                 </div>
                 <div className="HotItem-qty">
                   <p className="qty">{product.qty} left</p>
