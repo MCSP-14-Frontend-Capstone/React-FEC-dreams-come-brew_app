@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import DealsCompo from "../components/DealsCompo";
 import HomeCard from "../components/HomeCard.js";
 import ProductsItem from "../components/ProductsItem";
@@ -9,26 +9,38 @@ const Index = () => {
   //This is the homepage
   const [items, setItems] = useState([]); // from data.js
 
-      //API call to get products data
-      useEffect(() => {
-        const getProducts = async () => {
-        const {data} = await axios.get('https://dreamcomebrewserver.onrender.com/products');
-        setItems(data)
-      };
-      getProducts()
-      },[]);
+  //API call to get products data
+  useEffect(() => {
+    const getProducts = async () => {
+      const { data } = await axios.get(
+        "https://dreamcomebrewserver.onrender.com/products"
+      );
+      setItems(data);
+    };
+    getProducts();
+  }, []);
 
   return (
     <div className="home">
       <div className="home_container">
         <div className="twists">
           <div className="twist-div">
-          <img className="top-div" src="https://img.freepik.com/free-photo/coffee-beans_23-2148093838.jpg?w=2000&t=st=1666049817~exp=1666050417~hmac=9207df91f8ed8246e2bab9ff71a87a7dcd38688d657f9a2a28cacbf212a194a6" alt="" />
+            <img
+              className="top-div"
+              src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/home-page/Coffee-Beans.jpg"
+              alt=""
+            />
             <div className="top-div text">
-              <h3 >Our Mission</h3>
+              <h3>Our Mission</h3>
               <hr />
-              <p>Since their opening in 2022 Dreams Come Brew has been driven by a clear commitment to quality coffee — with over half the coffee they source home grown and all of it cupped and curated by Students of MCSP-14
-              Since their opening in 2022 Dreams Come Brew has been driven by a clear commitment to quality coffee — with over half the coffee they source home grown and all of it cupped and curated by Students of MCSP-14
+              <p>
+                Since their opening in 2022 Dreams Come Brew has been driven by
+                a clear commitment to quality coffee — with over half the coffee
+                they source home grown and all of it cupped and curated by
+                Students of MCSP-14 Since their opening in 2022 Dreams Come Brew
+                has been driven by a clear commitment to quality coffee — with
+                over half the coffee they source home grown and all of it cupped
+                and curated by Students of MCSP-14
               </p>
             </div>
           </div>
@@ -36,13 +48,22 @@ const Index = () => {
             <div className="bottom-div text">
               <h3>Pouring a new narrative </h3>
               <hr />
-            <p>Named for a desire to change the picture of what comes to mind when people think of specialty coffee, Dreams come Brew is as committed to rewriting that narrative as it is to reflecting the history and culture of its Fort Hood Texas Community.
-            Named for a desire to change the picture of what comes to mind when people think of specialty coffee, Dreams come Brew is as committed to rewriting that narrative as it is to reflecting the history and culture of its Fort Hood Texas Community.
-            
-            </p>
+              <p>
+                Named for a desire to change the picture of what comes to mind
+                when people think of specialty coffee, Dreams come Brew is as
+                committed to rewriting that narrative as it is to reflecting the
+                history and culture of its Fort Hood Texas Community. Named for
+                a desire to change the picture of what comes to mind when people
+                think of specialty coffee, Dreams come Brew is as committed to
+                rewriting that narrative as it is to reflecting the history and
+                culture of its Fort Hood Texas Community.
+              </p>
             </div>
-           <img className="bottom-div" src="https://img.freepik.com/free-photo/coffee-beans-heart-form_23-2147896435.jpg?w=2000&t=st=1666049946~exp=1666050546~hmac=32fc28baec9aa6934ece03cb7715cf66f8a4bd3ca7e1bb3d7af69062ebc96a07" alt="" />
-
+            <img
+              className="bottom-div"
+              src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/home-page/Coffee-Heart.jpg"
+              alt=""
+            />
           </div>
         </div>
         <SearchBar />
@@ -50,22 +71,22 @@ const Index = () => {
         <div className="home-img-box">
           <img
             className="home-img home-img-one"
-            src="https://images.unsplash.com/photo-1493925410384-84f842e616fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80"
+            src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/home-page/Coffee-hands.jpg"
             alt=""
           />
           <img
             className="home-img home-img-two"
-            src="https://images.unsplash.com/photo-1509047319667-c1a8de3000c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+            src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/home-page/Coffee-Pour.jpg"
             alt=""
           />
           <img
             className="home-img home-img-three"
-            src="https://images.unsplash.com/photo-1512153371649-ebbe07fc197d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+            src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/home-page/Expresso-Heart.jpg"
             alt=""
           />
           <img
             className="home-img home-img-four"
-            src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
+            src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/home-page/Coffee-Sip.jpg"
             alt=""
           />
         </div>
@@ -85,7 +106,7 @@ const Index = () => {
 
           <img
             className="coffee-image"
-            src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+            src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/CookiesNDreams-Front_1024x1024%402x.jpg"
             alt=""
           />
         </div>
