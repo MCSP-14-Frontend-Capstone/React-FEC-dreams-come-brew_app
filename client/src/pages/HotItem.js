@@ -19,9 +19,9 @@ const HotItems = () => {
 
   return (
     <>
-    <div className="HotItem-Head"></div>
+      <div className="HotItem-Head"></div>
       <div className="HotItems-Container">
-      {products.map((product) => {
+        {products.map((product) => {
           const { id } = product;
 
           const handleObj = (e) => {
@@ -47,16 +47,16 @@ const HotItems = () => {
 
           const checkOutObj = () => {
             handleClick(product)
-          
+
           };
           return (
             <div className="HotItem-Card" key={product.id} id={product.id}>
-              
+
               <Link className="single-link" to={`/products/${product.target}`}>
                 <img className="HotItem-Img" src={product.image} alt="" />
               </Link>
               <div className="belowHotItem-image">
-              <div className="btn-group-card">
+                <div className="btn-group-card">
                   <button
                     onClick={handleObj}
                     style={{
@@ -80,7 +80,7 @@ const HotItems = () => {
                 </div>
                 <div className="HotItem-info">
                   <p className="Hotproduct-name">{product.name}</p>
-                  <p  className="price">${product.price}</p>
+                  <p className="price">${product.price}</p>
                 </div>
                 <div className="HotItem-qty">
                   <p className="qty">{product.qty} left</p>
