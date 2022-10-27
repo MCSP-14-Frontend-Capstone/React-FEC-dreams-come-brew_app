@@ -10,13 +10,14 @@ const Summary = () => {
     const tax = subTotal * 0.15
     const fees = 1.75
     const grandTotal = subTotal + tax + fees
-       
-    
-    const onSubmitform = async (e) =>{
+
+
+    const onSubmitform = async (e) => {
         e.preventDefault();
         try {
-           const response = await axios.post("http://localhost:3500/purchase",{cart,subTotal,tax,fees,grandTotal});
-           console.log(response.data);    
+            const response = await axios.post("http://localhost:3500/purchase", { cart, subTotal, tax, fees, grandTotal });
+            console.log(response.data);
+            emptyCart()
         } catch (err) {
             console.log(err.response);
         }
