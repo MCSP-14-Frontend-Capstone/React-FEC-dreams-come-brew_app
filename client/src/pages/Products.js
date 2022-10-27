@@ -138,7 +138,7 @@ const Products = () => {
         <div className="special-main">
           <div className="special">
             <img
-              src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+              src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/CookiesNDreams-Front_1024x1024%402x.jpg"
               alt=""
             />
             <div className="special-stars">
@@ -172,7 +172,7 @@ const Products = () => {
           </div>
           <div className="special">
             <img
-              src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+              src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/CookiesNDreams-Front_1024x1024%402x.jpg"
               alt=""
             />
             <div className="special-stars">
@@ -206,7 +206,7 @@ const Products = () => {
           </div>
           <div className="special">
             <img
-              src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+              src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/CookiesNDreams-Front_1024x1024%402x.jpg"
               alt=""
             />
             <div className="special-stars">
@@ -256,7 +256,7 @@ const Products = () => {
 
         <img
           className="coffee-image"
-          src="https://cdn.shopify.com/s/files/1/1475/5488/products/CookiesNDreams-Front_1024x1024@2x.jpg?v=1569419317"
+          src="https://dreams-come-brew-app.s3.us-east-2.amazonaws.com/CookiesNDreams-Front_1024x1024%402x.jpg"
           alt=""
         />
       </div>
