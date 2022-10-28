@@ -19,7 +19,7 @@ const DealsCompo = ({items}) => {
             </div>
         {/* <Link className="DealsArrow" to="Deals" activeClass="active" duration={650} ignoreCancelEvents={false} offset={2000} smooth ={true} horizontal={true} containerId="deals">&#8250;</Link> */}
 <div className="homeNewsLetter">
-<marquee scrolldelay="1" marquee loop="4" className='marquee'>Donate to Victims of hurrican Ian &nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp;&nbsp; Guided By Your Taste + Brewing Habits&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Flexible Plans &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Delivered on Your Schedule&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Ethically Sourced&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;  Support Local Businesses&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Free Shipping &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; 25+ Curated Coffees &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp; Family Owned </marquee>
+<marquee scrolldelay="1" loop="4" className='marquee'>Donate to Victims of hurrican Ian &nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp;&nbsp; Guided By Your Taste + Brewing Habits&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Flexible Plans &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Delivered on Your Schedule&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; Ethically Sourced&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;  Support Local Businesses&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Free Shipping &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; 25+ Curated Coffees &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp; Family Owned </marquee>
     <Newsletter/>
 
        
