@@ -56,19 +56,23 @@ const Contact = () => {
         </section>
 
         <article className='contactForm'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               className='contactInputBox'
               type='text'
               placeholder='Full Name'
               value={cname}
-              onChange={handleChangeName} />
+              onChange={handleChangeName}
+              required
+              />
             <input
               className='contactInputBox'
               type='email'
               placeholder='Email'
               value={cemail}
-              onChange={handleChangeEmail} />
+              onChange={handleChangeEmail}
+              required
+              />
             <textarea
               className='contactInputBoxDes'
               name='text'
@@ -76,13 +80,13 @@ const Contact = () => {
               value={cdes}
               onChange={handleChangeDes}
               wrap='hard'
-              maxlength="600" />
-            <button
-              type="button"
+              maxLength="600"
+              required
+              />
+            <input
+              type="submit"
               className="contactSubmitBtn"
-              onClick={handleSubmit}
-            >Submit
-            </button>
+              />
           </form>
         </article>
       </main>

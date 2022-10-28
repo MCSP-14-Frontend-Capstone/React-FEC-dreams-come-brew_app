@@ -7,7 +7,7 @@ import CartContext from "../context/CartContext";
 import {
   faCartShopping,
   faSignIn,
-  faCoffee,
+  //faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
