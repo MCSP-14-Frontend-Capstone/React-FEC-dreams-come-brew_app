@@ -30,8 +30,6 @@ const Products = () => {
     getProducts()
   }, []);
 
-
-
   const buttons = {};
 
 
@@ -97,13 +95,13 @@ const Products = () => {
                 <div className="name-and-price">
                   <p className="product-name">{product.name}</p>
 
-                  <p className="price">
+                  <div className="price">
                     <p className="old-price">
                       <s>${product.original_price}</s>
                     </p>
                     ${product.sale_price}
                     <sup>99</sup> <p className="qty">{product.qty} left</p>
-                  </p>
+                  </div>
                 </div>
                 <div className="stars">
                   <FontAwesomeIcon

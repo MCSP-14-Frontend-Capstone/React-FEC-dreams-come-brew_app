@@ -9,7 +9,8 @@ const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+    const [singleProduct, setSingleProduct] = useState([]);
 
     const [cart, setCart] = useState([])
 
@@ -70,6 +71,7 @@ export const CartProvider = ({ children }) => {
 
     return <CartContext.Provider value={{ cart, handleClick, removeItem, emptyCart, Addon, onRemove, setCart, products, setProducts }}>
         <ToastContainer position="bottom-right" autoclose={1000} theme="light" hideProgressBar/>
+
 
         {children}
     </CartContext.Provider>

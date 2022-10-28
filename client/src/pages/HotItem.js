@@ -1,6 +1,7 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment, useContext, useEffect } from "react";
 // import products from "../data";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AddedContext from "../context/AddedContext";
 import CartContext from "../context/CartContext";
@@ -13,10 +14,24 @@ import { // This is how we import icon
 } from "@fortawesome/free-solid-svg-icons";
 
 const HotItems = () => {
-  const { handleClick, cart, setCart, Addon,products } = useContext(CartContext);
+  const { handleClick, cart, setCart, Addon, products, setProducts } = useContext(CartContext);
   const { addedText, changeText } =
     useContext(AddedContext);
 
+    useEffect(() => {
+
+      const getHotItems = async () => {
+        try {
+          const { data } = await axios.get('https://dreamcomebrewserver.onrender.com/products');
+          setProducts(data)
+        } catch (error) {
+          console.log(error.message)
+        }
+      }
+      getHotItems()
+    }, [])
+
+    
   return (
     <>
     <div className="HotItem-Head"></div>
@@ -31,7 +46,7 @@ const HotItems = () => {
               console.log(found)
               Addon(found)
             } else {
-              console.log('elese')
+              // console.log('elese')
               handleClick(product);
             }
             changeText(id);

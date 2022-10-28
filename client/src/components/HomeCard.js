@@ -4,9 +4,9 @@ const HomeCard = ({items}) => {
 
     //filter through images to get items with id less that 5
     const filters = (item) => {
-        if(item.id < 5){
+        if(item.product_id < 5){
             //return obj within condition set
-            return item.id
+            return item.product_id
         }
     }
 
@@ -17,7 +17,7 @@ const HomeCard = ({items}) => {
         <div className="CardMain-Container">
             {
                 imgItems.map(item => (
-                    <CardImg key={item.id} item={item}/>
+                    <CardImg key={item.product_id} item={item}/>
                 ))
             }
         </div>
