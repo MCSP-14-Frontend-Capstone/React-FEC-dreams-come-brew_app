@@ -59,6 +59,7 @@ input:hover {
   align-items: center;
   justify-content: space-around;
   padding-left: 2.5rem;
+  overflow: visible;
 }
 
 .underfoot p {
@@ -71,11 +72,12 @@ input:hover {
 
 .right-underfoot {
   display: flex;
-  margin-left: 61rem;
+  margin-left: 50rem;
   margin-top: 0.5rem;
   height: 2rem;
   background-color: #000;
   padding-bottom: 2rem;
+  width: auto;
 }
 
 .right-underfoot p {
