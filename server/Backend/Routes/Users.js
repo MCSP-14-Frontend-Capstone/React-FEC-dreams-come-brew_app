@@ -38,18 +38,22 @@ const addUser = async (req, res) => {
 
 const LoginUser = async (req, res) => {
   const { loginName, loginPassword } = req.body;
+
   try {
     const { rows } = await pool.query(queries.getAllUsers);
-    const user = rows.find((user) => user.user_name === loginName)
+      const user = rows.find(user => {
+        if(user.user_name === loginName){
+          return user.user_name;
+        }else{
+          return undefined;
+        }})
 
-    if (await user === undefined) {
+    if (user === undefined) {
       res.send(false)
     } else {
-      if (await bcrypt.compare(loginPassword, user.password)) {
-        res.send(true)
-      } else {
-        res.send(false)
-      }
+      const hashpass = await bcrypt.hash(loginPassword, 10);
+      const auth = await bcrypt.compare(user.password, hashpass);
+      res.send(auth)
     }
 
   } catch (err) {
