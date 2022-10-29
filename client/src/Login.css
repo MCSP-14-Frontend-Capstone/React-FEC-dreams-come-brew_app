@@ -124,3 +124,7 @@
   height: 29rem;
   background-color: var(--offWhite);
 }
+
+.error-login {
+  color: red;
+}

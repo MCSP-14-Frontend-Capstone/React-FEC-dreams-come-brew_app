@@ -11,7 +11,7 @@ export const LoginProvider = ({ children }) => {
   const [newUser, setNewUser] = useState("")
   const [newEmail, setNewEmail] = useState("")
   const [newPwd, setNewPwd] = useState("")
-
+  const [errorMsg, setErrorMsg] = useState('')
 
 
 
@@ -67,7 +67,7 @@ export const LoginProvider = ({ children }) => {
       //test create user//pass
       const response = await axios.post('https://dreamcomebrewserver.onrender.com/users', { newUser, newEmail, newPwd })
       const result = response.data
-      console.log(result)
+      setErrorMsg(result.message)
       setNewEmail("")
       setNewPwd("")
       setNewUser("")
@@ -95,7 +95,8 @@ export const LoginProvider = ({ children }) => {
         newUser,
         newPwd,
         newEmail,
-        setLoginInIcon
+        setLoginInIcon,
+        errorMsg
       }}
     >
       {children}
