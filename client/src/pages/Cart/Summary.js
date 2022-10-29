@@ -11,7 +11,7 @@ const Summary = () => {
     const fees = 1.75
     const grandTotal = subTotal + tax + fees
 
-
+    //This needs to be worked on//
     const onSubmitform = async (e) => {
         e.preventDefault();
         try {
@@ -23,7 +23,7 @@ const Summary = () => {
         }
     }
 
-    if (logInIcon === false) {
+    if (logInIcon === null || logInIcon === false) {
         return (
             <main className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>

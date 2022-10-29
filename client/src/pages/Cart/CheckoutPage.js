@@ -16,7 +16,7 @@ const CheckoutPage = () => {
         return arrLetter[Math.floor(Math.random() * arrLetter.length)]
     }
 
-    if (logInIcon === false) {
+    if (logInIcon === null || logInIcon === false) {
         return (<Login />
         )
     } else {

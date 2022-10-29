@@ -6,7 +6,7 @@ const LoginContext = createContext();
 export const LoginProvider = ({ children }) => {
   const [loginName, setLoginName] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
-  const [logInIcon, setLoginInIcon] = useState(false);
+  const [logInIcon, setLoginInIcon] = useState(null);
 
   const [newUser, setNewUser] = useState("")
   const [newEmail, setNewEmail] = useState("")
@@ -36,7 +36,7 @@ export const LoginProvider = ({ children }) => {
 
   const logOut = (e) => {
     e.preventDefault();
-    setLoginInIcon(false);
+    setLoginInIcon(null);
   };
 
   const logIn = (e) => {
@@ -71,7 +71,6 @@ export const LoginProvider = ({ children }) => {
       setNewEmail("")
       setNewPwd("")
       setNewUser("")
-
     } catch (error) {
       console.error(error.message)
     }
@@ -95,7 +94,8 @@ export const LoginProvider = ({ children }) => {
         handleUserName,
         newUser,
         newPwd,
-        newEmail
+        newEmail,
+        setLoginInIcon
       }}
     >
       {children}
