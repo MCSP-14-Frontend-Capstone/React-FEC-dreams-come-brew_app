@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const {
     logInIcon,
+    setLoginInIcon,
     toggleLogin,
     handleCreateNewUser,
     handlePassword,
@@ -43,7 +44,15 @@ const Login = () => {
         </div>
       </>
     );
-  } else {
+  } else if (logInIcon === false){
+      return(
+              <div className="test">
+                <h4 className="">Incorrect User Name or Password</h4>
+                <button className="loginButtons" onClick={()=>{setLoginInIcon(null)}}>ok</button>
+                </div>
+      ) 
+
+  }else {
     return (
       <>
         <h1 className="loginHeader">Log In Or Create An Account</h1>
