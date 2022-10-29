@@ -47,12 +47,10 @@ const LoginUser = async (req, res) => {
         }else{
           return undefined;
         }})
-
     if (user === undefined) {
       res.send(false)
     } else {
-      const hashpass = await bcrypt.hash(loginPassword, 10);
-      const auth = await bcrypt.compare(user.password, hashpass);
+      const auth = await bcrypt.compare(loginPassword,user.password);
       res.send(auth)
     }
 
