@@ -24,13 +24,18 @@ const getOneUser = async (req, res) => {
 
 const addUser = async (req, res) => {
   let { newUser, newEmail, newPwd } = req.body;
-  const hashedPwd = await bcrypt.hash(newPwd, 10)
-  newPwd = hashedPwd
 
   try {
-    console.log(newPwd)
-    await pool.query(queries.addUser, [newEmail, newUser, newPwd]);
-    res.status(201).send("User created");
+    const { rows } = await pool.query('SELECT * FROM users WHERE user_email = $1', [newEmail])
+
+    if (rows.length !== 0) {
+      res.send({ message: 'Email already exist' })
+    }
+    else {
+      const hashedPwd = await bcrypt.hash(newPwd, 10)
+      await pool.query(queries.addUser, [newEmail, newUser, hashedPwd]);
+      res.status(201).send("User created");
+    }
   } catch (err) {
     console.error(err.message);
   }
@@ -41,16 +46,17 @@ const LoginUser = async (req, res) => {
 
   try {
     const { rows } = await pool.query(queries.getAllUsers);
-      const user = rows.find(user => {
-        if(user.user_name === loginName){
-          return user.user_name;
-        }else{
-          return undefined;
-        }})
+    const user = rows.find(user => {
+      if (user.user_name === loginName) {
+        return user.user_name;
+      } else {
+        return undefined;
+      }
+    })
     if (user === undefined) {
       res.send(false)
     } else {
-      const auth = await bcrypt.compare(loginPassword,user.password);
+      const auth = await bcrypt.compare(loginPassword, user.password);
       res.send(auth)
     }
 

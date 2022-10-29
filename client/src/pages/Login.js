@@ -20,7 +20,8 @@ const Login = () => {
     handleUserName,
     newUser,
     newPwd,
-    newEmail
+    newEmail,
+    errorMsg
   } = useContext(LoginContext);
 
 
@@ -44,15 +45,15 @@ const Login = () => {
         </div>
       </>
     );
-  } else if (logInIcon === false){
-      return(
-              <div className="test">
-                <h4 className="">Incorrect User Name or Password</h4>
-                <button className="loginButtons" onClick={()=>{setLoginInIcon(null)}}>ok</button>
-                </div>
-      ) 
+  } else if (logInIcon === false) {
+    return (
+      <div className="test">
+        <h4 className="">Incorrect User Name or Password</h4>
+        <button className="loginButtons" onClick={() => { setLoginInIcon(null) }}>ok</button>
+      </div>
+    )
 
-  }else {
+  } else {
     return (
       <>
         <h1 className="loginHeader">Log In Or Create An Account</h1>
@@ -114,12 +115,7 @@ const Login = () => {
                 required
               />
               <br></br>
-              {/* <input
-                className="inputBox"
-                type="password"
-                placeholder="Confirm Password"
-                required
-              /> */}
+              <p className="error-login">{errorMsg}</p>
               <br></br>
               <button type="submit" className="loginButtons">
                 Create Account
