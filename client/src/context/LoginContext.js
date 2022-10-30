@@ -1,5 +1,6 @@
 import { useState, createContext } from "react";
 import axios from 'axios'
+import { json } from "react-router-dom";
 
 const LoginContext = createContext();
 
@@ -19,14 +20,26 @@ export const LoginProvider = ({ children }) => {
   const toggleLogin = async (e) => {
     e.preventDefault()
     try {
-      //login test//pass
+   
       const response = await axios.post('https://dreamcomebrewserver.onrender.com/users/login', { loginName, loginPassword })
-      // const response = await axios.post('https://dreamcomebrewserver.onrender.com/users/login', { loginName, loginPassword })
 
-      const result = response.data
+      const user = response.data;
+      //if response is not false give session a userToken with a value of the users accessToken
+      if(user !== false){
+        sessionStorage.setItem('userToken', user.accessToken)
+      }
+
+      //change user value to boolean
+      let foundUser = user
+      if(foundUser !== false){
+        foundUser = true
+      }else{
+        foundUser = false
+      }
+
       setLoginName("");
       setLoginPassword("");
-      setLoginInIcon(result);
+      setLoginInIcon(foundUser);
     } catch (error) {
       console.error(error.message)
     }
@@ -37,6 +50,8 @@ export const LoginProvider = ({ children }) => {
   const logOut = (e) => {
     e.preventDefault();
     setLoginInIcon(null);
+    //clears the session storage when user log out
+    sessionStorage.clear(loginName)
   };
 
   const logIn = (e) => {

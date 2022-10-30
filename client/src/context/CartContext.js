@@ -16,7 +16,7 @@ export const CartProvider = ({ children }) => {
 
     const Addon = (item) => {
         const exist = cart.find((x) => x.product_id === item.product_id)
-        console.log(exist)
+        // console.log(exist)
         if (exist) {
             setCart(
                 cart.map((x) =>
