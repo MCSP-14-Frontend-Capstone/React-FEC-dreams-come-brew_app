@@ -20,9 +20,9 @@ const getOneProduct = async (req, res) => {
 }
 
 const addToProduct = async (req, res) => {
-    const {name,description,original_price,sale_price,on_sale,popular_item} = req.body
+    const {name,description,original_price,sale_price,on_sale,popular_item,users_id} = req.body
     try {
-        let {rows} = await pool.query('INSERT INTO products (name,description,original_price,sale_price,on_sale,popular_item) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *',[name,description,original_price,sale_price,on_sale,popular_item])
+        let {rows} = await pool.query('INSERT INTO products (name,description,original_price,sale_price,on_sale,popular_item,users_id) VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING *',[name,description,original_price,sale_price,on_sale,popular_item, users_id])
         res.status(201).send(rows)
     } catch (error) {
         console.error(error.message)
