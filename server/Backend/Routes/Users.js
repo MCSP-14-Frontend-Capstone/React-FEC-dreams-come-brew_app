@@ -1,6 +1,8 @@
 const pool = require("../pool");
 const queries = require("../../DB/queries");
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 
 const getAllUsers = async (req, res) => {
@@ -12,6 +14,8 @@ const getAllUsers = async (req, res) => {
   }
 };
 
+
+
 const getOneUser = async (req, res) => {
   const { id } = req.params;
   try {
@@ -21,6 +25,8 @@ const getOneUser = async (req, res) => {
     console.error(err.message);
   }
 };
+
+
 
 const addUser = async (req, res) => {
   let { newUser, newEmail, newPwd } = req.body;
@@ -41,32 +47,31 @@ const addUser = async (req, res) => {
   }
 };
 
+
+
 const LoginUser = async (req, res) => {
   const { loginName, loginPassword } = req.body;
 
-  try {
     const { rows } = await pool.query(queries.getAllUsers);
-    const user = rows.find(user => {
-      if (user.user_name === loginName) {
-        return user.user_name;
-      } else {
-        return undefined;
-      }
-    })
-    if (user === undefined) {
+
+    const user = rows.filter((user) => user.user_name === loginName)
+    // console.log(user)
+    if (user.length === 0) {
       res.send(false)
     } else {
-      const auth = await bcrypt.compare(loginPassword, user.password);
-      res.send(auth)
+        try {
+          const auth = await bcrypt.compare(loginPassword, user[0].password);
+              if(auth === true){
+                const accessToken = jwt.sign(user[0], process.env.ACCESS_TOKEN);
+                res.send( {...user[0], accessToken} )
+              }else if(auth === false){
+                res.send(false)
+              }
+        } catch (error) {
+          console.log(error.message)
+        }
     }
-
-  } catch (err) {
-    console.error(err.message);
-  }
 };
-
-
-
 
 
 
@@ -85,6 +90,8 @@ const editUser = async (req, res) => {
     console.error(err.message);
   }
 };
+
+
 
 const deleteUser = async (req, res) => {
   const { id } = req.params;
