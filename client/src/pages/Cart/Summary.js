@@ -1,29 +1,41 @@
-import { Link } from 'react-router-dom';
+
+import { Link, useParams } from 'react-router-dom';
 import { useContext } from "react";
 import LoginContext from '../../context/LoginContext';
 import CartContext from '../../context/CartContext';
 import axios from 'axios';
 const Summary = () => {
     const { logInIcon } = useContext(LoginContext)
-    const { cart, emptyCart } = useContext(CartContext)
+    const { cart, emptyCart, products } = useContext(CartContext)
     const subTotal = cart.reduce((total, item) => total + item.original_price * item.cartqty, 0)
     const tax = subTotal * 0.15
     const fees = 1.75
     const grandTotal = subTotal + tax + fees
-
-    //This needs to be worked on//
+    const { productTarget } = useParams();
+    const product = products.find((product) => product.target === productTarget);
+    
+    
+    
+    
     const onSubmitform = async (e) => {
         e.preventDefault();
+        console.log(cart);
         try {
-            const response = await axios.post("http://localhost:3500/purchase", { cart, subTotal, tax, fees, grandTotal });
-            console.log(response.data);
-            emptyCart()
+           
+            cart.map(async (elem) => {
+                const response = await axios.post("http://localhost:3500/purchase", { product_name: elem.name, 
+                subTotal, tax, fees,order_total:subTotal, grand_total: grandTotal, taxes:tax, order_quantity: elem.cartqty, users_id: 9, product_id:elem.product_id });
+                console.log(response.data);
+            })
+            
+           
+            emptyCart();
         } catch (err) {
             console.log(err.response);
         }
     }
 
-    if (logInIcon === null || logInIcon === false) {
+    if (logInIcon === false) {
         return (
             <main className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>
@@ -60,5 +72,4 @@ const Summary = () => {
 };
 
 export default Summary;
-
 
