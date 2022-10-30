@@ -31,7 +31,7 @@ const Summary = () => {
         try {
            
             cart.map(async (elem) => {
-                const response = await axios.post("http://localhost:3500/purchase", { product_name: elem.name, 
+                const response = await axios.post("https://dreamcomebrewserver.onrender.com/purchase", { product_name: elem.name, 
                 subTotal, tax, fees,order_total:subTotal, grand_total: grandTotal, taxes:tax, order_quantity: elem.cartqty, users_id: users_id, product_id:elem.product_id});
                 // console.log(response.data);
             });
