@@ -49,7 +49,7 @@ const Products = () => {
               console.log(found)
               Addon(found)
             } else {
-              console.log('elese')
+              // console.log('elese')
               handleClick(product);
             }
             changeText(id);

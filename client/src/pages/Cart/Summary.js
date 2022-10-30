@@ -5,8 +5,8 @@ import LoginContext from '../../context/LoginContext';
 import CartContext from '../../context/CartContext';
 import axios from 'axios';
 const Summary = () => {
-    const { logInIcon } = useContext(LoginContext)
-    const { cart, emptyCart, products } = useContext(CartContext)
+    const { logInIcon ,loginName} = useContext(LoginContext)
+    const { cart, emptyCart, products,  } = useContext(CartContext)
     const subTotal = cart.reduce((total, item) => total + item.original_price * item.cartqty, 0)
     const tax = subTotal * 0.15
     const fees = 1.75
@@ -19,14 +19,22 @@ const Summary = () => {
     
     const onSubmitform = async (e) => {
         e.preventDefault();
-        console.log(cart);
+        
+        //access token through sessionStorage
+        const userToken = sessionStorage.getItem('userToken');
+        //set the payload portion into a variable
+        const getPayload = userToken.split('.')[1];
+        //parse the decoded payload to access obj
+        const payloadObj = (JSON.parse(atob(getPayload)))
+        const {iat, user_email, user_name, users_id} = payloadObj
+
         try {
            
             cart.map(async (elem) => {
                 const response = await axios.post("http://localhost:3500/purchase", { product_name: elem.name, 
-                subTotal, tax, fees,order_total:subTotal, grand_total: grandTotal, taxes:tax, order_quantity: elem.cartqty, users_id: 9, product_id:elem.product_id });
-                console.log(response.data);
-            })
+                subTotal, tax, fees,order_total:subTotal, grand_total: grandTotal, taxes:tax, order_quantity: elem.cartqty, users_id: users_id, product_id:elem.product_id});
+                // console.log(response.data);
+            });
             
            
             emptyCart();
@@ -35,7 +43,7 @@ const Summary = () => {
         }
     }
 
-    if (logInIcon === false) {
+    if (logInIcon === null || logInIcon === false) {
         return (
             <main className='summaryBox'>
                 <h2 className='summaryTitle'>Order Summary</h2>

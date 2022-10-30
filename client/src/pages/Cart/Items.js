@@ -11,7 +11,7 @@ const Items = () => {
     return (
         <>
             {cart.map((item) => (
-                <SingleItem key={item.id} item={item} />
+                <SingleItem key={item.product_id} item={item} />
 
             ))}
 
