@@ -26,10 +26,6 @@ const Login = () => {
 
 
 
-  const handleSubmit = (e) => {
-    console.log('jdkf')
-  }
-
 
   if (logInIcon === true) {
     return (
@@ -45,7 +41,7 @@ const Login = () => {
         </div>
       </>
     );
-  } else if (logInIcon === false) {
+  } /*else if (logInIcon === false) {
     return (
       <div className="test">
         <h4 className="">Incorrect User Name or Password</h4>
@@ -53,7 +49,7 @@ const Login = () => {
       </div>
     )
 
-  } else {
+  }*/ else {
     return (
       <>
         <h1 className="loginHeader">Log In Or Create An Account</h1>
@@ -68,6 +64,7 @@ const Login = () => {
                 onChange={logIn}
                 placeholder="User Name"
                 value={loginName}
+                required
               />
               <br></br>
               <input
@@ -76,8 +73,10 @@ const Login = () => {
                 onChange={handlePassword}
                 placeholder="Password"
                 value={loginPassword}
+                required
               />
               <br></br>
+              {logInIcon === false && <p className="error-login">Invalid Username or Password</p>}
               <button type="submit" className="loginButtons">
                 {" "}
                 Log In{" "}
